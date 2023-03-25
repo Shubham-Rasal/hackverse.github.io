@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1000px) {
+
+  .navbar-social-media{
+    background: red;
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 600px) {
   html {
     scroll-padding-top: 70px;
@@ -60,10 +67,10 @@
   }
 
   .title-about-hackverse {
-    margin-bottom: 300px !important;
+    /* margin-bottom: 300px !important; */
     font-size: 30px;
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
 
   .text-hackverse {

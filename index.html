@@ -61,18 +61,34 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Hackverse 4.0 | March 2023</title>
+
+    <title>Hackverse 4.0 | April 2023</title>
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#scroll-spy" data-bs-offset="90">
     <!-- navbar -->
+    <!-- <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("scroll-spy").style.top = "0";
+        } else {
+          document.getElementById("scroll-spy").style.top = "-200px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    
+    </script> -->
 
     <nav id="scroll-spy" class="navbar navbar-dark fixed-top navbar-expand-lg">
-      <div class="container" data-aos="fade-up" data-aos-once="true">
+      <div class="container" data-aos="fade-up" data-aos-once="true" id="container">
         <img
           src="./img/logo.webp"
-          width="80px"
+          width="auto"
+          height="50px"
           alt="Hackverse"
           class="navbar-brand navbar-logo-custom"
         />
@@ -100,11 +116,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#about-section"><span>ABOUT</span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#schedule-section"
                 ><span>SCHEDULE</span></a
               >
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#stats-section"><span>STATS</span></a>
             </li>
@@ -137,10 +153,11 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                
               >
                 LINKS
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="scroll-spy-link">
                 <li class="nav-item">
                   <a class="nav-link dropdown-item" href="/blog"
                     >HackVerse Blog</a
@@ -155,18 +172,68 @@
             </li>
           </ul>
         </div>
-      </div>
+
+        <!-- <div class="col-12 col-lg-4 d-flex align-items-center justify-content-evenly social-media-icon"> -->
+          <div class="col-12 col-lg-2 d-flex align-items-lg-end justify-content-evenly social-media-icon navbar-social-media">
+          <a
+              class="social-icons"
+              href="http://instagram.com/hackversenitk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <i class="fa" id="social-nav-icons">&#xf16d;</i>
+          </a>
+          <a
+              class="social-icons"
+              href="http://t.me/hackverse"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <i class="fa" id="social-nav-icons">&#xf2c6;</i>
+          </a>
+          <a
+              class="social-icons"
+              href="https://www.youtube.com/channel/UC_hR3RkqNKQMDG1R2hpbSoA"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa" id="social-nav-icons">&#xf16a;</i>
+            </a>
+          <a
+              class="social-icons"
+              href="http://linkedin.com/company/hackverse"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <i class="fa" id="social-nav-icons">&#xf0e1;</i>
+          </a>
+          <a
+              class="social-icons"
+              href="http://www.facebook.com/hackverse/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <i class="fa" id="social-nav-icons">&#xf082;</i>
+            </a>
+            <a
+              class="social-icons"
+              href="http://twitter.com/hackversenitk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <i class="fa" id="social-nav-icons">&#xf099;</i>
+          </a>
+          </div>
+        </div>
+
     </nav>
 
     <!-- Home Section -->
 
     <div id="hero">
       <section id="home-section">
-        <div class="home fluid-container d-flex flex-column">
-          <div class="container fill">
+        <div class="home fluid-container d-flex flex-column justify-content-start align-items-center">
+          
             <!-- Add rectangular space on the top only in the front page to shift the contents below the navbar -->
-            <div class="home-top-space-custom"></div>
-            <div class="main row main-page">
               
               <!-- <div id="imagine-text">
                 <h1 class="h1-title">
@@ -185,13 +252,16 @@
                 </h1>
                 </br>
               </div> -->
-
+              <div class="home-top-space-custom">
+                
+              </div>
+              <p class="small blink-soft" style="color:white; margin-top:1%;margin-bottom: 0%; margin-left:2%; margin-right:2%">Discover Your Inner Explorer: Apply Now for Arctic Adventures!</p>
               <div
-                class="d-flex flex-column col-text col col-md-12 col-lg-4 heading-main"
+                class="d-flex flex-column col-text hero-card"
                 data-aos="fade-right"
               >
                 <div>
-                  <p>March 11-12, 2023</p>
+                  <p>April 15-16, 2023</p>
                 </div>
                 
                 <h1>Imagine.</h1>
@@ -200,9 +270,11 @@
                 <br />
                 
 
-              <h1><b>HackVerse 4.0</b></h1>
-                <p>24-hour long hackathon · By NITK</p>
-                <a
+              <h1 class="font-esgalon"><b>HackVerse 4.0</b></h1>
+                <p>24-hour long hackathon <span class="">@</span> 
+                  <a href="https://www.nitk.ac.in/How_To_Reach" class="sketch-font">NITK</a></p>
+                
+                <!-- <a
                   href="https://discord.gg/Vr6hraQuPb"
                   class="pt-2 pb-2 pl-4 pr-4 text-center text-light mb-2 rounded fs-6"
                   style="background-color: #5865f2; width: 312px"
@@ -213,32 +285,86 @@
                     style="height: 30px; margin-right: 10px"
                   />
                   <b>Join Discord Server</b>
-                </a>
+                </a> -->
+                <div class="d-flex flex-row mr-0 ml-0">
+                  <div class="mr-1 ml-1 mt-0 mb-2 p-1">
+                    <a href="https://hackverse-2023.devfolio.co/" target="_blank"
+                    rel="noopener noreferrer">
+
+                        <button
+                        class="hero-button fill d-flex justify-content-center align-items-center mt-1"
+                      >
+                      <span class="sketch-font" style="font-size: smaller">Devfolio Post</span>
+                        
+                      </button>
+                    </a>
+                  </div>
+                  <div class="mr-1 ml-1 mt-0 mb-2 p-1">
+                    <a href="https://www.nitk.ac.in/How_To_Reach" target="_blank"
+                    rel="noopener noreferrer">
+                      <button
+                        class="hero-button fill d-flex justify-content-center align-items-center mt-1"
+                      >
+                      <span class="sketch-font" style="font-size: smaller">NITK</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+
                 <div
                   class="apply-button"
                   data-hackathon-slug="hackverse-2023"
-                  data-button-theme="light"
+                  data-button-theme="dark"
                   style="height: 44px; width: 312px"
                 ></div>
+                <!-- <div class="countdown">
+                  <p>Hackathon starts in</p>
+                  <div class="countdown-container">
+                    <div class="countdown-block">
+                      <span class="countdown-title" id="countdown-day">
+                        00
+                      </span>
+                      <span class="countdown-desc">
+                        Days
+                      </span>
+                    </div>
+                    <div class="countdown-block">
+                      <span class="countdown-title" id="countdown-hour">
+                        00
+                      </span>
+                      <span class="countdown-desc">
+                        Hours
+                      </span>
+                    </div>
+                    <div class="countdown-block">
+                      <span class="countdown-title" id="countdown-minute">
+                        00
+                      </span>
+                      <span class="countdown-desc">
+                        Minutes
+                      </span>
+                    </div>
+                    <div class="countdown-block">
+                      <span class="countdown-title" id="countdown-second">
+                        00
+                      </span>
+                      <span class="countdown-desc">
+                        Seconds
+                      </span>
+                    </div>
+                  </div>
+                </div> -->
               </div>
-              <!-- <div
-                data-aos="fade-left"
-                class="col col-md-12 col-lg-8 home-page-logo"
-              >
-                <img
-                  width="95%"
-                  src="./img/logo_long.webp"
-                  alt="HackVerse 3.0"
-                />
-              </div> -->
-            </div>
-          </div>
+
+              <p class="gradient-text-blue fading-text">Continue to traverse the icy tundra of this website to discover new and exciting updates.</p>
+              
+
         </div>
       </section>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 750 500"
+        viewBox="0 0 750 480"
         preserveAspectRatio="xMidYMax slice"
       >
         <defs>
@@ -263,8 +389,8 @@
             y2="374.3"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.0" stop-color="#1d2f8b" />
-            <stop offset="0.8" stop-color="#1b549d" />
+            <stop offset="0.0" stop-color="#63C3FB" />
+            <stop offset="0.8" stop-color="#63C3FB" />
           </linearGradient>
           <linearGradient
             id="grad2"
@@ -296,7 +422,7 @@
             y2="600.82"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#70375a" />
+            <stop offset="0" stop-color="#FCE8F4" />
             <stop offset="0.96" stop-color="#8a6e95" />
           </linearGradient>
           <linearGradient
@@ -367,8 +493,8 @@
             y2="334.36"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#2c2c50" />
-            <stop offset="1" stop-color="#434375" />
+            <stop offset="0" stop-color="#F0F9FF" />
+            <stop offset="1" stop-color="#C4E9FF" />
           </linearGradient>
           <linearGradient
             id="lg5"
@@ -525,102 +651,102 @@
         <!-- <circle id="skateperson" cx="700" cy="375" r="25" fill="red" /> -->
         <image id="skateperson" href="./img/Skater_Boy_Silhouette_PNG_Clip_Art_Image.png" height="49" x="600" y="375" />
       </svg>
-      <div class="scrollElement"></div>
       
     </div>
     <div class="snowflakeContainer">
       <div class="snowflake"></div>
     </div>
 
-    <div class="fluid-container fill" id="about-div">
+            <!-- timer -->
+            <div class="justify-content-center countdown-banner" data-aos="fade-right">
+              <div class="countdown align-self-center sketch-font">
+                <p>Hackathon starts in</p>
+              </div>
+              <div class="countdown ">
+                <div class="countdown-container sketch-font">
+                  <div class="countdown-block">
+                    <span class="countdown-title" id="countdown-day">
+                      00
+                    </span>
+                    <span class="countdown-desc">
+                      Days
+                    </span>
+                  </div>
+                  <div class="countdown-block">
+                    <span class="countdown-title" id="countdown-hour">
+                      00
+                    </span>
+                    <span class="countdown-desc">
+                      Hours
+                    </span>
+                  </div>
+                  <div class="countdown-block">
+                    <span class="countdown-title" id="countdown-minute">
+                      00
+                    </span>
+                    <span class="countdown-desc">
+                      Minutes
+                    </span>
+                  </div>
+                  <div class="countdown-block">
+                    <span class="countdown-title" id="countdown-second">
+                      00
+                    </span>
+                    <span class="countdown-desc">
+                      Seconds
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!-- <div class="fluid-container fill" id="about-div"> -->
       <!-- About hackverse -->
-      <section id="about-section">
-        <div class="about fluid-container d-flex align-items-center">
-          <div class="container">
-            <div class="row about-hackverse-container">
-              <div class="col col-md-12 col-lg-6" data-aos="fade-up">
-                <h1 class="h2-title title-about-hackverse mb-5">
-                  About Hackverse 4.0
-                </h1>
-                <p class="h2-text text-hackverse">
-                  <strong>HackVerse</strong> serves as a platform to encourage
-                  enthusiastic minds to brainstorm on solutions for challenging
-                  issues from all over India. The unified motive of gathering
-                  all like-minded hackers to our alma mater led to the creation
-                  of the idea in NITK Surathkal, the first of its kind. We
-                  provide a platform for innovations where developers can test
-                  and showcase their potential to the best of their abilities.
-                  The hackathon also comprises keynotes and workshops by
-                  executives from the industry.
-                </p>
-                <a href="https://hackverse.nitk.ac.in/2022/">
-                  <button
-                    class="revisit d-flex align-items-center justify-content-center"
-                  >
-                    <img src="./img/revisit.webp" width="28px" alt="re" />
-                    <span>&nbsp; Revisit Hackverse 3.0 </span>
-                  </button>
-                </a>
-              </div>
-              <div
-                class="col col-md-6 d-flex justify-content-end align-items-center"
-              >
-                <img
-                  data-aos="zoom-in"
-                  src="./img/logo.webp"
-                  class="img-logo"
-                  width="75%"
-                  alt="Hackverse"
-                />
-              </div>
+      <div id="about-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-lg-5 offset-lg-1 order-lg-last d-flex justify-content-end align-items-center"
+            >
+              <img
+                class="about-section-logo"
+                src="./img/logo.webp"
+                onerror="this.onerror=null;this.src='./img/logo.png';"
+                width="100%"
+                style="position: relative"
+                alt="Hackverse2.0"
+              />
+            </div>
+            <div class="col-12 col-lg-6 order-lg-first about">
+              <h2>
+                <span class="gradient-text-light">Unleash</span> the power of <span class="gradient-text-light">innovation</span> in the icy depths of HackVerse, where the Arctic meets <span class="gradient-text-light">technology</span>
+              </h2>
+              <br />
+              <p class="lead">
+                Join us at HackVerse, a platform that celebrates the power of
+                enthusiastic minds to ideate innovative solutions for complex
+                issues across India. It all started with a vision to bring
+                together like-minded hackers to our alma mater in NITK Surathkal,
+                and we're thrilled to be the pioneers of this unique initiative.
+              </p>
+              <p class="lead">
+                Be a part of an experience that celebrates innovation and provides
+                developers with the opportunity to showcase their potential to the
+                fullest. Get inspired by industry leaders through engaging
+                keynotes and workshops.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- viewBox="-75 150 1000 100" -->
-        <!-- License: CC Attribution. Made by game-icons.net: https://game-icons.net/ -->
-        <svg 
-          
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="-300 100 1000 100"
-          preserveAspectRatio="xMidYMax slice"
-        >
-        <defs>
-          <linearGradient
-          id="bg_grad"
-          x1="-154.32"
-          y1="120.27"
-          x2="-154.32"
-          y2="374.3"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop offset="0.0" stop-color="#1d2f8b" />
-          <stop offset="0.8" stop-color="#1b549d" />
-        </linearGradient>
-        </defs>
-        <rect
-        id="bg"
-        width="750"
-        height="500"
-        opacity="0.8"
-        fill="url(#bg_grad)"
-      />
-          <path id="a2-2" 
-          fill="#1d1d3a" 
-          d="M25 25v94.1c29.99.1 62.76-.7 90.3 3l11.4-6.6 15.8 103.9 19.5-92.2 17.6-.2 17.8 74.9 12.7-112.32 13.6 19.92c8.3 12.1 14.5 21.1 20.6 26.7 5.4 5 10.6 7.7 18.9 8.7 13.4-8.4 27.8-20.7 44.4-30.1 14.6-8.4 31.7-14.23 50.6-11.9V25H25zm417.6"/>
-        </svg>
+      </div>
 
-        <path id="a2-1" 
-          fill="#1d1444" 
-          d="P25 25v94.1c29.99 122.3 31.7-151.4 11 7.2c23.2 15.1 41.4 9.7 58.8-.3l11.4-6.6 15.8 103.9 9.7 58.8-.3l11.4-6.6 15.8 103.9 19.5-92.2 17.6-.2 17.8 74.9 12.7-112.32 13.6 19.92c8.3 12.1 14.5 21.1 20.6 26.7 5.4 5 10.6 7.7 18.9 8.7 13.4-8.4 27.8-20.7 44.4-30.1 14.6-8.4 31.7-14.23 3l11.4-6.6 15.8 103.9 9.7 58.8-.3l11.4-6.6 15.8 103.9 3l11.4-6.6 15.8 103.9 9.7 58.8-.3l11.4-6.6 15.8 103.9 3l11.4-6.6 15.8 103.9 9.7 58.8-.3l11.4-6.6 15.8 103.9 50.6-11.9V25H25zm417.6"/>
-
+  
         <div class="scrollElement"></div>
     </div>
     
 
       <!-- Schedule Section -->
-      <div class="frame">
+      <!-- <div class="frame">
       </div>
       <div class="clouds">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="-800px" width="762px"
@@ -664,15 +790,31 @@
       
     </div>
 
-    <div id="schedule-div">
+    <div id="schedule-div" style="position: relative;">
+      <div class="cloud-cover">
+        <svg viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg">
+          <mask id="m">
+            <g class="cloud1">
+              <rect fill="#fff" width="100%" height="801" y="799" />
+              <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+            </g>
+          </mask>
+          <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
+          <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
+          <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
+        </svg>
+      </div>
+      <div class="fix"></div>
       <section id="schedule-section">
         <div class="schedule fluid-container d-flex flex-column">
           <div class="container fill justify-content-center"  data-aos="fade-up">
             <h1 class="h2-title text-center">Schedule</h1>
-            <div class="row">
+            
+              ****previous commented****
+              <div class="row">
             <div class="col-12">
               <div id="timeline-content">
-                <div><h4 style="text-align: left">15 Feb 2023</h4></div>
+                <div><h4 style="text-align: left">1 Mar 2023</h4></div>
 
                 <ul class="timeline" style="cursor:default;">
                   <li class="event" data-date="12:00 PM (IST)" style="color: black">
@@ -685,7 +827,33 @@
                 </ul>
 
                 <div>
-                  <h4 style="text-align: left; padding-top: 20px">28 Feb 2023</h4>
+                  <h4 style="text-align: left; padding-top: 20px">8 Mar 2023</h4>
+                </div>
+                <ul class="timeline" style="cursor:default;">
+                  <li class="event" data-date="10:00 AM (IST)" style="color: black">
+                    <div class="member-infos">
+                      <h1 class="member-title active-sch">
+                        Announcement of Prizes <br>
+                      </h1>
+                    </div>
+                  </li>
+                </ul>
+
+                <div>
+                  <h4 style="text-align: left; padding-top: 20px">12 Mar 2023</h4>
+                </div>
+                <ul class="timeline" style="cursor:default;">
+                  <li class="event" data-date="10:00 AM (IST)" style="color: black">
+                    <div class="member-infos">
+                      <h1 class="member-title active-sch">
+                        Release of Tracks <br>
+                      </h1>
+                    </div>
+                  </li>
+                </ul>
+
+                <div>
+                  <h4 style="text-align: left; padding-top: 20px">18 Mar 2023</h4>
                 </div>
 
                 <ul class="timeline" style="cursor:default;">
@@ -699,7 +867,7 @@
                 </ul>
 
                 <div>
-                  <h4 style="text-align: left; padding-top: 20px">11 Mar 2023</h4>
+                  <h4 style="text-align: left; padding-top: 20px">25 Mar 2023</h4>
                 </div>
                 <ul class="timeline" style="cursor:default;">
                   <li class="event" data-date="10:00 AM (IST)" style="color: black">
@@ -712,7 +880,7 @@
                 </ul>
 
                 <div>
-                  <h4 style="text-align: left; padding-top: 20px">12 Mar 2023</h4>
+                  <h4 style="text-align: left; padding-top: 20px">26 Mar 2023</h4>
                 </div>
 
                 <ul class="timeline" style="cursor:default;">
@@ -727,79 +895,184 @@
 
               </div>
             </div>
+            ****previous commented****
+
+            <ul class="timeline-container">
+              <li class="timeline-item">
+                <div class="timeline-content-left">
+                  <h4>
+                    1 March
+                  </h4>
+                  <span>12:00 PM (IST)</span>
+                </div>
+                <div class="timeline-content-icon-container">
+                  <div class="bar top-bar"></div>
+                  <div class="timeline-content-icon">
+                    <svg>
+                      <path
+                        d="M18.41 5.8 17.2 4.59c-.78-.78-2.05-.78-2.83 0l-2.68 2.68L3 15.96V20h4.04l8.74-8.74 2.63-2.63c.79-.78.79-2.05 0-2.83zM6.21 18H5v-1.21l8.66-8.66 1.21 1.21L6.21 18zM11 20l4-4h6v4H11z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="bar bottom-bar"></div>
+                </div>
+                <div class="timeline-content-right">
+                    <h1>Registration Begins</h1>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-content-left">
+                  <h4>
+                    8 March 
+                  </h4>
+                  <span>10:00 AM (IST)</span>
+                </div>
+                <div class="timeline-content-icon-container">
+                  <div class="bar top-bar"></div>
+                  <div class="timeline-content-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 21.617v1.383h-8v-1.383c2.212 0 2.534-1.386 2.631-2.625.68.385 2.077.385 2.756 0 .097 1.238.338 2.625 2.613 2.625zm-3.991-20.617c-2.754 0-6.915.423-6.825 2.8.309 8.18 4.8 10.896 5.421 13.893.64.534 2.169.534 2.81 0 .612-2.957 4.965-5.654 5.39-13.575.137-2.574-4.13-3.118-6.796-3.118zm-4.837 4.814c.506.132 1.035.236 1.584.309.308 2.767 1.083 5.562 2.491 7.995-1.915-2.211-3.454-4.885-4.075-8.304zm4.837-.717c-2.459 0-5.485-.373-5.485-1.394 0-.839 2.628-1.456 5.485-1.456 2.716 0 5.492.667 5.492 1.542 0 .9-2.911 1.308-5.492 1.308zm7.786-1.09c0 .518-.045.746-.103 1.297h2.78c-.431 2.015-1.568 4.764-4.527 6.279-.319.659-.65 1.265-.984 1.816 4.167-1.309 6.662-5.23 7.039-9.392h-4.205zm-19.795 0c.377 4.162 2.872 8.083 7.039 9.392-.334-.551-.665-1.157-.984-1.816-2.959-1.515-4.097-4.265-4.527-6.279h2.78c-.058-.552-.103-.78-.103-1.297h-4.205z"/></svg>
+                  </div>
+                  <div class="bar bottom-bar"></div>
+                </div>
+                <div class="timeline-content-right">
+                    <h1>Announcement of Prizes</h1>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-content-left">
+                  <h4>
+                    12 March
+                  </h4>
+                  <span>10:00 AM (IST)</span>
+                </div>
+                <div class="timeline-content-icon-container">
+                  <div class="bar top-bar"></div>
+                  <div class="timeline-content-icon">
+                    <svg width="24" height="24" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.394 15.759s7.554 4.246 9.09 5.109c.165.093.333.132.492.132.178 0 .344-.049.484-.127 1.546-.863 9.155-5.113 9.155-5.113.246-.138.385-.393.385-.656 0-.566-.614-.934-1.116-.654 0 0-7.052 3.958-8.539 4.77-.211.115-.444.161-.722.006-1.649-.928-8.494-4.775-8.494-4.775-.502-.282-1.117.085-1.117.653 0 .262.137.517.382.655zm0-3.113s7.554 4.246 9.09 5.109c.165.093.333.132.492.132.178 0 .344-.049.484-.127 1.546-.863 9.155-5.113 9.155-5.113.246-.138.385-.393.385-.656 0-.566-.614-.934-1.116-.654 0 0-7.052 3.958-8.539 4.77-.211.115-.444.161-.722.006-1.649-.928-8.494-4.775-8.494-4.775-.502-.282-1.117.085-1.117.653 0 .262.137.517.382.655zm10.271-9.455c-.246-.128-.471-.191-.692-.191-.223 0-.443.065-.675.191l-8.884 5.005c-.276.183-.414.444-.414.698 0 .256.139.505.414.664l8.884 5.006c.221.133.447.203.678.203.223 0 .452-.065.689-.203l8.884-5.006c.295-.166.451-.421.451-.68 0-.25-.145-.503-.451-.682zm-8.404 5.686 7.721-4.349 7.72 4.349-7.72 4.35z" fill-rule="nonzero"/></svg>
+                  </div>
+                  <div class="bar bottom-bar"></div>
+                </div>
+                <div class="timeline-content-right">
+                    <h1>Release of Tracks</h1>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-content-left">
+                  <h4>
+                    18 March
+                  </h4>
+                  <span>11:59 AM (IST)</span>
+                </div>
+                <div class="timeline-content-icon-container">
+                  <div class="bar top-bar"></div>
+                  <div class="timeline-content-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.598 13.091l-5.69-5.688 7.402-7.403 5.69 5.689-7.402 7.402zm-16.598 10.909l7.126-1.436-5.688-5.689-1.438 7.125zm1.984-20.568l6.449 6.446-5.582 5.582 5.689 5.69 5.583-5.583 6.492 6.49 1.4-1.428-18.631-18.625-1.4 1.428z"/></svg>
+                  </div>
+                  <div class="bar bottom-bar"></div>
+                </div>
+                <div class="timeline-content-right">
+                    <h1>Registration Ends</h1>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-content-left">
+                  <h4>
+                    25 March
+                  </h4>
+                  <span>10:00 AM (IST)</span>
+                </div>
+                <div class="timeline-content-icon-container">
+                  <div class="bar top-bar"></div>
+                  <div class="timeline-content-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.566 17.842c-.945 2.462-3.678 4.012-6.563 4.161.139-2.772 1.684-5.608 4.209-6.563l.51.521c-1.534 1.523-2.061 2.765-2.144 3.461.704-.085 2.006-.608 3.483-2.096l.505.516zm-1.136-11.342c-1.778-.01-4.062.911-5.766 2.614-.65.649-1.222 1.408-1.664 2.258 1.538-1.163 3.228-1.485 5.147-.408.566-1.494 1.32-3.014 2.283-4.464zm5.204 17.5c.852-.44 1.61-1.013 2.261-1.664 1.708-1.706 2.622-4.001 2.604-5.782-1.575 1.03-3.125 1.772-4.466 2.296 1.077 1.92.764 3.614-.399 5.15zm11.312-23.956c-.428-.03-.848-.044-1.261-.044-9.338 0-14.465 7.426-16.101 13.009l4.428 4.428c5.78-1.855 12.988-6.777 12.988-15.993v-.059c-.002-.437-.019-.884-.054-1.341zm-5.946 7.956c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>
+                  </div>
+                  <div class="bar bottom-bar"></div>
+                </div>
+                <div class="timeline-content-right">
+                    <h1>Hackathon Begins</h1>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-content-left">
+                  <h4>
+                    26 March
+                  </h4>
+                  <span> 4:00 PM (IST)</span>
+                </div>
+                <div class="timeline-content-icon-container">
+                  <div class="bar top-bar"></div>
+                  <div class="timeline-content-icon">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4.823 21.933l2.734-1.171-3.241-8.847-1.561 4.372 2.068 5.646zm-2.594-4.174l-2.229 6.241 3.903-1.672-1.674-4.569zm6.248 2.609l2.934-1.258-3.482-9.141-2.215-1.969-.872 2.443 3.635 9.925zm7.523-3.224l-6.453-5.736 2.785 7.308 3.668-1.572zm-.826-5.003l2.201-1.445c.23-.152.295-.462.143-.693-.152-.232-.463-.295-.692-.143l-2.201 1.445c-.231.151-.295.461-.144.692.096.147.256.226.418.226.095 0 .19-.026.275-.082m-2.993-4.312l1.112-2.388c.117-.25.008-.548-.242-.664-.251-.116-.548-.009-.665.242l-1.111 2.388c-.117.25-.008.547.242.664l.211.047c.189 0 .368-.107.453-.289m-2.627.709c1.539-2.963 1.644-5.73.314-8.222-.09-.169-.263-.265-.442-.265-.37 0-.621.398-.44.736 1.166 2.184 1.058 4.637-.32 7.29-.127.245-.031.547.214.674.073.038.152.057.23.057.18 0 .355-.099.444-.27m6.505 6.095c2.017-1.434 4.463-1.64 7.272-.613.327.119.672-.123.672-.47 0-.203-.125-.395-.328-.47-3.136-1.147-5.894-.9-8.196.738-.224.16-.277.472-.117.698.098.136.251.209.407.209.101 0 .202-.03.29-.092m3.757-6.757l-1.697.014.938 1.415-.511 1.618 1.635-.455 1.381.986.073-1.696 1.365-1.009-1.591-.592-.538-1.61-1.055 1.329zm-7.307 3.624c.276-.009.492-.24.483-.517-.056-1.627.36-1.937 1.377-2.051 1.689-.191 1.785-1.312 1.842-1.982.053-.637.071-.851.773-.903.63-.046 1.331-.16 1.76-.659.461-.538.466-1.358.402-2.164-.021-.276-.266-.478-.537-.459-.275.021-.481.262-.459.537.062.787.011 1.23-.165 1.434-.149.174-.48.271-1.074.314-1.553.114-1.644 1.179-1.697 1.816-.057.668-.082.973-.956 1.071-2.075.234-2.315 1.619-2.266 3.08.01.27.231.483.5.483h.017m7.842-8.675c0 1.006.818 1.824 1.825 1.824 1.006 0 1.824-.818 1.824-1.824 0-1.007-.818-1.825-1.824-1.825-1.007 0-1.825.818-1.825 1.825m-6.623-2.841c1.104 0 2 .897 2 2 0 1.104-.896 2-2 2-1.103 0-2-.896-2-2 0-1.103.897-2 2-2"/></svg>
+                  </div>
+                  <div class="bar bottom-bar"></div>
+                </div>
+                <div class="timeline-content-right">
+                    <h1>Hackathon Ends</h1>
+                </div>
+              </li>
+            </ul>
            </div>
         </div>
       </section>
-        <!-- <svg 
-            
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 750 500"
-            preserveAspectRatio="xMidYMax slice"
-          >
-        <image id="iceberg-1" href="./img/iceberg.png" height="500" x="0" y="0" />
-        </svg>
-          <div class="scrollElement"></div> -->
-    </div>
+    </div> -->
 
       <!-- Stats Section -->
       <section id="stats-section">
         <div class="fluid-container stats d-flex flex-column">
-          <div class="container fill justify-content-center">
-            <h1 class="text-center bold-t1" data-aos="fade-down">
-              HackVerse 3.0 Stats
-            </h1>
-            <div
-              class="container d-flex justify-content-around align-items-center stats-items"
-            >
-              <div
-                class="d-flex justify-content-center align-items-center flex-column institute_icon"
-              >
-                <img
-                  class="mb-md-5"
-                  src="./img/programmer.webp"
-                  width="192px"
-                  alt="programmer"
-                  data-aos="zoom-in"
-                />
-                <h1 class="no-margin bold-t1 milestone-number">
-                  <span class="number-holder">1500</span> +
-                </h1>
-                <p class="no-margin">Total Registerations</p>
+            <div class="container fill justify-content-center stats-card">
+              <h1 class="text-center bold-t1 mb-2" data-aos="fade-down">
+                <span>HackVerse 3.0</span> <span class="gradient-text-blue">Highlights</span>
+              </h1>
+            
+              <!-- Testimonials -->
+              <div class="container testimonials">
+                <div class="row"> 
+                  <div class="col-sm-1 d-flex justify-content-center my-auto">
+                    <button class="testimonials-arrow"><span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span></button>
+                  </div>
+                  <div class="col-xl-10">
+                  <div id="carousel">
+                    <figure id="spinner">
+                      <img src="./img/testimonials/campus-1.webp" alt="First slide">
+                      <img src="./img/testimonials/campus-2.webp" alt="Second slide">
+                      <img src="./img/testimonials/pc-setup.webp" alt="Third slide">
+                      <img src="./img/testimonials/campus-4.webp" alt="Fourth slide">
+                      <img src="./img/testimonials/testimonial-1.webp" alt="Fifth slide">
+                      <img src="./img/testimonials/testimonial-2.webp" alt="Sixth slide">
+                    </figure>
+                  </div>
+                </div>
+              
+                <div class="col-sm-1 d-flex justify-content-center my-auto">
+                  <button class="testimonials-arrow"><span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span></button>
+                </div>
               </div>
-              <div
-                class="d-flex justify-content-center align-items-center flex-column institute_icon"
-              >
-                <img
-                  class="mb-md-5"
-                  src="./img/hacker.webp"
-                  width="192px"
-                  alt="hackers"
-                  data-aos="zoom-in"
-                />
-                <h1 class="bold-t1 no-margin milestone-number">
-                  <span class="number-holder">400</span> +
-                </h1>
-                <p class="no-margin">Hackers Hosted</p>
+
+              <div class="stats-statistics">
+                <div class="container d-flex justify-content-around align-items-center stats-items">
+                  <div class="d-flex justify-content-center align-items-center flex-column institute_icon">
+                    <h1 class="no-margin bold-t1 milestone-number">
+                      <span class="number-holder">1500</span> +
+                    </h1>
+                    <p class="no-margin">Total Registerations</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center flex-column institute_icon"> 
+                    <h1 class="bold-t1 no-margin milestone-number">
+                      <span class="number-holder">400</span> +
+                    </h1>
+                    <p class="no-margin">Hackers Hosted</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center flex-column institute_icon">
+                    <h1 class="bold-t1 no-margin milestone-number">
+                      <span class="number-holder">140</span> +
+                    </h1>
+                    <p class="no-margin">Engineering Institutes</p>
+                  </div>
+                </div>
               </div>
-              <div
-                class="d-flex justify-content-center align-items-center flex-column institute_icon"
-              >
-                <img
-                  class="mb-md-5"
-                  src="./img/institute.webp"
-                  width="192px"
-                  alt="institute"
-                  data-aos="zoom-in"
-                />
-                <h1 class="bold-t1 no-margin milestone-number">
-                  <span class="number-holder">140</span> +
-                </h1>
-                <p class="no-margin">Engineering Institutes</p>
-              </div>
+
             </div>
           </div>
-        </div>
       </section>
 
       <!-- Events Section -->
@@ -1649,13 +1922,41 @@
       <section id="sponsors-section">
         <div class="fluid-container sponsor-us" id="sponsor">
           <div
-            class="container fill justify-content-center pt-5 pb-3"
+            class="container fill justify-content-center pt-1 pb-3"
             data-aos="zoom-out"
           >
-            <h1 class="text-center bold-t1 mt-5">Sponsors</h1>
+            <h1 class="text-center bold-t1 mt-5 mb-1"><span class="gradient-text-dark">Sponsors</span></h1>
+            </div>
             <div
-              class="d-flex pt-4 pb-4 justify-content-center align-items-center align-self-stretch flex-wrap sponsor-container"
+              class="d-flex pt-0 pb-0 justify-content-center align-items-center align-self-stretch flex-wrap sponsor-container"
             >
+            <a
+                href="https://www.esamudaay.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/eSamudaay.webp"
+                  alt="eSamudaay"
+                  class="p-2 m-2"
+                  style="height: 10vw"
+                />
+              </a>
+              <a
+                href="https://ondc.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./img/ONDC.webp"
+                  alt="ONDC"
+                  class="p-2 m-2"
+                  style="height: 10vw"
+              /></a>
+            </div>
+            <div
+              class="d-flex pt-0 pb-2 justify-content-center align-items-center align-self-stretch flex-wrap sponsor-container"
+            >
+
               <!-- <a
                 href="https://www.wellsfargo.com/"
                 target="_blank"
@@ -1664,10 +1965,10 @@
                   src="./img/wells_fargo.webp"
                   alt="Wells Fargo"
                   class="p-3 m-3"
-                  style="width: 20vw"
+                  style="width: 15vw"
                 />
               </a> -->
-
+          
               <a
                 href="https://devfolio.co/"
                 target="_blank"
@@ -1676,8 +1977,8 @@
                 <img
                   src="./img/Devfolio_Logo-Colored.webp"
                   alt="Devfolio"
-                  class="p-3 m-3"
-                  style="width: 20vw"
+                  class="p-1 m-1"
+                  style="width: 15vw"
               /></a>
               <a
                 href="https://polygon.technology/"
@@ -1686,10 +1987,26 @@
                 ><img
                   src="./img/Polygon_Logo-Colored.webp"
                   alt="Polygon"
-                  class="p-3 m-3"
-                  style="width: 20vw"
+                  class="p-1 m-1"
+                  style="width: 15vw"
                 />
               </a>
+              <a
+                href="https://1by0grit.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./img/1by0grit.webp"
+                  alt="1by0grit"
+                  class="p-1 m-1"
+                  style="width: 10vw"
+              /></a>
+
+              </div>
+              <div
+              class="d-flex pt-0 pb-0 justify-content-center align-items-center align-self-stretch flex-wrap sponsor-container"
+            >
               <a
                 href="https://solana.com"
                 target="_blank"
@@ -1697,8 +2014,8 @@
                 ><img
                   src="./img/Solana-Colored.webp"
                   alt="Solana"
-                  class="p-3 m-3"
-                  style="width: 20vw"
+                  class="p-1 m-1"
+                  style="width: 15vw"
                 />
               </a>
               <a
@@ -1709,8 +2026,8 @@
                 <img
                   src="./img/Filecoin Coloured White Text.webp"
                   alt="Filecoin"
-                  class="p-3 m-3"
-                  style="width: 20vw"
+                  class="p-1 m-1"
+                  style="width: 15vw"
                 />
               </a>
               <a
@@ -1720,38 +2037,166 @@
                 ><img
                   src="./img/Replit-light-background.webp"
                   alt="Replit"
-                  class="p-3 m-3"
-                  style="width: 20vw"
+                  class="p-1 m-1"
+                  style="width: 15vw"
                 />
               </a>
+
+              <!-- <a
+                href="https://tezos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/Tezos_Logo-Colored.webp"
+                  alt="Tezos"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+              <a
+                href="https://celo.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/Celo Logo Color.webp"
+                  alt="Celo"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+              <a
+                href="https://rosenfeldmedia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/rosenfeld.webp"
+                  alt="Rosenfeld"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+              <a
+                href="https://www.clerky.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/Clerky_Logo.webp"
+                  alt="Leading Learners"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+              <a
+                href="https://alan.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/alan-logo-horizontal-color.webp"
+                  alt="Alan AI"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+              <a
+                href="https://bpbonline.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/bpb.webp"
+                  alt="BPB Online"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+              <a
+                href="https://digitalocean.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/digital-ocean.webp"
+                  alt="Digital Ocean"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+              <a
+                href="https://www.echo3d.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/echo3D - Logo 2021.webp"
+                  alt="Echo 3D"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+              <a
+                href="https://www.idp.com/global"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/idp-logo.webp"
+                  alt="IDP"
+                  class="p-3 m-3"
+                  style="width: 15vw"
+                />
+              </a>
+
+              <a
+                href="https://geeksforgeeks.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/GFG LOGO-1.webp"
+                  alt="GFG"
+                  class="p-3 m-3"
+                  style="width: 25vw"
+                />
+              </a>
+              <a
+                href="https://www.leadlearners.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./img/Leading_Learners_Logo.webp"
+                  alt="Leading Learners"
+                  class="p-3 m-3"
+                  style="width: 30vw"
+                />
+              </a> -->
               
             </div>
-          </div>
-          <div
-            class="container fill pt-5 pb-5 align-items-center sponsor-ads"
-            data-aos="fade-in"
-          >
-            <h3 class="no-margin bold-t2">Interested in sponsoring?</h3>
-            <a href="mailto:hackverse@nitk.edu.in" target="_blank">
-              <button
-                class="sponsor fill d-flex justify-content-center align-items-center"
-                style="width: 100%; height: 100%"
-              >
-                Get in Touch!
-              </button>
-            </a>
-          </div>
+
+            <div>
+              
+              <div
+              class="container fill pt-3 pb-0 align-items-center sponsor-ads"
+               >
+                <p>Break through the snow barrier and join us in shaping the future of tech.</p>
+                <h6 class="no-margin bold-t2">Interested in sponsoring?</h6>
+                <a href="mailto:hackverse@nitk.edu.in" target="_blank">
+                  <button
+                    class="sponsor fill d-flex justify-content-center align-items-center mt-2"
+                    style="width: 100%; height: 100%"
+                  >
+                  <span class="sketch-font">Get in Touch!</span>
+                    
+                  </button>
+                </a>
+              </div>
+            </div>
+
         </div>
       </section>
 
-      <!-- FAQ section -->
-      <section id="faqs-section">
+       <!-- FAQ section -->
+       <section id="faqs-section">
         <div class="fluid-container faq">
           <div class="container faq-container" data-aos="fade-in">
             <h1 class="bold-t1">
-              Frequently Asked
+              Find Your Answers, Even in a Frozen World: 
               <br />
-              Questions <br />
+              Explore Our Arctic FAQs <br />
               <br />
             </h1>
 
@@ -1840,7 +2285,7 @@
                         aria-expanded="false"
                         aria-controls="faq4"
                       >
-                        What is the selection criteria?
+                      What are the selection criteria?
                       </button>
                     </h2>
                     <div
@@ -1849,11 +2294,11 @@
                       data-bs-parent="#faq-list"
                     >
                       <div class="accordion-body">
-                        We are looking for people who innovate and can build
-                        crazy, unique solutions to real-world problems. Tell us
-                        why you want to be a part of HackVerse, any
-                        accomplishments you are proud of and anything else which
-                        could strengthen your application.
+                        We are looking for innovative people who can build crazy, 
+                        unique solutions to real-world problems. 
+                        Tell us why you want to be a part of HackVerse, 
+                        any accomplishments you are proud of, 
+                        and anything else which could strengthen your application.
                       </div>
                     </div>
                   </div>
@@ -1868,6 +2313,7 @@
                         aria-expanded="false"
                         aria-controls="faq5"
                       >
+                      
                         Can I participate without a team?
                       </button>
                     </h2>
@@ -1884,8 +2330,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 col-lg-6">
+
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
@@ -1896,7 +2341,8 @@
                         aria-expanded="false"
                         aria-controls="faq6"
                       >
-                        What are the perks of participating in this hackathon?
+                      
+                      Once selected for the hackathon, what should I bring?
                       </button>
                     </h2>
                     <div
@@ -1905,15 +2351,15 @@
                       data-bs-parent="#faq-list"
                     >
                       <div class="accordion-body">
-                        The hackathon will instantly increase your knowledge and
-                        skill level and will serve as a platform to socialize
-                        with the tech community. Cash prizes and other perks are
-                        in store for the winners and cool swag for all
-                        participants.
+                        Bring your student ID, laptop, and chargers. 
+                        A pillow and sleeping bag may be helpful as well. 
+                        Lots of enthusiasm is a must. Please leave anything illegal at home.
                       </div>
                     </div>
                   </div>
 
+                
+                
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
@@ -1924,7 +2370,7 @@
                         aria-expanded="false"
                         aria-controls="faq7"
                       >
-                        Can I participate without a computer science background?
+                        What are the perks of participating in this hackathon?
                       </button>
                     </h2>
                     <div
@@ -1933,11 +2379,18 @@
                       data-bs-parent="#faq-list"
                     >
                       <div class="accordion-body">
-                        Yes. Creativity is independent of your technical skills.
-                        You can learn the tools and technologies anytime.
+                        The hackathon will instantly increase your knowledge and skill level and serve as a platform to socialize with the tech community. 
+                        Cash prizes and other perks are
+                        in store for the winners and cool swag for all
+                        participants.
+                        For more details, stay tuned to our website ;)
                       </div>
                     </div>
                   </div>
+
+                </div>
+
+                <div class="col-12 col-lg-6">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button
@@ -1948,7 +2401,7 @@
                         aria-expanded="false"
                         aria-controls="faq8"
                       >
-                        Can I start working on my hack before the event?
+                        Can I participate without a technical background?
                       </button>
                     </h2>
                     <div
@@ -1957,7 +2410,8 @@
                       data-bs-parent="#faq-list"
                     >
                       <div class="accordion-body">
-                        Please refer to our Terms and Conditions.
+                        Of course you can!  Creativity is independent of your technical skills.
+                        You can learn the tools and technologies anytime.
                       </div>
                     </div>
                   </div>
@@ -1971,7 +2425,7 @@
                         aria-expanded="false"
                         aria-controls="faq9"
                       >
-                        Still got questions?
+                        Can I start working on my hack before the event?
                       </button>
                     </h2>
                     <div
@@ -1980,9 +2434,111 @@
                       data-bs-parent="#faq-list"
                     >
                       <div class="accordion-body">
-                        Please join our Telegram Channel: @hackverse, and ask
-                        your question, one of the organizers will get in touch
-                        with you.
+                        No. In the interest of fairness, we don't allow students to work on projects before HackVerse begins. 
+                        However, you can familiarize yourself with the tools and technologies beforehand.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq10"
+                        aria-expanded="false"
+                        aria-controls="faq10"
+                      >
+                      Will accommodation and food be provided?
+                      </button>
+                    </h2>
+                    <div
+                      class="accordion-collapse collapse"
+                      id="faq10"
+                      data-bs-parent="#faq-list"
+                    >
+                      <div class="accordion-body">
+                        Yes, absolutely! 
+                        Accommodation and food will be provided in the college, i.e., NITK itself. 
+                        We'll make sure you don't go back on an empty stomach.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq11"
+                        aria-expanded="false"
+                        aria-controls="faq11"
+                      >
+                      Will travel reimbursements be provided?
+                      </button>
+                    </h2>
+                    <div
+                      class="accordion-collapse collapse"
+                      id="faq11"
+                      data-bs-parent="#faq-list"
+                    >
+                      <div class="accordion-body">
+                        No, we will not be reimbursing your travel.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq12"
+                        aria-expanded="false"
+                        aria-controls="faq12"
+                      >
+                      Where will the hackathon be held?
+                      </button>
+                    </h2>
+                    <div
+                      class="accordion-collapse collapse"
+                      id="faq12"
+                      data-bs-parent="#faq-list"
+                    >
+                      <div class="accordion-body">
+                        The hackathon will be held within the premises of <a href="https://www.nitk.ac.in/How_To_Reach" class=""><strong>NITK campus</strong></a>.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq13"
+                        aria-expanded="false"
+                        aria-controls="faq13"
+                      >
+                        Still got questions?
+                      </button>
+                    </h2>
+                    <div
+                      class="accordion-collapse collapse"
+                      id="faq13"
+                      data-bs-parent="#faq-list"
+                    >
+                      <div class="accordion-body">
+                        Please join our Telegram Channel:  
+                      <a
+                        href="http://t.me/hackverse"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                      <strong>@hackverse</strong> <i class="fa" id="social-nav-icons" style="color:black"> &#xf2c6;</i></a>, and ask
+                        your question. One of the organizers will get in touch with you.
                       </div>
                     </div>
                   </div>
@@ -1996,11 +2552,11 @@
     <!-- Footer -->
     <div class="fluid-container footer">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-12 col-lg-4 footer-container">
-            <h2 class="bold-t1 font-size">HackVerse 4.0</h2>
-            <p class="font-size">Hack till you crack it!</p>
-            <p class="lead mt-5">
+            <h2 class="bold-t1 font-size" style="color:#021f3b">HackVerse 4.0</h2>
+            <p class="font-size">Imagine.Believe.Achieve!</p>
+            <p class="lead mt-3">
               <i class="bi bi-geo-alt-fill"></i> &nbsp; NITK, Surathkal
             </p>
             <p class="lead">
@@ -2079,7 +2635,9 @@
               >
             </p>
           </div> -->
-          <div
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div
             class="col-12 col-lg-4 d-flex align-items-center justify-content-evenly social-media-icon"
           >
             <a
@@ -2132,7 +2690,7 @@
         </div>
         <div class="row campus mt-5">
           <div class="col-12">
-            <h5 class="mb-3">Campus</h5>
+            <h5 class="mb-3 text-center">Campus</h5>
           </div>
           <div class="col-md-2 col-6 py-3">
             <img src="img/nitk/01.webp" alt="NITK Campus" />
@@ -2154,7 +2712,7 @@
           </div>
         </div>
         <div
-          class="fluid-container d-flex copyright mt-5 justify-content-between copy-right-tags"
+          class="fluid-container d-flex copyright mt-5 justify-content-between copy-right-tags flex-column"
         >
           <p>
             <a
