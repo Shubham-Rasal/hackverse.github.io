@@ -279,5 +279,9 @@ spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-t
 }
 
 
+var loader = document.getElementById("preloader");
 
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
 
