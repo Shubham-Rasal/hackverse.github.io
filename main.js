@@ -271,7 +271,7 @@ var navbar = document.getElementById("scroll-spy");
 
 window.addEventListener("load", function () {
   loader.style.display = "none";
-  // navbar.classList.add('fixed-top');
+  navbar.classList.add('fixed-top');
 });
 
 
