@@ -376,7 +376,9 @@ button:focus {
 .about p {
   font-size: 1.25rem;
   font-family: Inter;
-    text-align: justify;
+  text-align: justify;
+  color: #fff;
+  font-weight: 350;
 }
 
 #about-section {
