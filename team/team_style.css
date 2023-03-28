@@ -11,7 +11,6 @@ font-family: 'Raleway Dots', cursive; */
 
 body {
   /* background-color: #041c3c; */
-  background-image: url("../img/bg_stars.webp");
   color: white;
   min-height: 100vh;
   /* display:flex;
@@ -23,7 +22,7 @@ p {
 }
 
 #teams {
-  background: url(../img/snow-heap.png) bottom no-repeat, #63c3fb;
+  background: url(../img/snow-heap.webp) bottom no-repeat, #63c3fb;
   padding-bottom: 15rem;
 }
 
@@ -131,7 +130,8 @@ p {
 }
 .social li {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .card .social li a {
   border-radius: 50%;

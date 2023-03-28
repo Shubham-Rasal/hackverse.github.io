@@ -462,7 +462,7 @@ let student_info_others =
         "Designation": "Content Team"
     },
     {
-        "Name": "Abhinav Bharwli",
+        "Name": "Abhinav Bharali",
         "Email_id": "abhinavbharali10@gmail.com",
         "LinkedIn_profile": "https://www.linkedin.com/in/abhinav-bharali",
         "Profile_photo": "https://drive.google.com/file/d/1YPAHyAC2h16n0ZoKpma-rdnlrLNyqMP2/view?usp=drivesdk",
@@ -692,7 +692,7 @@ function insert_in_div(insert_div, persons) {
           <div class="card-top">
           <!-- Profile_photo -->
           <div class="pic">
-              <img src="../img/team_page/` + person.image_path + `" alt="">
+              <img loading="lazy" src="../img/team_page/` + person.image_path + `" alt="">
           </div>
 
             <!-- Info -->
@@ -730,7 +730,7 @@ function insert_in_div_students(insert_div, persons) {
               <!-- Profile_photo -->
               <div class="pic">
               `
-              div_text2 = '<img src="' + profile_photo_location + '" alt=""/>'
+              div_text2 = '<img loading="lazy" src="' + profile_photo_location + '" alt=""/>'
 
               div_text3 =
               `
