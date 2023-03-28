@@ -36,6 +36,8 @@
   <!-- Responsive design stylesheet-->
   <link rel="stylesheet" href="responsive.css" />
 
+  <!-- Setting “media” type as ‘print’ forces the browser to load the stylesheet asynchronously. 
+  On full page load, the media type is changed to ‘all’ so that the stylesheet gets applied. -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
   <!-- Fallback for when JavaScript is disabled, but in this case CSS can’t be loaded asynchronously. -->
   <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
@@ -46,7 +48,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
   <!-- Fallback for when JavaScript is disabled, but in this case CSS can’t be loaded asynchronously. -->
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
-
 
   <title>Hackverse 4.0 | April 2023</title>
 </head>
@@ -1757,8 +1758,12 @@
     crossorigin="anonymous"></script>
   
   <!-- <script src="https://apply.devfolio.co/v2/sdk.js" async defer></script> -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <!-- Using google CDN for jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
   <!-- Google Analytics -->
   <script defer async src="https://www.googletagmanager.com/gtag/js?id=UA-149404272-1"></script>
   <script>
