@@ -461,7 +461,8 @@ button:focus {
     justify-content: center;
     align-items: center;
     width: 100%;
-}
+    z-index: 1;
+} 
 
 .stats {
   background-color: #201c3c;
@@ -478,7 +479,6 @@ button:focus {
   background-color: rgba(0, 0, 0, 0.332);
   /* background-color: #fff; */
   opacity: 10;
-  z-index: 400;
   /* mask: linear-gradient(transparent, black 1000%); */
 }
 
@@ -494,6 +494,7 @@ margin-bottom: 3%;
 }
 
 .testimonials-photo-roll-container {
+  position: relative;
   width: 100%;
   overflow: hidden;
   margin: 10vmin auto;
@@ -573,6 +574,38 @@ margin-bottom: 3%;
 
 /* End roller img shine on hover */
 
+ /* *** Start Repeating Background Text *** */
+ .repeating-text-background {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+}
+.repeating-text-background .accent-text {
+  font-family: Krona One, sans-serif;
+  -webkit-text-stroke: 2px rgba(105, 197, 251, 0.25);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 92px;
+  overflow: hidden;
+  width: 2000%;
+  line-height: 1.12;
+}
+
+.repeating-text-background .accent-text:nth-child(3n - 1) {
+  transform: translateX(-50px);
+}
+
+.repeating-text-background .accent-text:nth-child(3n - 2) {
+  transform: translateX(-150px);
+}
+
+.repeating-text-background .accent-text:nth-child(3n) {
+  transform: translateX(-100px);
+}
+/* *** End Repeating Background Text *** */
+
 .bold-t1 {
   font-size: 36px;
   font-weight: 700;
@@ -638,7 +671,7 @@ margin-bottom: 3%;
 
 .sponsor-us {
   padding: 70px 30px;
-  background-color: #DCF1FF;
+  background-color: #fcfeff;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -661,17 +694,21 @@ margin-bottom: 3%;
 }
 
 .sponsor-section-link{
-  color: #63c3fb;
+  color: #0079bf;
 }
 
 #sponsors .row img {
-  max-width: 250px;
+  /* max-width: 250px;
   width: auto;
-  max-height: 200px;
+  max-height: 200px; */
+  max-width: 200px;
+  width: auto;
+  max-height: 150px;
 }
 
-#sponsors a:hover {
+#sponsors a img:hover {
   transform: scale(1.07);
+  transition: all 0.6s;
 }
 
 #sponsor .row .col-6{
@@ -694,6 +731,12 @@ margin-bottom: 3%;
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .sponsor-spacer {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 520px) {
   #sponsors .row img {
     width: 80%;
@@ -705,6 +748,10 @@ margin-bottom: 3%;
 
   .sponsor-us p {
     font-size: 0.75rem;
+  }
+
+  .sponsor-spacer {
+    display: none;
   }
 }
 
