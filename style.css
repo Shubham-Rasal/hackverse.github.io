@@ -72,6 +72,7 @@ p {
 /* Start Preloader */
 #preloader {
     background: #f7fcff no-repeat center center;
+    background-color: #f7fcff;
     background-size: 15%;
     position: fixed;
     height: 100vh;
