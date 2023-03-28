@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.timer span {
+    color: #fff;
+}
+
+.geeky-font {
+    font-family: 'VT323' !important;
+    /* font-family: 'Esgalon', 'Poppins', 'VT323', Roboto, Cantarell, "Helvetica Neue", sans-serif, cursive; */
+    font-size: 80px;
+}
+
+.card {
+    background-color: #111351;
+    border-radius: 25px;
+    width: 140px;
+    height: 140px;
+}
+
+#announcement {
+    font-weight: bolder;
+    font-size: 50;
+}
+
+.container {
+    color: #111351;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 100px;
+}
+
+.logo {
+    display: block;
+    width: 30%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* general styling */
+
+body {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #ebf8ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    /* font-family: 'Poppins',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+}
+
+.container {
+    margin: 0 auto;
+}

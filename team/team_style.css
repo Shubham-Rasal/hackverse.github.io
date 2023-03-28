@@ -130,7 +130,8 @@ p {
 }
 .social li {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .card .social li a {
   border-radius: 50%;

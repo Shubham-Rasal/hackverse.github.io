@@ -184,19 +184,6 @@ gsap.to("#a2-2", {
   },
 });
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: ".cloud-cover",
-      start: "-=250px bottom",
-      end: "top center",
-      scrub: 1,
-    },
-  })
-  .fromTo(".cloud1", { y: -200 }, { y: -550 }, 0)
-  .fromTo(".cloud2", { y: -150 }, { y: -250 }, 0)
-  .fromTo(".cloud3", { y: -50 }, { y: -400 }, 0);
-
 // ScrollTrigger.create({
 //   animation: scene1,
 //   trigger: "#schedule-div",
@@ -280,8 +267,9 @@ spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-t
 
 
 var loader = document.getElementById("preloader");
+var navbar = document.getElementById("scroll-spy");
 
 window.addEventListener("load", function () {
   loader.style.display = "none";
+  navbar.classList.add('fixed-top');
 });
-
