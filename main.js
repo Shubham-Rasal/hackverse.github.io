@@ -273,6 +273,3 @@ window.addEventListener("load", function () {
   loader.style.display = "none";
   navbar.classList.add('fixed-top');
 });
-
-
-

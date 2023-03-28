@@ -57,6 +57,7 @@
   </head>
 
 <body data-bs-spy="scroll" data-bs-target="#scroll-spy" data-bs-offset="90">
+  <div id="preloader"></div>
   <!-- background animation -->
   <div class="scene">
     <div class="space">
@@ -84,6 +85,7 @@
           height="50px"
           alt="Hackverse"
           class="navbar-brand navbar-logo-custom"
+          loading="lazy"
         />
     </a>
       <button
@@ -186,7 +188,9 @@
           href="http://www.facebook.com/hackverse/"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="../img/facebook.svg" alt="facebook"
+          ><img 
+          loading="lazy"
+          src="../img/facebook.svg" alt="facebook"
         /></a>
         <a
           class="social-icons"
