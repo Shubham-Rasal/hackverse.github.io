@@ -36,12 +36,16 @@
   <!-- Responsive design stylesheet-->
   <link rel="stylesheet" href="responsive.css" />
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <!-- Fallback for when JavaScript is disabled, but in this case CSS can’t be loaded asynchronously. -->
+  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
 
   <!-- Judges stylesheet-->
   <link rel="stylesheet" href="judges/judges_style.css" />
   <!--font-awesome for social media icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
+  <!-- Fallback for when JavaScript is disabled, but in this case CSS can’t be loaded asynchronously. -->
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
 
 
   <title>Hackverse 4.0 | April 2023</title>
@@ -1746,7 +1750,7 @@
     </div>
   </div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
