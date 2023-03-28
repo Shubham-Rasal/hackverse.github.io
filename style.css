@@ -461,7 +461,8 @@ button:focus {
     justify-content: center;
     align-items: center;
     width: 100%;
-}
+    z-index: 1;
+} 
 
 .stats {
   background-color: #201c3c;
@@ -478,7 +479,6 @@ button:focus {
   background-color: rgba(0, 0, 0, 0.332);
   /* background-color: #fff; */
   opacity: 10;
-  z-index: 400;
   /* mask: linear-gradient(transparent, black 1000%); */
 }
 
@@ -494,6 +494,7 @@ margin-bottom: 3%;
 }
 
 .testimonials-photo-roll-container {
+  position: relative;
   width: 100%;
   overflow: hidden;
   margin: 10vmin auto;
@@ -572,6 +573,38 @@ margin-bottom: 3%;
 }
 
 /* End roller img shine on hover */
+
+ /* *** Start Repeating Background Text *** */
+ .repeating-text-background {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+}
+.repeating-text-background .accent-text {
+  font-family: Krona One, sans-serif;
+  -webkit-text-stroke: 2px rgba(105, 197, 251, 0.25);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 92px;
+  overflow: hidden;
+  width: 2000%;
+  line-height: 1.12;
+}
+
+.repeating-text-background .accent-text:nth-child(3n - 1) {
+  transform: translateX(-50px);
+}
+
+.repeating-text-background .accent-text:nth-child(3n - 2) {
+  transform: translateX(-150px);
+}
+
+.repeating-text-background .accent-text:nth-child(3n) {
+  transform: translateX(-100px);
+}
+/* *** End Repeating Background Text *** */
 
 .bold-t1 {
   font-size: 36px;
