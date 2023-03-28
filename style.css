@@ -71,9 +71,17 @@ p {
 }
 /* Start Preloader */
 #preloader {
+    /* background: #f7fcff no-repeat center center; */
     background: #f7fcff no-repeat center center;
-    background-color: #f7fcff;
-    background-size: 15%;
+    
+    background-color: rgb(247, 252, 255);
+    /* background: linear-gradient(165deg, rgba(247, 252, 255) 0%, rgb(186, 230, 255) 40%, 
+    rgb(128, 208, 255) 98%, rgb(247, 252, 255) 100%); */
+    background: radial-gradient(#4db8ff, rgb(247, 252, 255));
+    /* background: radial-gradient(rgb(218, 243, 255), rgb(232, 247, 255)); */
+    /* background: linear-gradient(rgb(255, 255, 255),#6bc4ff); */
+    /* background-color:#6bc4ff; */
+    /* background-size: 15%; */
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -85,20 +93,19 @@ p {
 .water{
   width:400px;
   height: 400px;
-  background-color: #4db8ff;
+  background-color: #4db8ff; 
+  /* #4db8ff; */
   border-radius: 50%;
   position: relative;
   box-shadow: inset 0 0 30px 0 rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 4px 20px 0 rgba(255, 255, 255, 0.5);
-  box-shadow:
-  /* 0 -10px 20px 20px #ffffffac inset,
-  0 -5px 15px 10px #ffffff50 inset, */
+  /* box-shadow:
   0 -2px 5px #ffffffb9 inset,
   0 -3px 2px #ffffffBB inset,
   0 2px 0px #ffffff,
   0 2px 3px #ffffff,
-  0 5px 5px #ffffff90;
-  filter: blur(1px);
+  0 5px 5px #ffffff90; */
+  /* filter: blur(1px); */
   overflow: hidden;
 }
 
@@ -256,15 +263,6 @@ button:focus {
 .main {
   height: 80%;
   z-index: 1;
-}
-
-#preloader{
-  background: #000 url(img/loader.gif) no-repeat center center;
-  background-size: 15%;
- position: fixed;
-  height: 100vh;
-  width: 100%;
-  z-index: 100;
 }
 
 .snowflake {

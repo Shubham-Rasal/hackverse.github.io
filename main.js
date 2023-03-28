@@ -270,8 +270,8 @@ var loader = document.getElementById("preloader");
 var navbar = document.getElementById("scroll-spy");
 
 window.addEventListener("load", function () {
-  loader.style.display = "none";
-  navbar.classList.add('fixed-top');
+  // loader.style.display = "none";
+  // navbar.classList.add('fixed-top');
 });
 
 document.addEventListener("scroll",lazyload);
