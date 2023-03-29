@@ -46,12 +46,27 @@ function testScroll() {
 
 // Countdown logic
 
-var countDownDate = new Date("2023-04-15");;
+// var countDownDate = new Date("2023-04-15");;
+
+var date_str = new Date("2023-04-02T18:29:00.000Z"); //.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
+var countDownDate = Date.parse(date_str);
+
+// var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+// var countDownDate = new Date(utc + (3600000*+5.5));
 
 // Update the count down every 1 second
 var x = setInterval(function () {
   // Get today's date and time
-  var now = new Date().getTime();
+  // var now = new Date().getTime();
+
+  // Get today's date and time in ist
+  // d = new Date();
+  // utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+  // nd = new Date(utc + (3600000*+5.5));
+  // var now =  nd;
+
+  var now_str = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
+  var now = Date.parse(now_str);
 
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
