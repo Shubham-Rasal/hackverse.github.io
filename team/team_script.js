@@ -546,7 +546,7 @@ let student_info_others =
     {
         "Name": "Subhojit Karmakar",
         "Email_id": "subhojit.211it071@nitk.edu.in",
-        "LinkedIn_profile": "https://www.linkedin.com/me?trk=p_mwlite_me_notifications-secondary_nav",
+        "LinkedIn_profile": "https://www.linkedin.com/in/subhojit-karmakar-75b400228/",
         "Profile_photo": "https://drive.google.com/file/d/1H9m9DMoGaFmlp8J05a0sh7wKPuujZAKa/view?usp=sharing",
         "Profile_photo_url": "WhatsApp-Image-2023-02-03-at-5.56.29-PM.jpg",
         "Profile_Photo_name": "WhatsApp-Image-2023-02-03-at-5.56.29-PM",
