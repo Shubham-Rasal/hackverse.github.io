@@ -7,10 +7,7 @@ font-family: 'Cabin Sketch', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway Dots', cursive; */
 
-@font-face {
-  font-family: 'Esgalon';
-  src: url('fonts/Esgalon-w18gP.otf') format('opentype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Grand+Hotel&family=Lobster&family=VT323&display=swap');
 
 * {
   margin: 0;
@@ -206,8 +203,17 @@ button:focus {
 }
 
 .font-esgalon {
-  font-family: 'Esgalon', sans-serif;
-  font-size: 3em;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 4em;
+
+  /* font-family: 'Grand Hotel', cursive;
+  font-size: 4em; */
+  /* font-family: 'VT323', cursive;
+  font-size: 4em; */
+
+  /* font-family: 'Lobster', cursive;
+  font-size: 3.6em; */
+
   color: #fff;
 }
 
