@@ -271,14 +271,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
   StartTextAnimation(0);
 });
 
-var loader = document.getElementById("preloader");
+// var loader = document.getElementById("preloader");
 var navbar = document.getElementById("scroll-spy");
 
 // window.addEventListener("load", function () {
 //   setTimeout(function(){        
 //     loader.style.display = "none";
 //     navbar.classList.add('fixed-top');
-// }, 1000);
+// },1000)});
 
   window.addEventListener("DOMContentLoaded", function () {
   loader.style.display = "none";
