@@ -266,7 +266,7 @@ var navbar = document.getElementById("scroll-spy");
 // }, 1000);
 
   window.addEventListener("DOMContentLoaded", function () {
-  // loader.style.display = "none";
+  loader.style.display = "none";
   navbar.classList.add('fixed-top');
 });
 
