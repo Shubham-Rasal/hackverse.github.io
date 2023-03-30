@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   StartTextAnimation(0);
 });
 
-// var loader = document.getElementById("preloader");
+var loader = document.getElementById("preloader");
 var navbar = document.getElementById("scroll-spy");
 
 // window.addEventListener("load", function () {
