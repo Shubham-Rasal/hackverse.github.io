@@ -1058,6 +1058,18 @@ section {
 }
 
 /* Remove extra left and right margins, due to padding */
+.prizes-section {
+  position: relative;
+  padding-top: 0%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  background-color: #d4eaff; 
+}
+
 #prizes .row {
   margin: 0 -5px;
   display: flex;
