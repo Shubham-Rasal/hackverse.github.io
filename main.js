@@ -289,3 +289,19 @@ var navbar = document.getElementById("scroll-spy");
 // make event listeners passive to improve scrolling performance
 document.addEventListener('touchstart', onTouchStart, {passive: true});
 
+
+
+// const barItems = document.querySelectorAll('.bar-item')
+// const sections = document.querySelectorAll('.prize_box')
+
+// console.log(barItems)
+
+// barItems.forEach( item => {
+//   item.addEventListener('click' , ()=>{
+//     barItems.forEach(items =>items.classList.remove('active_1'))
+
+//     const target = item.getAttribute('data-target');
+//     item.classList.add('active_1');
+//     document.querySelector(`[data-section="${target}"]`).classList.add('active_1');
+//   })
+// })
