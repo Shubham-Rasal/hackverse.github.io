@@ -211,6 +211,10 @@
     width: 130px;
   }
 
+  .section-heading-2 h1{
+    font-size: 1rem;
+  }
+
   #prizes .column {
     margin-bottom: 32px;
   }
