@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   StartTextAnimation(0);
 });
 
-var loader = document.getElementById("preloader");
+// var loader = document.getElementById("preloader");
 var navbar = document.getElementById("scroll-spy");
 
 // window.addEventListener("load", function () {
@@ -280,12 +280,12 @@ var navbar = document.getElementById("scroll-spy");
 //     navbar.classList.add('fixed-top');
 // },1000)});
 
-  window.addEventListener("DOMContentLoaded", function () {
-  loader.style.display = "none";
-  navbar.classList.add('fixed-top');
-});
+//   window.addEventListener("DOMContentLoaded", function () {
+//   loader.style.display = "none";
+//   navbar.classList.add('fixed-top');
+// });
 
-document.addEventListener("scroll",lazyload);
+// document.addEventListener("scroll",lazyload);
 // make event listeners passive to improve scrolling performance
 document.addEventListener('touchstart', onTouchStart, {passive: true});
 
