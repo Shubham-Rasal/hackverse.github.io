@@ -9,7 +9,10 @@
   html {
     scroll-padding-top: 70px;
   }
-
+ /* prize */
+ #prize_img {
+  display: none !important;
+}
   /* Navbar */
   .navbar-brand {
     width: 60px;
@@ -253,5 +256,7 @@
     height: 200px;
     top:-100px;
   }
+
+
 }
 
