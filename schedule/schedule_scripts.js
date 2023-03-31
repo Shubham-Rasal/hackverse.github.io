@@ -145,9 +145,16 @@ const setSchedule = (idx) => {
 
   activeScheduleIndex = idx;
 
-  document
-    .getElementById("day-item-" + idx)
-    .scrollIntoView({ behavior: "smooth", block: "center" });
+
+  let elem = document.querySelector("body");
+  let rect = elem.getBoundingClientRect("schedule-section");
+  if(rect.top < -3000)
+  {
+    document
+      .getElementById("day-item-" + idx)
+      .scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
   document.getElementById("day-item-" + idx).classList.add("active");
 
   document.getElementById("left-button").disabled = idx == 0;
