@@ -9,40 +9,37 @@ navLinks.forEach((l) => {
   });
 });
 
-$(window).scroll(testScroll);
+window.addEventListener("scroll", testScroll);
 var viewed = false;
 
 function isScrolledIntoView(elem) {
-  var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height();
+  var docViewTop = window.scrollY;
+  var docViewBottom = docViewTop + window.innerHeight;
 
-  var elemTop = $(elem).offset().top;
-  var elemBottom = elemTop + $(elem).height();
+  var elemTop = elem.offsetTop;
+  var elemBottom = elemTop + elem.offsetHeight;
 
   return elemBottom <= docViewBottom && elemTop >= docViewTop;
 }
 
 function testScroll() {
-  if (isScrolledIntoView($(".milestone-number")) && !viewed) {
+  if (isScrolledIntoView(document.querySelector(".milestone-number")) && !viewed) {
     viewed = true;
-    $(".number-holder").each(function () {
-      $(this)
-        .prop("Counter", 0)
-        .animate(
-          {
-            Counter: $(this).text(),
-          },
-          {
-            duration: 4000,
-            easing: "swing",
-            step: function (now) {
-              $(this).text(Math.ceil(now));
-            },
-          }
-        );
+    var numberHolders = document.querySelectorAll(".number-holder");
+    numberHolders.forEach(function (numberHolder) {
+      var counter = 0;
+      var textContent = parseInt(numberHolder.textContent, 10);
+      var animation = setInterval(function () {
+        counter++;
+        numberHolder.textContent = Math.ceil((counter * textContent) / 100);
+        if (counter >= 100) {
+          clearInterval(animation);
+        }
+      }, 40);
     });
   }
 }
+
 
 // Countdown logic
 
@@ -229,9 +226,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       setTimeout(function () {
         StartTextAnimation(0);
       }, 20000);
-    }
-    // check if dataText[i] exists
-    if (i < dataText[i].length) {
+    }else{
       // text exists! start typewriter animation
       typeWriter(dataText[i], 0, function () {
         // after callback (and whole text has been animated), start next text
