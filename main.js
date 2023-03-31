@@ -253,7 +253,7 @@ var navbar = document.getElementById("scroll-spy");
 //     navbar.classList.add('fixed-top');
 // },1000)});
 
-  window.addEventListener("DOMContentLoaded", function () {
+  // window.addEventListener("DOMContentLoaded", function () {
   // loader.style.display = "none";
   // navbar.classList.add('fixed-top');
 
@@ -271,7 +271,7 @@ var navbar = document.getElementById("scroll-spy");
     // gtag("js", new Date());
 
     // gtag("config", "UA-149404272-1");
-});
+// });
 
 // document.addEventListener("scroll",lazyload);
 // make event listeners passive to improve scrolling performance
