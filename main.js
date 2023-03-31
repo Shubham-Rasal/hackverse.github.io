@@ -174,33 +174,6 @@ gsap.to("#h2-6", {
 
 // ScrollTrigger.create({
 //   animation: scene1,
-//   trigger: "#about-div",
-//   start: "top top",
-//   end: "80% center",
-//   scrub: 3,
-//   pin: true,
-// });
-
-gsap.to("#a2-1", {
-  yPercent: 10,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".scrollElement",
-    scrub: 1,
-  },
-});
-
-gsap.to("#a2-2", {
-  yPercent: 10,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".scrollElement",
-    scrub: 1,
-  },
-});
-
-// ScrollTrigger.create({
-//   animation: scene1,
 //   trigger: "#schedule-div",
 //   start: "top top",
 //   end: "80% center",
