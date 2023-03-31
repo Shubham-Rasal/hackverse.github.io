@@ -1831,7 +1831,9 @@ padding-left: 3em; */
   padding: 30px;
   border-radius: 10px;
   /* box-shadow: 0 3px 10px rgba(3, 3, 3, 0.63); */
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .position_container {
   border-radius: 100%;
