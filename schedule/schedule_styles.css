@@ -106,14 +106,15 @@
 
 .forward-backward-buttons .forward-backward-button {
   padding: 1rem;
-  border: 1px solid #111;
+  /* border: 1px solid #111; */
   /* background: #69c6fb; */
-  background: #2d294d;
+  background: #93aaff;
+  /* background: #2d294d; */
   color: #fff;
 }
 
 .forward-backward-buttons .forward-backward-button:hover {
-  background: #574f93;
+  background: #2d294d;
 }
 
 .forward-backward-buttons .forward-backward-button:disabled {
