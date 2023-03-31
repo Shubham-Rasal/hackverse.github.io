@@ -25,7 +25,6 @@ html {
 body {
   font-family: Poppins;
   overflow-x: hidden;
-  background: #63c3fb;
   overflow-y: scroll;
 }
 
@@ -905,6 +904,9 @@ a {
 }
 
 /* Countdown Starts Here  */
+#countdown-section{
+  background: #69c6fb;
+}
 
 .countdown-container {
   position: relative;

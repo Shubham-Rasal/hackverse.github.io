@@ -34,6 +34,8 @@
 
 
   <link rel="stylesheet" href="style.css" />
+  <!-- Schedule stylesheet-->
+  <link rel="stylesheet" href="./schedule/schedule_styles.css">
   <!-- Responsive design stylesheet-->
   <link rel="stylesheet" href="responsive.css" />
 
@@ -350,46 +352,48 @@
   </div>
 
   <!-- timer -->
-  <div class="fluid-container">
-    <div class="justify-content-center countdown-banner" data-aos="zoom-in">
-      <!-- <strong> -->
-        <div class="countdown align-self-center">
-        <p>Applications <b>close</b> in </p>
-      </div>
-    <!-- </strong> -->
-      <div class="countdown ">
-        <div class="countdown-container">
-          <div class="countdown-block">
-            <span class="countdown-title sketch-font" id="countdown-day">
-              00
-            </span>
-            <span class="countdown-desc">
-              Days
-            </span>
-          </div>
-          <div class="countdown-block">
-            <span class="countdown-title sketch-font" id="countdown-hour">
-              00
-            </span>
-            <span class="countdown-desc">
-              Hours
-            </span>
-          </div>
-          <div class="countdown-block">
-            <span class="countdown-title sketch-font" id="countdown-minute">
-              00
-            </span>
-            <span class="countdown-desc">
-              Minutes
-            </span>
-          </div>
-          <div class="countdown-block">
-            <span class="countdown-title sketch-font" id="countdown-second">
-              00
-            </span>
-            <span class="countdown-desc">
-              Seconds
-            </span>
+  <div id="countdown-section">
+    <div class="fluid-container">
+      <div class="justify-content-center countdown-banner" data-aos="zoom-in">
+        <!-- <strong> -->
+          <div class="countdown align-self-center">
+          <p>Applications <b>closes</b> in </p>
+        </div>
+      <!-- </strong> -->
+        <div class="countdown ">
+          <div class="countdown-container">
+            <div class="countdown-block">
+              <span class="countdown-title sketch-font" id="countdown-day">
+                00
+              </span>
+              <span class="countdown-desc">
+                Days
+              </span>
+            </div>
+            <div class="countdown-block">
+              <span class="countdown-title sketch-font" id="countdown-hour">
+                00
+              </span>
+              <span class="countdown-desc">
+                Hours
+              </span>
+            </div>
+            <div class="countdown-block">
+              <span class="countdown-title sketch-font" id="countdown-minute">
+                00
+              </span>
+              <span class="countdown-desc">
+                Minutes
+              </span>
+            </div>
+            <div class="countdown-block">
+              <span class="countdown-title sketch-font" id="countdown-second">
+                00
+              </span>
+              <span class="countdown-desc">
+                Seconds
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -441,232 +445,76 @@
 
 
   <!-- Schedule Section -->
-  <!--
-    <div id="schedule-div" style="position: relative;">
-      <div class="cloud-cover">
-        <svg viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg">
-          <mask id="m">
-            <g class="cloud1">
-              <rect fill="#fff" width="100%" height="801" y="799" />
-              <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
-            </g>
-          </mask>
-          <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
-          <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
-          <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
-        </svg>
+  <div id="schedule-section">
+    <h1 class="text-center bold-t1 mb-2 p-5 aos-init aos-animate" data-aos="zoom-out">
+      <span>Timeline</span>
+    </h1>
+    <div class="schedule-section-container">
+      <div id="calender-pins">
+        <div class="calender-pin"></div>
+        <div class="calender-pin"></div>
       </div>
-      <div class="fix"></div>
-      <section id="schedule-section">
-        <div class="schedule fluid-container d-flex flex-column">
-          <div class="container fill justify-content-center"  data-aos="fade-up">
-            <h1 class="h2-title text-center">Schedule</h1>
-            
-              ****previous commented****
-              <div class="row">
-            <div class="col-12">
-              <div id="timeline-content">
-                <div><h4 style="text-align: left">1 Mar 2023</h4></div>
-
-                <ul class="timeline" style="cursor:default;">
-                  <li class="event" data-date="12:00 PM (IST)" style="color: black">
-                    <div class="member-infos">
-                      <h1 class="member-title active-sch">
-                        Registration begins <br>
-                      </h1>
-                    </div>
-                  </li>
-                </ul>
-
-                <div>
-                  <h4 style="text-align: left; padding-top: 20px">8 Mar 2023</h4>
-                </div>
-                <ul class="timeline" style="cursor:default;">
-                  <li class="event" data-date="10:00 AM (IST)" style="color: black">
-                    <div class="member-infos">
-                      <h1 class="member-title active-sch">
-                        Announcement of Prizes <br>
-                      </h1>
-                    </div>
-                  </li>
-                </ul>
-
-                <div>
-                  <h4 style="text-align: left; padding-top: 20px">12 Mar 2023</h4>
-                </div>
-                <ul class="timeline" style="cursor:default;">
-                  <li class="event" data-date="10:00 AM (IST)" style="color: black">
-                    <div class="member-infos">
-                      <h1 class="member-title active-sch">
-                        Release of Tracks <br>
-                      </h1>
-                    </div>
-                  </li>
-                </ul>
-
-                <div>
-                  <h4 style="text-align: left; padding-top: 20px">18 Mar 2023</h4>
-                </div>
-
-                <ul class="timeline" style="cursor:default;">
-                  <li class="event" data-date="11:59 PM (IST)" style="color: black">
-                    <div class="member-infos">
-                      <h1 class="member-title active-sch">
-                        Registration ends <br>
-                      </h1>
-                    </div>
-                  </li>
-                </ul>
-
-                <div>
-                  <h4 style="text-align: left; padding-top: 20px">25 Mar 2023</h4>
-                </div>
-                <ul class="timeline" style="cursor:default;">
-                  <li class="event" data-date="10:00 AM (IST)" style="color: black">
-                    <div class="member-infos">
-                      <h1 class="member-title active-sch">
-                        Hackathon begins <br>
-                      </h1>
-                    </div>
-                  </li>
-                </ul>
-
-                <div>
-                  <h4 style="text-align: left; padding-top: 20px">26 Mar 2023</h4>
-                </div>
-
-                <ul class="timeline" style="cursor:default;">
-                  <li class="event" data-date="4:00 PM (IST)" style="color: black">
-                    <div class="member-infos">
-                      <h1 class="member-title active-sch">
-                        Hackathon ends <br>
-                      </h1>
-                    </div>
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-            ****previous commented****
-
-            <ul class="timeline-container">
-              <li class="timeline-item">
-                <div class="timeline-content-left">
-                  <h4>
-                    1 March
-                  </h4>
-                  <span>12:00 PM (IST)</span>
-                </div>
-                <div class="timeline-content-icon-container">
-                  <div class="bar top-bar"></div>
-                  <div class="timeline-content-icon">
-                    <svg>
-                      <path
-                        d="M18.41 5.8 17.2 4.59c-.78-.78-2.05-.78-2.83 0l-2.68 2.68L3 15.96V20h4.04l8.74-8.74 2.63-2.63c.79-.78.79-2.05 0-2.83zM6.21 18H5v-1.21l8.66-8.66 1.21 1.21L6.21 18zM11 20l4-4h6v4H11z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div class="bar bottom-bar"></div>
-                </div>
-                <div class="timeline-content-right">
-                    <h1>Registration Begins</h1>
-                </div>
-              </li>
-              <li class="timeline-item">
-                <div class="timeline-content-left">
-                  <h4>
-                    8 March 
-                  </h4>
-                  <span>10:00 AM (IST)</span>
-                </div>
-                <div class="timeline-content-icon-container">
-                  <div class="bar top-bar"></div>
-                  <div class="timeline-content-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 21.617v1.383h-8v-1.383c2.212 0 2.534-1.386 2.631-2.625.68.385 2.077.385 2.756 0 .097 1.238.338 2.625 2.613 2.625zm-3.991-20.617c-2.754 0-6.915.423-6.825 2.8.309 8.18 4.8 10.896 5.421 13.893.64.534 2.169.534 2.81 0 .612-2.957 4.965-5.654 5.39-13.575.137-2.574-4.13-3.118-6.796-3.118zm-4.837 4.814c.506.132 1.035.236 1.584.309.308 2.767 1.083 5.562 2.491 7.995-1.915-2.211-3.454-4.885-4.075-8.304zm4.837-.717c-2.459 0-5.485-.373-5.485-1.394 0-.839 2.628-1.456 5.485-1.456 2.716 0 5.492.667 5.492 1.542 0 .9-2.911 1.308-5.492 1.308zm7.786-1.09c0 .518-.045.746-.103 1.297h2.78c-.431 2.015-1.568 4.764-4.527 6.279-.319.659-.65 1.265-.984 1.816 4.167-1.309 6.662-5.23 7.039-9.392h-4.205zm-19.795 0c.377 4.162 2.872 8.083 7.039 9.392-.334-.551-.665-1.157-.984-1.816-2.959-1.515-4.097-4.265-4.527-6.279h2.78c-.058-.552-.103-.78-.103-1.297h-4.205z"/></svg>
-                  </div>
-                  <div class="bar bottom-bar"></div>
-                </div>
-                <div class="timeline-content-right">
-                    <h1>Announcement of Prizes</h1>
-                </div>
-              </li>
-              <li class="timeline-item">
-                <div class="timeline-content-left">
-                  <h4>
-                    12 March
-                  </h4>
-                  <span>10:00 AM (IST)</span>
-                </div>
-                <div class="timeline-content-icon-container">
-                  <div class="bar top-bar"></div>
-                  <div class="timeline-content-icon">
-                    <svg width="24" height="24" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.394 15.759s7.554 4.246 9.09 5.109c.165.093.333.132.492.132.178 0 .344-.049.484-.127 1.546-.863 9.155-5.113 9.155-5.113.246-.138.385-.393.385-.656 0-.566-.614-.934-1.116-.654 0 0-7.052 3.958-8.539 4.77-.211.115-.444.161-.722.006-1.649-.928-8.494-4.775-8.494-4.775-.502-.282-1.117.085-1.117.653 0 .262.137.517.382.655zm0-3.113s7.554 4.246 9.09 5.109c.165.093.333.132.492.132.178 0 .344-.049.484-.127 1.546-.863 9.155-5.113 9.155-5.113.246-.138.385-.393.385-.656 0-.566-.614-.934-1.116-.654 0 0-7.052 3.958-8.539 4.77-.211.115-.444.161-.722.006-1.649-.928-8.494-4.775-8.494-4.775-.502-.282-1.117.085-1.117.653 0 .262.137.517.382.655zm10.271-9.455c-.246-.128-.471-.191-.692-.191-.223 0-.443.065-.675.191l-8.884 5.005c-.276.183-.414.444-.414.698 0 .256.139.505.414.664l8.884 5.006c.221.133.447.203.678.203.223 0 .452-.065.689-.203l8.884-5.006c.295-.166.451-.421.451-.68 0-.25-.145-.503-.451-.682zm-8.404 5.686 7.721-4.349 7.72 4.349-7.72 4.35z" fill-rule="nonzero"/></svg>
-                  </div>
-                  <div class="bar bottom-bar"></div>
-                </div>
-                <div class="timeline-content-right">
-                    <h1>Release of Tracks</h1>
-                </div>
-              </li>
-              <li class="timeline-item">
-                <div class="timeline-content-left">
-                  <h4>
-                    18 March
-                  </h4>
-                  <span>11:59 AM (IST)</span>
-                </div>
-                <div class="timeline-content-icon-container">
-                  <div class="bar top-bar"></div>
-                  <div class="timeline-content-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.598 13.091l-5.69-5.688 7.402-7.403 5.69 5.689-7.402 7.402zm-16.598 10.909l7.126-1.436-5.688-5.689-1.438 7.125zm1.984-20.568l6.449 6.446-5.582 5.582 5.689 5.69 5.583-5.583 6.492 6.49 1.4-1.428-18.631-18.625-1.4 1.428z"/></svg>
-                  </div>
-                  <div class="bar bottom-bar"></div>
-                </div>
-                <div class="timeline-content-right">
-                    <h1>Registration Ends</h1>
-                </div>
-              </li>
-              <li class="timeline-item">
-                <div class="timeline-content-left">
-                  <h4>
-                    25 March
-                  </h4>
-                  <span>10:00 AM (IST)</span>
-                </div>
-                <div class="timeline-content-icon-container">
-                  <div class="bar top-bar"></div>
-                  <div class="timeline-content-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.566 17.842c-.945 2.462-3.678 4.012-6.563 4.161.139-2.772 1.684-5.608 4.209-6.563l.51.521c-1.534 1.523-2.061 2.765-2.144 3.461.704-.085 2.006-.608 3.483-2.096l.505.516zm-1.136-11.342c-1.778-.01-4.062.911-5.766 2.614-.65.649-1.222 1.408-1.664 2.258 1.538-1.163 3.228-1.485 5.147-.408.566-1.494 1.32-3.014 2.283-4.464zm5.204 17.5c.852-.44 1.61-1.013 2.261-1.664 1.708-1.706 2.622-4.001 2.604-5.782-1.575 1.03-3.125 1.772-4.466 2.296 1.077 1.92.764 3.614-.399 5.15zm11.312-23.956c-.428-.03-.848-.044-1.261-.044-9.338 0-14.465 7.426-16.101 13.009l4.428 4.428c5.78-1.855 12.988-6.777 12.988-15.993v-.059c-.002-.437-.019-.884-.054-1.341zm-5.946 7.956c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>
-                  </div>
-                  <div class="bar bottom-bar"></div>
-                </div>
-                <div class="timeline-content-right">
-                    <h1>Hackathon Begins</h1>
-                </div>
-              </li>
-              <li class="timeline-item">
-                <div class="timeline-content-left">
-                  <h4>
-                    26 March
-                  </h4>
-                  <span> 4:00 PM (IST)</span>
-                </div>
-                <div class="timeline-content-icon-container">
-                  <div class="bar top-bar"></div>
-                  <div class="timeline-content-icon">
-                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4.823 21.933l2.734-1.171-3.241-8.847-1.561 4.372 2.068 5.646zm-2.594-4.174l-2.229 6.241 3.903-1.672-1.674-4.569zm6.248 2.609l2.934-1.258-3.482-9.141-2.215-1.969-.872 2.443 3.635 9.925zm7.523-3.224l-6.453-5.736 2.785 7.308 3.668-1.572zm-.826-5.003l2.201-1.445c.23-.152.295-.462.143-.693-.152-.232-.463-.295-.692-.143l-2.201 1.445c-.231.151-.295.461-.144.692.096.147.256.226.418.226.095 0 .19-.026.275-.082m-2.993-4.312l1.112-2.388c.117-.25.008-.548-.242-.664-.251-.116-.548-.009-.665.242l-1.111 2.388c-.117.25-.008.547.242.664l.211.047c.189 0 .368-.107.453-.289m-2.627.709c1.539-2.963 1.644-5.73.314-8.222-.09-.169-.263-.265-.442-.265-.37 0-.621.398-.44.736 1.166 2.184 1.058 4.637-.32 7.29-.127.245-.031.547.214.674.073.038.152.057.23.057.18 0 .355-.099.444-.27m6.505 6.095c2.017-1.434 4.463-1.64 7.272-.613.327.119.672-.123.672-.47 0-.203-.125-.395-.328-.47-3.136-1.147-5.894-.9-8.196.738-.224.16-.277.472-.117.698.098.136.251.209.407.209.101 0 .202-.03.29-.092m3.757-6.757l-1.697.014.938 1.415-.511 1.618 1.635-.455 1.381.986.073-1.696 1.365-1.009-1.591-.592-.538-1.61-1.055 1.329zm-7.307 3.624c.276-.009.492-.24.483-.517-.056-1.627.36-1.937 1.377-2.051 1.689-.191 1.785-1.312 1.842-1.982.053-.637.071-.851.773-.903.63-.046 1.331-.16 1.76-.659.461-.538.466-1.358.402-2.164-.021-.276-.266-.478-.537-.459-.275.021-.481.262-.459.537.062.787.011 1.23-.165 1.434-.149.174-.48.271-1.074.314-1.553.114-1.644 1.179-1.697 1.816-.057.668-.082.973-.956 1.071-2.075.234-2.315 1.619-2.266 3.08.01.27.231.483.5.483h.017m7.842-8.675c0 1.006.818 1.824 1.825 1.824 1.006 0 1.824-.818 1.824-1.824 0-1.007-.818-1.825-1.824-1.825-1.007 0-1.825.818-1.825 1.825m-6.623-2.841c1.104 0 2 .897 2 2 0 1.104-.896 2-2 2-1.103 0-2-.896-2-2 0-1.103.897-2 2-2"/></svg>
-                  </div>
-                  <div class="bar bottom-bar"></div>
-                </div>
-                <div class="timeline-content-right">
-                    <h1>Hackathon Ends</h1>
-                </div>
-              </li>
-            </ul>
-           </div>
+      <div class="schedule-header">
+        <div id="day-selector" class="day-selector-custom-scrollbar">
+          <button
+            id="day-item-0"
+            class="schedule-day-item"
+            onclick="setSchedule(0)"
+          >
+            <span>Important</span>
+            <span>Timelines</span>
+          </button>
+          <button
+            id="day-item-1"
+            class="schedule-day-item"
+            onclick="setSchedule(1)"
+          >
+            <span>Day 1</span>
+            <span>April 15, 2022</span>
+          </button>
+          <button
+            id="day-item-2"
+            class="schedule-day-item"
+            onclick="setSchedule(2)"
+          >
+            <span>Day 2</span>
+            <span>April 16, 2022</span>
+          </button>
         </div>
-      </section>
-    </div> -->
+        <div class="forward-backward-buttons">
+          <button
+            class="forward-backward-button"
+            id="left-button"
+            onclick="setSchedule(activeScheduleIndex-1)"
+          >
+          ←
+        </button>
+        <button
+        class="forward-backward-button"
+        id="right-button"
+        onclick="setSchedule(activeScheduleIndex+1)"
+        >
+        → 
+          </button>
+        </div>
+      </div>
+      <div id="schedule-body">
+        <div id="schedule-item-1" class="schedule-item" data-section="1">
+          <span class="schedule-item-time">1:00 PM</span>
+          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        </div>
+        <div id="schedule-item-2" class="schedule-item" data-section="2">
+          <span class="schedule-item-time">1:00 PM</span>
+          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        </div>
+        <div id="schedule-item-3" class="schedule-item" data-section="3">
+          <span class="schedule-item-time">1:00 PM</span>
+          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Schedule Section -->
 
       <!-- Stats Section -->
       <section id="stats-section"class="fluid-container stats d-flex flex-column">
@@ -1762,7 +1610,7 @@
 
     gtag("config", "UA-149404272-1");
   </script> -->
-
+  <script src="./schedule/schedule_scripts.js"></script>
   <script src="main.js"></script>
   <script src="snow.js"></script>
 </body>
