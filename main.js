@@ -302,7 +302,7 @@ var navbar = document.getElementById("scroll-spy");
 
 // document.addEventListener("scroll",lazyload);
 // make event listeners passive to improve scrolling performance
-document.addEventListener('touchstart', onTouchStart, {passive: true});
+// document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 
 
