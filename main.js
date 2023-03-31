@@ -280,10 +280,25 @@ var navbar = document.getElementById("scroll-spy");
 //     navbar.classList.add('fixed-top');
 // },1000)});
 
-//   window.addEventListener("DOMContentLoaded", function () {
-//   loader.style.display = "none";
-//   navbar.classList.add('fixed-top');
-// });
+  window.addEventListener("DOMContentLoaded", function () {
+  // loader.style.display = "none";
+  // navbar.classList.add('fixed-top');
+
+  /*load some scripts later since defer doesnt work for DOMContentLoaded*/
+  var recaptchaScript = document.createElement('script');
+    recaptchaScript.src = "https://www.googletagmanager.com/gtag/js?id=UA-149404272-1";
+    recaptchaScript.defer = true;
+    document.body.appendChild(recaptchaScript);
+
+    // Google analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-149404272-1");
+});
 
 // document.addEventListener("scroll",lazyload);
 // make event listeners passive to improve scrolling performance
