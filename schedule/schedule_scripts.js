@@ -27,32 +27,16 @@ const scheduleData = [
     description: [
       {
         time: "TBA",
-        description: "Opening Ceremony",
+        description: "TBA",
       },
       {
         time: "TBA",
-        description: "Opening Announcements",
+        description: "TBA",
       },
       {
         time: "TBA",
-        description: "Participants Check-In",
-      },
-      {
-        time: "TBA",
-        description: "Lunch",
-      },
-      {
-        time: "TBA",
-        description: "Coding Begins",
-      },
-      {
-        time: "TBA",
-        description: "Networking Session",
-      },
-      {
-        time: "TBA",
-        description: "Midnight Evaluation",
-      },
+        description: "TBA",
+      }
     ],
   },
   {
@@ -60,27 +44,97 @@ const scheduleData = [
     description: [
       {
         time: "TBA",
-        description: "Midnight Evaluation",
+        description: "TBA",
       },
       {
         time: "TBA",
-        description: "Coding Ends, Judging Begins",
+        description: "TBA",
       },
       {
         time: "TBA",
-        description: "Live Exhibition",
-      },
-      {
-        time: "TBA",
-        description: "Announcement of Top 10 Teams",
-      },
-      {
-        time: "TBA",
-        description: "Closing Ceremony",
-      },
+        description: "TBA",
+      }
     ],
   },
 ];
+
+// const scheduleData = [
+//   {
+//     title: "Genral Announcements",
+//     description: [
+//       {
+//         time: "2nd April",
+//         description: "Registration Ends",
+//       },
+//       {
+//         time: "15th April",
+//         description: "Hackathon Starts",
+//       },
+//       {
+//         time: "16th April",
+//         description: "Hackathon Ends",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Day-1",
+//     description: [
+//       {
+//         time: "TBA",
+//         description: "Opening Ceremony",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Opening Announcements",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Participants Check-In",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Lunch",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Coding Begins",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Networking Session",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Midnight Evaluation",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Day-2",
+//     description: [
+//       {
+//         time: "TBA",
+//         description: "Midnight Evaluation",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Coding Ends, Judging Begins",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Live Exhibition",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Announcement of Top 10 Teams",
+//       },
+//       {
+//         time: "TBA",
+//         description: "Closing Ceremony",
+//       },
+//     ],
+//   },
+// ];
 
 const setSchedule = (idx) => {
   if (idx < 0 || idx >= scheduleData.length) return;

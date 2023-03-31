@@ -82,11 +82,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#about-section"><span>ABOUT</span></a>
           </li>
-          <!-- <li class="nav-item">
-              <a class="nav-link" href="#schedule-section"
-                ><span>SCHEDULE</span></a
-              >
-            </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#stats-section"><span>STATS</span></a>
           </li>
@@ -103,6 +98,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#judges-section"><span>JUDGES</span></a>
             </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule-section"
+                ><span>TIMELINE</span></a
+              >
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="#sponsors"><span>SPONSORS</span></a>
           </li>
@@ -443,167 +443,95 @@
   </div>
 
 
-  <div class="scrollElement"></div>
+  <!-- <div class="scrollElement"></div>
+  </div> -->
+
+
+   <!-- Stats Section -->
+   <section id="stats-section"class="fluid-container stats d-flex flex-column">
+    <!-- Start Repeating background text  -->
+  <div class="repeating-text-background">
+    <div class="accent-text">
+      highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights
+      &nbsp;&nbsp;highlights<!-- -->
+    </div>
+    <div class="accent-text">
+      highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights
+      &nbsp;&nbsp;highlights<!-- -->
+    </div>
+    <div class="accent-text">
+      &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
+    </div>
+    <div class="accent-text">
+      &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
+    </div>
+    <div class="accent-text">
+      &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
+    </div>
+    <div class="accent-text">
+      &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
+    </div>
+    <div class="accent-text">
+      &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
+    </div>
+    <div class="accent-text">
+      &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
+    </div>
   </div>
-
-
-  <!-- Schedule Section -->
-  <div id="schedule-section">
-    <h1 class="text-center bold-t1 mb-2 p-5 aos-init aos-animate" data-aos="zoom-out">
-      <span>Timeline</span>
+  <!-- End Repeating background text  -->
+  <div class="fluid-container fill justify-content-center stats-card">
+    <h1 class="text-center bold-t1 mb-2 p-5 pb-0" data-aos="zoom-out">
+      <span>HackVerse 3.0</span> <span class="gradient-text-blue">Highlights</span>
     </h1>
-    <div class="schedule-section-container">
-      <div id="calender-pins">
-        <div class="calender-pin"></div>
-        <div class="calender-pin"></div>
-      </div>
-      <div class="schedule-header">
-        <div id="day-selector" class="day-selector-custom-scrollbar">
-          <button
-            id="day-item-0"
-            class="schedule-day-item"
-            onclick="setSchedule(0)"
-          >
-            <span>Important</span>
-            <span>Timelines</span>
-          </button>
-          <button
-            id="day-item-1"
-            class="schedule-day-item"
-            onclick="setSchedule(1)"
-          >
-            <span>Day 1</span>
-            <span>April 15, 2022</span>
-          </button>
-          <button
-            id="day-item-2"
-            class="schedule-day-item"
-            onclick="setSchedule(2)"
-          >
-            <span>Day 2</span>
-            <span>April 16, 2022</span>
-          </button>
-        </div>
-        <div class="forward-backward-buttons">
-          <button
-            class="forward-backward-button"
-            id="left-button"
-            onclick="setSchedule(activeScheduleIndex-1)"
-          >
-          ←
-        </button>
-        <button
-        class="forward-backward-button"
-        id="right-button"
-        onclick="setSchedule(activeScheduleIndex+1)"
-        >
-        → 
-          </button>
+  
+    <!-- Testimonials -->
+    <div class="fluid-container testimonials">
+      <div class="testimonials-photo-roll-container">
+        <div class="testimonials-photo-roll">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/campus-1.webp" alt="First slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/campus-2.webp" alt="Second slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/pc-setup.webp" alt="Third slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/campus-4.webp" alt="Fourth slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/testimonial-1.webp" alt="Fifth slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/testimonial-2.webp" alt="Sixth slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/campus-1.webp" alt="First slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/campus-2.webp" alt="Second slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/pc-setup.webp" alt="Third slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/campus-4.webp" alt="Fourth slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/testimonial-1.webp" alt="Fifth slide">
+          <img loading="lazy" class="img-shine" src="./img/testimonials/testimonial-2.webp" alt="Sixth slide">
         </div>
       </div>
-      <div id="schedule-body">
-        <div id="schedule-item-1" class="schedule-item" data-section="1">
-          <span class="schedule-item-time">1:00 PM</span>
-          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+
+    </div>
+
+    <div class="stats-statistics" data-aos="fade-up">
+      <div class="container d-flex justify-content-around align-items-center stats-items">
+        <div class="d-flex justify-content-center align-items-center flex-column institute_icon">
+          <h1 class="no-margin bold-t1 milestone-number">
+            <span class="number-holder">1500</span> +
+          </h1>
+          <p class="no-margin">Total Registrations</p>
         </div>
-        <div id="schedule-item-2" class="schedule-item" data-section="2">
-          <span class="schedule-item-time">1:00 PM</span>
-          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        <div class="d-flex justify-content-center align-items-center flex-column institute_icon"> 
+          <h1 class="bold-t1 no-margin milestone-number">
+            <span class="number-holder">400</span> +
+          </h1>
+          <p class="no-margin">Hackers Hosted</p>
         </div>
-        <div id="schedule-item-3" class="schedule-item" data-section="3">
-          <span class="schedule-item-time">1:00 PM</span>
-          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        <div class="d-flex justify-content-center align-items-center flex-column institute_icon">
+          <h1 class="bold-t1 no-margin milestone-number">
+            <span class="number-holder">140</span> +
+          </h1>
+          <p class="no-margin">Engineering Institutes</p>
         </div>
       </div>
     </div>
   </div>
-  <!-- Schedule Section -->
 
-      <!-- Stats Section -->
-      <section id="stats-section"class="fluid-container stats d-flex flex-column">
-              <!-- Start Repeating background text  -->
-            <div class="repeating-text-background">
-              <div class="accent-text">
-                highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights
-                &nbsp;&nbsp;highlights<!-- -->
-              </div>
-              <div class="accent-text">
-                highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights
-                &nbsp;&nbsp;highlights<!-- -->
-              </div>
-              <div class="accent-text">
-                &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
-              </div>
-              <div class="accent-text">
-                &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
-              </div>
-              <div class="accent-text">
-                &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
-              </div>
-              <div class="accent-text">
-                &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
-              </div>
-              <div class="accent-text">
-                &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
-              </div>
-              <div class="accent-text">
-                &nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights&nbsp;&nbsp;highlights<!-- -->
-              </div>
-            </div>
-            <!-- End Repeating background text  -->
-            <div class="fluid-container fill justify-content-center stats-card">
-              <h1 class="text-center bold-t1 mb-2 p-5 pb-0" data-aos="zoom-out">
-                <span>HackVerse 3.0</span> <span class="gradient-text-blue">Highlights</span>
-              </h1>
-            
-              <!-- Testimonials -->
-              <div class="fluid-container testimonials">
-                <div class="testimonials-photo-roll-container">
-                  <div class="testimonials-photo-roll">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/campus-1.webp" alt="First slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/campus-2.webp" alt="Second slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/pc-setup.webp" alt="Third slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/campus-4.webp" alt="Fourth slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/testimonial-1.webp" alt="Fifth slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/testimonial-2.webp" alt="Sixth slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/campus-1.webp" alt="First slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/campus-2.webp" alt="Second slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/pc-setup.webp" alt="Third slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/campus-4.webp" alt="Fourth slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/testimonial-1.webp" alt="Fifth slide">
-                    <img loading="lazy" class="img-shine" src="./img/testimonials/testimonial-2.webp" alt="Sixth slide">
-                  </div>
-                </div>
 
-              </div>
-
-              <div class="stats-statistics" data-aos="fade-up">
-                <div class="container d-flex justify-content-around align-items-center stats-items">
-                  <div class="d-flex justify-content-center align-items-center flex-column institute_icon">
-                    <h1 class="no-margin bold-t1 milestone-number">
-                      <span class="number-holder">1500</span> +
-                    </h1>
-                    <p class="no-margin">Total Registrations</p>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center flex-column institute_icon"> 
-                    <h1 class="bold-t1 no-margin milestone-number">
-                      <span class="number-holder">400</span> +
-                    </h1>
-                    <p class="no-margin">Hackers Hosted</p>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center flex-column institute_icon">
-                    <h1 class="bold-t1 no-margin milestone-number">
-                      <span class="number-holder">140</span> +
-                    </h1>
-                    <p class="no-margin">Engineering Institutes</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          
-        </div>
-  </section>
+</div>
+</section>
 
   <!-- Prizes Section -->
 
@@ -826,9 +754,118 @@
           </section>
 
   <!-- Tracks Section -->
-  <!-- <section id="track-section">
-       
-      </section> -->
+  <section id="track-section">
+    <div class="repeating-text-background" style="padding-top: 0;margin-top: 0;color:white">
+      <div class="accent-text" style="-webkit-text-stroke: 7.5px rgba(99, 195, 251, 0.25);">
+        tracks &nbsp;&nbsp;tracks &nbsp;&nbsp;
+        tracks &nbsp;&nbsp;tracks &nbsp;&nbsp;
+        tracks &nbsp;&nbsp;tracks &nbsp;&nbsp;
+      </div>
+      <!-- <div class="accent-text" style="-webkit-text-stroke: 8px rgba(99, 195, 251, 0.13);">
+        sponsors&nbsp;&nbsp;sponsors&nbsp;&nbsp;sponsors
+        &nbsp;&nbsp;sponsors
+      </div> -->
+      <div class="accent-text" style="-webkit-text-stroke: 8px rgba(99, 195, 251, 0.13);">
+        tracks&nbsp;&nbsp;tracks&nbsp;&nbsp;tracks
+        &nbsp;&nbsp;tracks &nbsp;&nbsp;tracks &nbsp;&nbsp;
+        tracks &nbsp;&nbsp;tracks &nbsp;&nbsp;
+      </div>
+      <div class="accent-text" style="-webkit-text-stroke: 8px rgba(99, 195, 251, 0.09);">
+        tracks&nbsp;&nbsp;tracks&nbsp;&nbsp;tracks
+        &nbsp;&nbsp;tracks &nbsp;&nbsp;tracks &nbsp;&nbsp;
+      </div>
+    </div>
+
+    <div class="container pt-1 mt-01">
+      <h1 class="text-center bold-t1 mb-5 pt-2 mt-0 aos-init aos-animate" data-aos="zoom-out"
+      style="color:white">
+        Tracks
+      </h1>
+      <div class="container fill pt-2 pb-0 align-items-center sponsor-ads text-center" data-aos="fade-up">
+        <!-- <h2 class="sponser-head">Interested in sponsoring?</h2> -->
+        <p style="padding: 0 !important;color:white;">
+          Hold on to your seats, folks! There's more excitement coming your way.
+           <br>
+           The tracks will be announced soon.
+       </p>
+     </div>
+      
+    </div>
+
+  </section>
+  <!-- Schedule Section -->
+  <div id="schedule-section">
+    <h1 class="text-center bold-t1 mb-2 p-5 aos-init aos-animate" data-aos="zoom-out">
+      <span>Timeline</span>
+    </h1>
+    <div class="schedule-section-container">
+      <div id="calender-pins">
+        <div class="calender-pin"></div>
+        <div class="calender-pin"></div>
+      </div>
+      <div class="schedule-header">
+        <div id="day-selector" class="day-selector-custom-scrollbar">
+          <button
+            id="day-item-0"
+            class="schedule-day-item"
+            onclick="setSchedule(0)"
+          >
+            <span>Important</span>
+            <span>Dates</span>
+          </button>
+          <button
+            id="day-item-1"
+            class="schedule-day-item"
+            onclick="setSchedule(1)"
+          >
+            <span>Day 1</span>
+            <span>April 15, 2022</span>
+          </button>
+          <button
+            id="day-item-2"
+            class="schedule-day-item"
+            onclick="setSchedule(2)"
+          >
+            <span>Day 2</span>
+            <span>April 16, 2022</span>
+          </button>
+        </div>
+        <div class="forward-backward-buttons">
+          <button
+            class="forward-backward-button"
+            id="left-button"
+            onclick="setSchedule(activeScheduleIndex-1)"
+          >
+          ←
+        </button>
+        <button
+        class="forward-backward-button"
+        id="right-button"
+        onclick="setSchedule(activeScheduleIndex+1)"
+        >
+        → 
+          </button>
+        </div>
+      </div>
+      <div id="schedule-body">
+        <div id="schedule-item-1" class="schedule-item" data-section="1">
+          <span class="schedule-item-time">1:00 PM</span>
+          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        </div>
+        <div id="schedule-item-2" class="schedule-item" data-section="2">
+          <span class="schedule-item-time">1:00 PM</span>
+          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        </div>
+        <div id="schedule-item-3" class="schedule-item" data-section="3">
+          <span class="schedule-item-time">1:00 PM</span>
+          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Schedule Section -->
+
+     
 
   <!-- <div class="column">
                 <div class="card" style="height: 300px" data-aos="zoom-in-down">
