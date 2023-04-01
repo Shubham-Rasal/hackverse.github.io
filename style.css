@@ -812,21 +812,17 @@ button:focus {
 
 a {
   color: inherit;
-}
-
-#navbarNav {
-  font-family: "Cabin Sketch", "Poppins", cursive;
-}
+} 
 
 .sketch-font {
   font-family: "Cabin Sketch", "Poppins", cursive;
 }
 
 .social-icons {
-  font-size: 2rem;
+  opacity: 0.7;
 }
 .social-icons:hover {
-  transform: scale(1.05);
+  opacity: 1;
 }
 
 .social-icons img {
@@ -846,12 +842,10 @@ a {
 #scroll-spy {
   padding-top: 0px;
   padding-bottom: 0px;
-  /* background-image: linear-gradient(to right, #042c44, #041c3c); */
-  background: rgba(33, 37, 41, 0.2);
-  background: rgba(33, 37, 41, 0);
+  background: rgba(105, 197, 251, 0.8);
   box-shadow: 10px 10px 76px 0px rgb(0 0 0 / 5%);
-  /* color: #042c44; */
   backdrop-filter: blur(10px);
+  /* color: #042c44; */
   mask: linear-gradient(transparent, black 60%);
 }
 
@@ -871,15 +865,17 @@ a {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .show > .nav-link {
-  color: #18a7ff !important;
+  color: #fff !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  text-align: center  ;
 }
 
 .navbar-dark .navbar-nav .nav-link :hover {
-  color: #18a7ff;
+  color: #fff;
 }
 
 .container {
