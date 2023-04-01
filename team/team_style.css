@@ -24,6 +24,7 @@ p {
 #teams {
   background: url(../img/snow-heap.webp) bottom no-repeat, #63c3fb;
   padding-bottom: 15rem;
+  margin-top: 2%;
 }
 
 .teams {
@@ -45,7 +46,7 @@ p {
 
   justify-content: space-between;
   width: 400px;
-  height: 380px;
+  height: 350px;
   border-radius: 8px;
   /* animation: animate 4s linear infinite forwards; */
 }
