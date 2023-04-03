@@ -821,6 +821,12 @@ a {
 .social-icons {
   opacity: 0.7;
 }
+
+#discord-footer{
+  width:40px;
+  border-radius: 45px;
+}
+
 .social-icons:hover {
   opacity: 1;
 }
@@ -829,9 +835,14 @@ a {
   width: 36px;
 }
 
+
 #social-nav-icons {
   font-size: 18px;
   color: white;
+}
+
+#social-nav-icons > img{
+  width:22px;
 }
 
 .campus img {
