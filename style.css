@@ -1050,182 +1050,265 @@ section {
   flex: 1;
 }
 
-/* Remove extra left and right margins, due to padding */
-.prizes-section {
+/* Prizes Section Start */
+#prize-section {
   position: relative;
-  padding-top: 0%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
   width: 100%;
   background-color: #d4eaff;
+  padding: 3rem 0;
 }
 
-.section-heading-2 h1 {
-  font-size: 1.7rem;
+.prize .prizing-heading-container{
+  padding-bottom: 3rem;
 }
 
-#prizes .row {
-  margin: 0 -5px;
+.prize h1 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 4em;
+}
+
+.prize h3 {
+  color: #1673A8;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.prize .prize-container {
+  background: #B1DFFA;
+  width: 100%;
+  padding: 4rem 6rem;
   display: flex;
-  justify-content: center;
-}
-
-#prizes .column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Clear floats after the columns */
-#prizes .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-#prizes .front {
-  display: flex;
+  gap: 30px;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px;
-  color: white;
-  /* background-image: url('./img/bg_stars2.webp'); */
+  border-radius: 16px;
 }
-#prizes .front > img {
-  padding: 30px 10px;
-  /* height: 256px; */
-  width: auto;
-  /* width: 300px; */
-  object-fit: fill;
-  /* margin: 0px 10px; */
+
+.prize .prize-container .prize-navbar-container {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
-#prizes .front > span {
-  background-color: gold;
-  font-size: x-large;
-  padding: 2px 15px;
-  margin-bottom: 8px;
+
+.prize .prize-container .prize-navbar {
+  width: 100%;
+  border-bottom: 1px solid #7AC8F5;
+  display: flex;
+  padding: 1rem 0;
+  min-width: max-content;
 }
-#prizes .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 5px;
-  /* width: 300px; */
-  text-align: center;
-  background-color: #fff;
-  border-radius: 10px;
+
+.prize .prize-container .prize-navbar .navbar-prize-item {
+  margin: 0;
+  margin-right: 25px;
+  color: rgba(7, 72, 110, 0.5);
+  transition: color 350ms ease 0s;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  vertical-align: middle;
+  position: relative;
   cursor: pointer;
 }
-#prizes .card .profile {
-  border-radius: 10px;
-  transition: 0.2s;
-}
-#prizes .card:hover .profile {
-  transform: scale(1.2);
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
+
+.prize .prize-container .prize-navbar .navbar-prize-item:hover {
+  color: #1673A8;
 }
 
-#prizes .card .content {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+.prize .prize-container .prize-navbar .active-prize-item,
+.prize .prize-container .prize-navbar .active-prize-item:hover {
+  color: #07486E !important;
 }
-#prizes .card .content .back {
+
+.prize .prize-container .prize-navbar .active-prize-item::before {
+  content: "";
   position: absolute;
+  inset: 0;
+  top: 36px;
+  border-bottom: 4px solid #4FB5F0;
+  border-radius: 100px;
+}
+
+.prize .prize-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.prize .prize-card-container .prize-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
-  height: 100%;
-  background-color: #f1f1f1e6;
-  transition: 1s;
-
-  z-index: 1;
-  padding: 10px;
-}
-#prizes .back {
-  overflow-y: auto;
-  /* background-image: url('./img/bg_stars.png'); */
-  color: black;
-  font-size: larger;
-  text-align: left;
-  /* background-color: sienna; */
-  /* padding: 20px 2px; */
-  /* margin: 10px 10px 10px 10px; */
+  max-width: 400px;
+  gap: 2rem;
 }
 
-.special .card {
-  margin: 20px 12px;
+.bronze p {
+  color: rgba(223, 182, 103, 1);
+  z-index: 2;
+  margin: 0;
 }
 
-#prizes .description {
-  padding: 32px 16px;
+.silver p {
+  color: rgba(160, 160, 160, 1);
+  z-index: 2;
+  margin: 0;
 }
 
-#prizes .description ul {
-  font-size: 1rem;
+.gold p {
+  color: rgba(242, 215, 50, 1);
+  z-index: 2;
+  margin: 0;
 }
 
-#prizes .description small {
-  font-size: 0.75rem;
-  text-align: left;
-}
-
-.from-left {
-  top: 0;
-  left: -100%;
-}
-.card:hover .content .from-left {
-  left: 0%;
-}
-#prizes .content {
-  background-color: #fff;
-}
-.from-bottom {
-  top: 100%;
-  left: 0;
-}
-.card:hover .content .from-bottom {
-  top: 0%;
-}
-
-.from-right {
-  top: 0%;
-  right: -100%;
-}
-.card:hover .content .from-right {
-  right: 0;
-}
-
-#prizes .card {
-  width: 300px;
-}
-
-.logo_saction {
-  border-radius: 12px;
-  background-color: #72ddbf;
-}
-
-#prizes .special .card,
-#prizes .special .content,
-#prizes .special .back {
-  border-radius: 18px;
-}
-
-#prizes .special .front > span {
-  background-color: #212529;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
-/* #prizes .row :nth-child(2) {
+.prize .prize-card-container .prize-card .prize-card-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
   position: relative;
-  top: -20px;
-} */
+  top: 6px;
+  border-radius: 500px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .1);
+}
 
-/* Tracks Section */
+.prize .prize-card-container .prize-card .prize-card-number:after {
+  content: "";
+  width: 135px;
+  height: 135px;
+  top: 8px;
+  left: 8px;
+  position: absolute;
+  border-radius: 500px;
+  z-index: 1;
+  transition: all 1s ease;
+}
+
+.prize .prize-card-container .prize-card .prize-card-number:before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 500px;
+  z-index: 0;
+  transition: all 1s ease;
+}
+
+.bronze {
+  background: linear-gradient(45deg, rgba(223, 182, 103, 1) 0%, rgba(249, 243, 232, 1) 56%, rgba(231, 192, 116, 1) 96%);
+  border: 1px solid #e6b86a;
+}
+
+.bronze:after {
+  background: linear-gradient(45deg, rgba(223, 182, 103, 1) 0%, rgba(249, 243, 232, 1) 56%, rgba(231, 192, 116, 1) 96%);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(209, 156, 53, 0.3);
+  border-right: 1px solid rgba(209, 156, 53, 0.5);
+  box-shadow: inset 0px 0px 2px 2px rgba(153, 106, 26, .05);
+}
+
+.silver {
+  background: linear-gradient(45deg, rgba(181, 181, 181, 1) 0%, rgba(252, 252, 252, 1) 56%, rgba(232, 232, 232, 1) 96%);
+  border: 1px solid rgba(181, 181, 181, 1);
+}
+
+
+.silver:after {
+  background: linear-gradient(45deg, rgba(181, 181, 181, 1) 0%, rgba(252, 252, 252, 1) 56%, rgba(232, 232, 232, 1) 96%);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+  border-right: 1px solid rgba(160, 160, 160, 0.5);
+  box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+}
+
+.gold {
+  background: linear-gradient(45deg, rgba(242, 215, 12, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(252, 235, 0, 1) 96%);
+  border: 1px solid rgba(242, 215, 12, 1);
+}
+
+
+.gold:after {
+  background: linear-gradient(45deg, rgba(242, 215, 12, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(252, 235, 0, 1) 96%);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(242, 215, 12, 0.3);
+  border-right: 1px solid rgba(242, 215, 12, 0.3);
+  box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+}
+
+.prize .prize-card-container .prize-card .prize-card-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prize .prize-card-container .prize-card .prize-card-text h3 {
+  font-size: 3rem;
+}
+
+.prize .prize-card-container .prize-card .prize-card-text p {
+  color: #07486E;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  #prize-section{
+    padding: 0 0 2rem 0;
+  }
+  .prize .prizing-heading-container{
+    padding-bottom: 1rem;
+  }
+
+  .prize .prize-container {
+    padding: 0.5rem;
+  }
+
+  .prize .prize-card-container .prize-card {
+    flex-direction: column;
+  }
+
+  .prize h1 {
+    font-size: 3rem !important;
+  }
+
+  .prize h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .prize p {
+    font-size: 1.5rem !important;
+  }
+
+  .prize .prize-card-container .prize-card .prize-card-number {
+    width: 50vw;
+    height: 50vw;
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .prize .prize-card-container .prize-card .prize-card-number:after{
+    display: none;
+  }
+}
+/* Prizes Section End */
+
+/* Tracks Section Start */
 
 #track-section {
   position: relative;
@@ -1241,112 +1324,4 @@ section {
   /* background-color: #021f3b; */
 }
 
-.tracks {
-  min-height: 80vh;
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #d1e5dc;
-}
-
-.tracks .row {
-  column-gap: 16px;
-  row-gap: 32px;
-}
-
-.tracks .card-img-top {
-  height: 80%;
-  width: auto;
-  transition: all 0.6s;
-}
-
-.tracks .card-img-top:hover {
-  transform: scale(0.9);
-}
-
-.card-img {
-  padding: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tracks .card {
-  border-radius: 32px;
-  background-color: #09428b56;
-  min-height: 356px;
-}
-
-.tracks .card-text {
-  text-align: left;
-  font-size: 1rem;
-}
-
-.tracks .card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.tracks .list-group-item {
-  background-color: rgba(255, 255, 255, 0.26);
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.15rem;
-}
-
-.tracks .list-group:last-child {
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-}
-
-.tracks .list-group-item.special {
-  font-size: 1rem;
-  text-align: left;
-  font-weight: normal;
-}
-
-/*Prize section*/
-
-.prize_box {
-  display: flex;
-  background-color: #021f3b;
-  margin-bottom: 10px;
-  padding: 30px;
-  border-radius: 10px;
-  /* box-shadow: 0 3px 10px rgba(3, 3, 3, 0.63); */
-  /* overflow-x: scroll; */
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.position_container {
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-
-.prize-text {
-  text-align: center;
-  font-weight: 400;
-  padding-bottom: 30px;
-}
-
-.bar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-.bar-item{
-  padding: 10px ;
-  margin: 0px 10px;
-  font-size: 20px;
-  color: white;
-}
-.active_1{
-  border-bottom: solid 4px rgb(196, 24, 24);
-}
+/* Tracks Section End */
