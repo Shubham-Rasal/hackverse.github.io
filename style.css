@@ -1067,7 +1067,9 @@ section {
 }
 
 .prize h1 {
-  font-family: "Caveat Brush", cursive;
+  /* font-family: "Caveat Brush", cursive; */
+  font-family: "Poppins", cursive;
+  font-weight: 800;
   font-size: 4em;
 }
 
@@ -1275,6 +1277,12 @@ section {
   font-weight: 600;
   margin: 0;
   font-size: 1.2rem;
+}
+
+.prize-text {
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 768px) {
