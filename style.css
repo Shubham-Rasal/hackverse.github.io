@@ -1077,6 +1077,16 @@ section {
   font-size: 1.25rem;
 }
 
+.prize h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1673A8;
+}
+
+.prize p {
+  text-align: center;
+}
+
 .prize .prize-container {
   background: #B1DFFA;
   width: 100%;
@@ -1288,11 +1298,11 @@ section {
   }
 
   .prize h3 {
-    font-size: 1.2rem !important;
+    font-size: 1.7rem !important;
   }
 
-  .prize p {
-    font-size: 1.5rem !important;
+  .prize h5 {
+    font-size: 1rem !important;
   }
 
   .prize .prize-card-container .prize-card .prize-card-number {
