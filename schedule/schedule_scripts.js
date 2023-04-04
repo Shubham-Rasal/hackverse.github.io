@@ -9,10 +9,6 @@ const scheduleData = [
     title: "Genral Announcements",
     description: [
       {
-        time: "5th April",
-        description: "Registration Ends",
-      },
-      {
         time: "15th April",
         description: "Hackathon Starts",
       },
