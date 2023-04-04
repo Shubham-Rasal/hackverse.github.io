@@ -674,45 +674,25 @@
       </div>
       <div class="schedule-header">
         <div id="day-selector" class="day-selector-custom-scrollbar">
-          <button
-            id="day-item-0"
-            class="schedule-day-item"
-            onclick="setSchedule(0)"
-          >
+          <button id="day-item-0" class="schedule-day-item" onclick="setSchedule(0)">
             <span>Important</span>
             <span>Dates</span>
           </button>
-          <button
-            id="day-item-1"
-            class="schedule-day-item"
-            onclick="setSchedule(1)"
-          >
+          <button id="day-item-1" class="schedule-day-item" onclick="setSchedule(1)">
             <span>Day 1</span>
             <span>April 15, 2022</span>
           </button>
-          <button
-            id="day-item-2"
-            class="schedule-day-item"
-            onclick="setSchedule(2)"
-          >
+          <button id="day-item-2" class="schedule-day-item" onclick="setSchedule(2)">
             <span>Day 2</span>
             <span>April 16, 2022</span>
           </button>
         </div>
         <div class="forward-backward-buttons">
-          <button
-            class="forward-backward-button"
-            id="left-button"
-            onclick="setSchedule(activeScheduleIndex-1)"
-          >
-          ←
-        </button>
-        <button
-        class="forward-backward-button"
-        id="right-button"
-        onclick="setSchedule(activeScheduleIndex+1)"
-        >
-        → 
+          <button class="forward-backward-button" id="left-button" onclick="setSchedule(activeScheduleIndex-1)">
+            <img src="./img/icons/arrow-left.svg" width="50px" alt="">
+          </button>
+          <button class="forward-backward-button" id="right-button" onclick="setSchedule(activeScheduleIndex+1)">
+            <img src="./img/icons/arrow-right.svg" width="50px" alt="">
           </button>
         </div>
       </div>
