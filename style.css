@@ -702,7 +702,7 @@ button:focus {
   }
 
   .sponsor-us p {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -1069,7 +1069,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #d4eaff;
+  background-color: #edf7fd;;
   padding: 3rem 0;
 }
 

@@ -2,9 +2,9 @@
   padding: 3rem 1rem;
   text-align: center;
   position: relative;
-  background: #d4eaff;
+  background-color: #edf7fd;
   height: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 #schedule-section h1 {
@@ -15,7 +15,7 @@
   position: relative;
   background: #B1DFFA;
   border-radius: 14px;
-  max-width: 850px;
+  /* max-width: 850px; */
   margin: 0 auto;
 }
 
@@ -82,18 +82,24 @@
   background: #7AC8F5;
 }
 
-.day-selector-custom-scrollbar::-webkit-scrollbar-track {
-  background-color: #EBF8FF;
+
+#day-selector::-webkit-scrollbar-track {
+  background-color: #7AC8F5;
+  box-shadow:none;
+  width: 2px !important;
   border-radius: 0 !important;
 }
 
-.day-selector-custom-scrollbar::-webkit-scrollbar {
-  width: 16px !important;
-  background-color: #EBF8FF;
+#day-selector::-webkit-scrollbar {
+  box-shadow: none;
+  width: 2px !important;
+  background-color: #002f4b
 }
 
-.day-selector-custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #BBE3FA;
+#day-selector::-webkit-scrollbar-thumb {
+  box-shadow: none;
+  background-color: #002f4b;
+  width: 2px !important;
   border-radius: 0 !important;
 }
 
