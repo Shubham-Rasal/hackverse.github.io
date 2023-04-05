@@ -92,7 +92,7 @@
 
 /* Chrome, Edge, and Safari */
 #day-selector::-webkit-scrollbar {
-  height: 14px;
+  height: 18px;
 }
 
 #day-selector::-webkit-scrollbar-track {
