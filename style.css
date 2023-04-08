@@ -55,11 +55,11 @@ body {
   background: #156999;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-      width: 0px;
-      -webkit-appearance: none;
+    width: 0px;
+    -webkit-appearance: none;
   }
   /* body {
     overflow-y: hidden;
@@ -1382,17 +1382,115 @@ section {
 /* Tracks Section Start */
 
 #track-section {
-  position: relative;
+  /* position: relative; */
   padding-top: 0%;
   min-height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 2;
   width: 100%;
   background-color: #2d294d;
   /* background-color: #398dbb; */
   /* background-color: #021f3b; */
+}
+
+/* track section styles */
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pan-overlay {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -100%;
+  }
+}
+.flake {
+  animation: spin 5000ms infinite linear;
+}
+.scene {
+  height: 302px;
+  width: 233px;
+}
+.card-wrapper:hover {
+  cursor: pointer;
+}
+.front-card > img {
+  transition: 0.5s all ease-in-out;
+}
+.card-wrapper:hover > .front-card > img {
+  scale: 1.2;
+}
+.card-wrapper:hover > .slider-wrapper {
+  transform: translateY(-100%);
+}
+.front-card,
+.slider {
+  width: 14.5rem;
+  aspect-ratio: 5/6.5;
+  border-radius: 10px;
+}
+.slider-wrapper {
+  border-radius: 10px;
+  transition: 0.75s all ease-in-out;
+}
+.screen-overlay {
+  background: linear-gradient(
+    rgba(51, 140, 191, 0.5),
+    rgba(51, 140, 191, 0.5) 2px,
+    transparent 1px,
+    transparent 1.5px
+  );
+  background-size: 100% 2%;
+  height: 100%;
+  animation: pan-overlay 22s infinite linear;
+}
+.slider-content {
+  color: white;
+  text-shadow: black 1px 1px;
+  height: 100%;
+}
+#track-cards::-webkit-scrollbar {
+  height: 0.5rem;
+}
+#track-cards::-webkit-scrollbar-track {
+  background-color: #d4eaff;
+}
+#track-cards::-webkit-scrollbar-thumb {
+  background-color: #2e5980;
+}
+#track-intro {
+  font-size: 1.25rem;
+  font-family: Inter;
 }
 
 /* Tracks Section End */
