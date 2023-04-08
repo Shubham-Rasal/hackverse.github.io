@@ -55,6 +55,17 @@ body {
   background: #156999;
 }
 
+@media screen and (max-width: 768px){
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+      width: 0px;
+      -webkit-appearance: none;
+  }
+  /* body {
+    overflow-y: hidden;
+  } */
+}
+
 a {
   text-decoration: none;
 }
