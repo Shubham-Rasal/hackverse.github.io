@@ -87,6 +87,24 @@ var x = setInterval(function () {
 }, 1000);
 // *** Countdown logic Ends ***
 
+// ***Prize section Scripts Starts Here ***
+const navbarItems = document.querySelectorAll('.navbar-prize-item');
+const prizeCardContainers = document.querySelectorAll('.prize-card-container-main');
+
+navbarItems.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    prizeCardContainers.forEach(container => {
+      container.classList.add('hidden');
+    });
+    prizeCardContainers[index].classList.remove('hidden');
+    navbarItems.forEach(item => {
+      item.classList.remove('active-prize-item');
+    });
+    item.classList.add('active-prize-item');
+  });
+});
+// ***Prize section Scripts Ends Here ***
+
 // *** GSAP Starts ***
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 let speed = 200;
