@@ -1102,8 +1102,9 @@ section {
 }
 
 .prize h1 {
-  font-family: "Caveat Brush", cursive;
+  /* font-family: "Caveat Brush", cursive; */
   font-size: 4rem;
+  font-weight: 600;
 }
 
 .prize h3 {
