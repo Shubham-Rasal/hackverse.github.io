@@ -574,7 +574,7 @@ button:focus {
 }
 .repeating-text-background .accent-text {
   font-family: Krona One, sans-serif;
-  -webkit-text-stroke: 2px rgba(105, 197, 251, 0.3);
+  -webkit-text-stroke: 2px rgba(105, 197, 251, 0.25);
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-size: 92px;
@@ -1063,6 +1063,7 @@ section {
     border-color: transparent;
   }
 }
+/* prize saction css */
 
 /* Float three columns side by side */
 .column {
@@ -1075,50 +1076,52 @@ section {
 }
 
 /* Prizes Section Start */
-.hidden {
-  display: none !important;
-}
-
-.gradient-text-dark {
-  background-color: #000406;
-  background-image: linear-gradient(45deg, #00344d, #16a2ff);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
 #prize-section {
   position: relative;
-  padding-top: 0%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #d4eaff;
+  background-color: #edf7fd;
   padding: 3rem 0;
 }
 
+.prize .prizing-heading-container {
+  padding-bottom: 3rem;
+}
+
 .prize h1 {
-  font-family: "Caveat Brush", cursive;
-  font-size: 4rem;
+  /* font-family: "Caveat Brush", cursive; */
+  font-family: "Poppins", cursive;
+  font-weight: 800;
+  font-size: 4em;
 }
 
 .prize h3 {
-  color: #1673A8;
+  color: #1673a8;
   font-weight: bold;
   font-size: 1.25rem;
 }
 
+.prize h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1673a8;
+}
+
+.prize p {
+  text-align: center;
+}
+
 .prize .prize-container {
-  background: #B1DFFA;
+  background: #b1dffa;
   width: 100%;
   padding: 4rem 6rem;
   display: flex;
   gap: 30px;
   flex-direction: column;
+  border-radius: 16px;
 }
 
 .prize .prize-container .prize-navbar-container {
@@ -1128,10 +1131,9 @@ section {
 
 .prize .prize-container .prize-navbar {
   width: 100%;
-  border-bottom: 1px solid #7AC8F5;
+  border-bottom: 1px solid #7ac8f5;
   display: flex;
   padding: 1rem 0;
-  border-radius: 16px 16px 0 0;
   min-width: max-content;
 }
 
@@ -1149,12 +1151,12 @@ section {
 }
 
 .prize .prize-container .prize-navbar .navbar-prize-item:hover {
-  color: #1673A8;
+  color: #1673a8;
 }
 
 .prize .prize-container .prize-navbar .active-prize-item,
 .prize .prize-container .prize-navbar .active-prize-item:hover {
-  color: #07486E !important;
+  color: #07486e !important;
 }
 
 .prize .prize-container .prize-navbar .active-prize-item::before {
@@ -1162,21 +1164,8 @@ section {
   position: absolute;
   inset: 0;
   top: 36px;
-  border-bottom: 4px solid #4FB5F0;
+  border-bottom: 4px solid #4fb5f0;
   border-radius: 100px;
-  animation: 0.25s linear view;
-}
-
-@keyframes view {
-  from {
-    opacity: 0;
-    scale: 1.25;
-  }
-
-  to {
-    opacity: 1;
-    scale: 1;
-  }
 }
 
 .prize .prize-card-container {
@@ -1185,16 +1174,6 @@ section {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  min-height: 75vh;
-}
-
-.prize .prize-card-container .prize-card-container-main {
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  display: flex;
-  animation: 0.25s linear view;
 }
 
 .prize .prize-card-container .prize-card {
@@ -1238,7 +1217,7 @@ section {
   position: relative;
   top: 6px;
   border-radius: 500px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .1);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .prize .prize-card-container .prize-card .prize-card-number:after {
@@ -1264,47 +1243,75 @@ section {
 }
 
 .bronze {
-  background: linear-gradient(45deg, rgba(223, 182, 103, 1) 0%, rgba(249, 243, 232, 1) 56%, rgba(231, 192, 116, 1) 96%);
+  background: linear-gradient(
+    45deg,
+    rgba(223, 182, 103, 1) 0%,
+    rgba(249, 243, 232, 1) 56%,
+    rgba(231, 192, 116, 1) 96%
+  );
   border: 1px solid #e6b86a;
 }
 
 .bronze:after {
-  background: linear-gradient(45deg, rgba(223, 182, 103, 1) 0%, rgba(249, 243, 232, 1) 56%, rgba(231, 192, 116, 1) 96%);
+  background: linear-gradient(
+    45deg,
+    rgba(223, 182, 103, 1) 0%,
+    rgba(249, 243, 232, 1) 56%,
+    rgba(231, 192, 116, 1) 96%
+  );
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(209, 156, 53, 0.3);
   border-right: 1px solid rgba(209, 156, 53, 0.5);
-  box-shadow: inset 0px 0px 2px 2px rgba(153, 106, 26, .05);
+  box-shadow: inset 0px 0px 2px 2px rgba(153, 106, 26, 0.05);
 }
 
 .silver {
-  background: linear-gradient(45deg, rgba(181, 181, 181, 1) 0%, rgba(252, 252, 252, 1) 56%, rgba(232, 232, 232, 1) 96%);
+  background: linear-gradient(
+    45deg,
+    rgba(181, 181, 181, 1) 0%,
+    rgba(252, 252, 252, 1) 56%,
+    rgba(232, 232, 232, 1) 96%
+  );
   border: 1px solid rgba(181, 181, 181, 1);
 }
 
-
 .silver:after {
-  background: linear-gradient(45deg, rgba(181, 181, 181, 1) 0%, rgba(252, 252, 252, 1) 56%, rgba(232, 232, 232, 1) 96%);
+  background: linear-gradient(
+    45deg,
+    rgba(181, 181, 181, 1) 0%,
+    rgba(252, 252, 252, 1) 56%,
+    rgba(232, 232, 232, 1) 96%
+  );
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(160, 160, 160, 0.3);
   border-right: 1px solid rgba(160, 160, 160, 0.5);
-  box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+  box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, 0.05);
 }
 
 .gold {
-  background: linear-gradient(45deg, rgba(242, 215, 12, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(252, 235, 0, 1) 96%);
+  background: linear-gradient(
+    45deg,
+    rgba(242, 215, 12, 1) 0%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(252, 235, 0, 1) 96%
+  );
   border: 1px solid rgba(242, 215, 12, 1);
 }
 
-
 .gold:after {
-  background: linear-gradient(45deg, rgba(242, 215, 12, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(252, 235, 0, 1) 96%);
+  background: linear-gradient(
+    45deg,
+    rgba(242, 215, 12, 1) 0%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(252, 235, 0, 1) 96%
+  );
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(242, 215, 12, 0.3);
   border-right: 1px solid rgba(242, 215, 12, 0.3);
-  box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, .05);
+  box-shadow: inset 0px 0px 2px 2px rgba(150, 150, 150, 0.05);
 }
 
 .prize .prize-card-container .prize-card .prize-card-text {
@@ -1319,13 +1326,26 @@ section {
 }
 
 .prize .prize-card-container .prize-card .prize-card-text p {
-  color: #07486E;
+  color: #07486e;
   font-weight: 600;
   margin: 0;
   font-size: 1.2rem;
 }
 
+.prize-text {
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
 @media (max-width: 768px) {
+  #prize-section {
+    padding: 0 0 2rem 0;
+  }
+  .prize .prizing-heading-container {
+    padding-bottom: 1rem;
+  }
+
   .prize .prize-container {
     padding: 0.5rem;
   }
@@ -1334,12 +1354,16 @@ section {
     flex-direction: column;
   }
 
-  .prize h3 {
-    font-size: 1.5rem !important;
+  .prize h1 {
+    font-size: 3rem !important;
   }
 
-  .prize p {
-    font-size: 1.5rem !important;
+  .prize h3 {
+    font-size: 1.7rem !important;
+  }
+
+  .prize h5 {
+    font-size: 1rem !important;
   }
 
   .prize .prize-card-container .prize-card .prize-card-number {
@@ -1363,7 +1387,7 @@ section {
   min-height: 60vh;
   z-index: 2;
   width: 100%;
-  background-color: #201c3c;
+  background-color: #2d294d;
   /* background-color: #398dbb; */
   /* background-color: #021f3b; */
 }
