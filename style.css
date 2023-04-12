@@ -1326,6 +1326,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
 }
 
 .prize .special-prize-container .special-prize-card{
