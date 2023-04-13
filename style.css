@@ -231,7 +231,7 @@ button:focus {
 }
 .hero-card-top {
   color: rgba(255, 255, 255, 0.8);
-  min-width: 400px;
+  min-width: 350px;
   width: 40vmin;
   padding: 0.5rem;
   margin: 1rem 0 0 0;
@@ -909,7 +909,7 @@ a {
 
 .hero-card {
   color: #f3faff;
-  min-width: 400px;
+  min-width: 350px;
   width: 40vmin;
   padding: 0.5rem 0;
   margin: 3vh 0;
