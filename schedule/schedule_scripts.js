@@ -22,16 +22,46 @@ const scheduleData = [
     title: "Day-1",
     description: [
       {
-        time: "TBA",
-        description: "TBA",
+        time: "8:30AM",
+        description: "Participants Check-In",
       },
       {
-        time: "TBA",
-        description: "TBA",
+        time: "9:00AM",
+        description: "Opening Ceremony",
       },
       {
-        time: "TBA",
-        description: "TBA",
+        time: "10:00AM",
+        description: "Opening Announcements",
+      },
+      {
+        time: "10:30AM",
+        duration: "(1 hour)",
+        description: "Esamudaay talk on ONDC by Ravinder Mahori",
+      },
+      {
+        time: "12:00PM",
+        description: "Coding Begins",
+      },
+      {
+        time: "3:00PM",
+        description: "Publicis Sapient talk, Use of Metaverse",
+      },
+      {
+        time: "5:00PM",
+        description: "Networking Session",
+      },
+      {
+        time: "6:00PM",
+        description: "Devfolio Talk",
+      },
+      {
+        time: "8:00PM",
+        description: "Filecoin Talk Online",
+      },
+      {
+        time: "11:00PM",
+        duration: "(1 hour)",
+        description: "Midnight Evaluation",
       }
     ],
   },
@@ -39,16 +69,24 @@ const scheduleData = [
     title: "Day-2",
     description: [
       {
-        time: "TBA",
-        description: "TBA",
+        time: "12:00PM",
+        description: "Coding Ends, Judging Begins",
       },
       {
-        time: "TBA",
-        description: "TBA",
+        time: "1:00PM",
+        description: "Live Exhibition",
       },
       {
-        time: "TBA",
-        description: "TBA",
+        time: "4:30PM",
+        description: "Announcement of Top 10 Teams",
+      },
+      {
+        time: "5:00PM",
+        description: "Live Judging",
+      },
+      {
+        time: "6:00 PM",
+        description: "Closing Ceremony",
       }
     ],
   },
@@ -175,6 +213,16 @@ const setSchedule = (idx) => {
     time.textContent = day.description[j].time;
     item.appendChild(time);
 
+    // if (day.description[j].duration != null)
+    // {
+    //   const linebreak = document.createElement("br");
+    //   item.appendChild(linebreak);
+    //   const duration = document.createElement("span");
+    //   time.classList.add("schedule-item-duration");
+    //   time.textContent = day.description[j].duration;
+    //   item.appendChild(duration);
+    // }
+    
     const desc = document.createElement("h3");
     desc.classList.add("schedule-item-desc");
     desc.textContent = day.description[j].description;
