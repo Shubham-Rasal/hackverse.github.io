@@ -1335,7 +1335,6 @@ section {
   justify-content: center;
   align-items: center;
   height: 200px;
-  width: 300px;
   border-radius: 8px;
   padding: 5px;
   margin: 20px 10px;
@@ -1415,10 +1414,6 @@ section {
   }
 
   .prize h3 {
-    font-size: 1.5rem !important;
-  }
-
-  .prize p {
     font-size: 1.5rem !important;
   }
 
