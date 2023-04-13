@@ -1375,6 +1375,7 @@ section {
 
 .prize .special-prize-container .special-prize-card .front .prize-logo img{
   height: 50px;
+  max-width: 180px;
   object-fit: contain;
   vertical-align: middle;
 }
@@ -1391,12 +1392,13 @@ section {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   border-radius: 8px;
 }
 
 .prize .special-prize-container .special-prize-card .description p{
   font-size: small;
+  text-align: center;
+
 }
 
 .prize .special-prize-card:hover .description {
