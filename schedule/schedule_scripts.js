@@ -34,29 +34,12 @@ const scheduleData = [
         description: "Opening Announcements",
       },
       {
-        time: "10:30AM",
-        duration: "(1 hour)",
-        description: "Esamudaay talk on ONDC by Ravinder Mahori",
-      },
-      {
         time: "12:00PM",
         description: "Coding Begins",
       },
       {
-        time: "3:00PM",
-        description: "Publicis Sapient talk, Use of Metaverse",
-      },
-      {
         time: "5:00PM",
         description: "Networking Session",
-      },
-      {
-        time: "6:00PM",
-        description: "Devfolio Talk",
-      },
-      {
-        time: "8:00PM",
-        description: "Filecoin Talk Online",
       },
       {
         time: "11:00PM",
