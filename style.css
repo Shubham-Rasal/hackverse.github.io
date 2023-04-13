@@ -1397,8 +1397,18 @@ section {
 
 .prize .special-prize-container .special-prize-card .description p{
   font-size: small;
-  text-align: center;
+  text-align: left;
+}
 
+.prize .special-prize-container .special-prize-card .description button{
+  padding: 0;
+}
+
+.prize .special-prize-container .special-prize-card .description button a{
+  color: #EBF8FF; 
+  border-radius: 3px; 
+  background: #2AA6EC; 
+  padding: 8px;
 }
 
 .prize .special-prize-card:hover .description {
