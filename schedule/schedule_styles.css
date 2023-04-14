@@ -2,7 +2,7 @@
   padding: 3rem 1rem;
   text-align: center;
   position: relative;
-  background-color: #f3faff;
+  background-color: #edf7fd;
   height: 100%;
   min-height: 60vh;
 }
@@ -13,9 +13,9 @@
 
 .schedule-section-container {
   position: relative;
-  background: #eef9ff;
+  background: #B1DFFA;
   border-radius: 14px;
-  /* max-width: 800px; */
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@
   line-height: 1.75rem;
   text-align: left;
   outline: none;
-  color: rgba(7, 72, 110, 0.5);
+  color: rgba(0, 32, 51, 0.3);
   border-right: 0.5px solid #00a2ff;
   background: #7dcdfc;
 }
@@ -79,7 +79,7 @@
 #day-selector {
   display: flex;
   overflow-x: auto;
-  background: #a5d8f5;
+  background: #7AC8F5;
 }
 
 
@@ -110,8 +110,7 @@
 }
 
 #day-selector .active {
-  color: #fff;
-  font-weight: 800;
+  color: #002033;
 }
 
 .forward-backward-buttons {
@@ -137,6 +136,10 @@
   border-bottom-right-radius: 14px;
 }
 
+#schedule-body .hidden {
+  display: none;
+}
+
 #schedule-body .schedule-item {
   display: flex;
   padding: 1rem 2rem;
@@ -152,16 +155,39 @@
   text-align: left;
   white-space: nowrap;
   width: 5.5rem;
-  color: #002033;
+  color: #1673A8;
 }
 
-#schedule-body .schedule-item .schedule-item-desc {
+#schedule-body .schedule-item .schedule-item-desc-title {
   font-size: 1.125rem;
   line-height: 1.75rem;
-  color: #0088d6;
+  /* color: #0088d6; */
+  color: #002033;
   margin: 0;
   width: 100%;
   text-align: left;
+}
+
+#schedule-body .schedule-item .schedule-item-desc-text {
+  color: #1673A8 !important;
+}
+
+#schedule-body .schedule-item .schedule-item-desc {
+  text-align: left;
+}
+
+#schedule-body .schedule-item .schedule-item-desc ul {
+  list-style: none;
+  padding: 0;
+}
+
+#schedule-body .schedule-item .schedule-item-desc li {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+#schedule-body .schedule-item .schedule-item-desc span {
+  color: #0893E3;
 }
 
 @media (min-width: 768px) {
@@ -185,7 +211,7 @@
   }
 
   #schedule-body .schedule-item .schedule-item-time,
-  #schedule-body .schedule-item .schedule-item-desc {
+  #schedule-body .schedule-item .schedule-item-desc-title {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
