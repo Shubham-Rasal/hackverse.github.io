@@ -572,10 +572,10 @@
         <div class="prize-container"  data-aos="fade-up">
           <div class="prize-navbar-container">
             <div class="prize-navbar">
-              <h4 class="navbar-prize-item">
+              <h4 class="navbar-prize-item  active-prize-item">
                 Prizes
               </h4>
-              <h4 class="navbar-prize-item active-prize-item">
+              <h4 class="navbar-prize-item">
                 Special Prizes
               </h4>
               <h4 class="navbar-prize-item">
@@ -585,7 +585,7 @@
           </div>
 
           <div class="prize-card-container" data-aos="fade-up">
-            <div id="prize-card-container-1" class="prize-card-container-main hidden" data-aos="zoom-out">
+            <div id="prize-card-container-1" class="prize-card-container-main" data-aos="zoom-out">
               <div class="prize-card">
                 <div class="prize-card-number gold"  data-aos="zoom-out">
                   <p>1st</p>
@@ -614,7 +614,7 @@
                 </div>
               </div>
             </div>
-            <div id="prize-card-container-2" class="prize-card-container-main"
+            <div id="prize-card-container-2" class="prize-card-container-main hidden"
             data-aos="zoom-out">
             <div class="special-prize-container">
               <div class="special-prize-card">
@@ -1190,31 +1190,32 @@
   </section>
   <!-- Schedule Section -->
   <div id="schedule-section">
-    <h1 class="text-center bold-t1 mb-2 p-5" data-aos="zoom-out">
+    <h1 class="text-center bold-t1 mb-2 p-5 aos-init aos-animate" data-aos="zoom-out">
       <span class="gradient-text-blue">Arctic</span> <span style="color:black">Timeline</span>
     </h1>
-    <div class="schedule-section-container" data-aos="fade-up">
+    <div class="schedule-section-container"  data-aos="fade-up">
       <div id="calender-pins">
         <div class="calender-pin"></div>
         <div class="calender-pin"></div>
       </div>
       <div class="schedule-header">
         <div id="day-selector" class="day-selector-custom-scrollbar">
-          <button id="day-item-0" class="schedule-day-item" onclick="setSchedule(0)">
+          <button id="day-item-0" class="schedule-day-item active" onclick="setSchedule(0)">
             <span>Important</span>
             <span>Dates</span>
           </button>
           <button id="day-item-1" class="schedule-day-item" onclick="setSchedule(1)">
             <span>Day 1</span>
-            <span>April 15, 2023</span>
+            <span>April 15, 2022</span>
           </button>
           <button id="day-item-2" class="schedule-day-item" onclick="setSchedule(2)">
             <span>Day 2</span>
-            <span>April 16, 2023</span>
+            <span>April 16, 2022</span>
           </button>
         </div>
         <div class="forward-backward-buttons">
-          <button class="forward-backward-button" id="left-button" onclick="setSchedule(activeScheduleIndex-1)">
+          <button class="forward-backward-button" id="left-button" onclick="setSchedule(activeScheduleIndex-1)"
+            disabled>
             <img src="./img/icons/arrow-left.svg" width="50px" alt="">
           </button>
           <button class="forward-backward-button" id="right-button" onclick="setSchedule(activeScheduleIndex+1)">
@@ -1222,20 +1223,181 @@
           </button>
         </div>
       </div>
-      <div id="schedule-body">
-        <div id="schedule-item-1" class="schedule-item" data-section="1">
-          <span class="schedule-item-time">1:00 PM</span>
-          <span class="text-gray-500 text-sm whitespace-nowrap">(30 Min)</span>
-          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+      <div id="schedule-body" class="schedule-body">
+        <div id="schedule-day-item-1" class="schedule-items">
+          <div id="schedule-item-1-1" class="schedule-item" data-section="1"><span class="schedule-item-time">
+              <span> 15th April </span>
+            </span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Hackathon Starts</h3>
+            </div>
+          </div>
+          <div id="schedule-item-1-2" class="schedule-item" data-section="1"><span class="schedule-item-time">16th
+              April</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Hackathon Ends</h3>
+            </div>
+          </div>
         </div>
-        <div id="schedule-item-2" class="schedule-item" data-section="2">
-          <span class="schedule-item-time">1:00 PM</span>
-          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        <div id="schedule-day-item-2" class="schedule-items hidden">
+          <div id="schedule-item-2-1" class="schedule-item" data-section="2"><span class="schedule-item-time">08:30
+              AM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Participants Check-In</h3>
+              <span>
+                <img src="./img/icons/venue.svg" alt="location" height="16">
+                <span class="schedule-item-desc-text">LHC C</span>
+              </span>
+            </div>
+          </div>
+          <div id="schedule-item-2-2" class="schedule-item" data-section="2"><span class="schedule-item-time">09:00
+              AM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Opening Ceremony</h3>
+              <span>
+                <img src="./img/icons/venue.svg" alt="location" height="16">
+                <span class="schedule-item-desc-text">LHC C</span>
+              </span>
+              <ul class="fw-normal" style="font-size: 0.8em">
+                <li>
+                  Introduction by MC followed by NITK anthem <br>
+                  <span class="fst-italic">Shlok Bhosale, Student Organizer, Hackverse 3.0</span>
+                </li>
+                <li>
+                  Welcome Address & HackVerse Report <br>
+                  <span class="fst-italic">Rajveer Singhl, Lead Organizer, Hackverse 3.0</span>
+                </li>
+                <li>
+                  Inaugral Address <br>
+                  <span class="fst-italic">Director in-charge, NITK</span>
+                </li>
+                <li>
+                  Inaugral Address by Chief Guest <br>
+                  <!-- <span class="fst-italic">Mr Ashish Banerjee, Technology Evangelist, QZip.in</span> -->
+                </li>
+                <li>
+                  Presidential Address <br>
+                  <span class="fst-italic">Prof. Narendranath S, Dean of Student Welfare, NITK</span>
+                </li>
+                <li>
+                  Vote of Thanks <br>
+                  <span class="fst-italic">Achintya Kumar, Lead Organizer, Hackverse 4.0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="schedule-item-2-3" class="schedule-item" data-section="2"><span class="schedule-item-time">10:00
+              AM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Opening Announcements</h3>
+              <span>
+                <img src="./img/icons/venue.svg" alt="location" height="16">
+                <span class="schedule-item-desc-text">LHC C</span>
+              </span>
+            </div>
+          </div>
+          <div id="schedule-item-2-4" class="schedule-item" data-section="2"><span class="schedule-item-time">12:00
+              PM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Coding Begins</h3>
+              <span>
+                <img src="./img/icons/venue.svg" alt="location" height="16">
+                <span class="schedule-item-desc-text">CICD</span>
+              </span>
+            </div>
+          </div>
+          <div id="schedule-item-2-5" class="schedule-item" data-section="2"><span class="schedule-item-time">05:00
+              PM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Networking Session</h3>
+            </div>
+          </div>
+          <div id="schedule-item-2-6" class="schedule-item" data-section="2"><span class="schedule-item-time">11:00
+              PM <br>
+              <small> (1 Hour)</small>
+            </span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Midnight Evaluation</h3>
+              <span>
+                <img src="./img/icons/venue.svg" alt="location" height="16">
+                <span class="schedule-item-desc-text">CICD</span>
+              </span>
+            </div>
+          </div>
         </div>
-        <div id="schedule-item-3" class="schedule-item" data-section="3">
-          <span class="schedule-item-time">1:00 PM</span>
-          <h3 class="schedule-item-desc">Hackathon Registration Opens</h3>
+        <div id="schedule-day-item-3" class="schedule-items hidden">
+          <div id="schedule-item-3-1" class="schedule-item" data-section="3"><span class="schedule-item-time">12:00
+              PM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Coding Ends, Judging Begins</h3>
+            </div>
+          </div>
+          <div id="schedule-item-3-2" class="schedule-item" data-section="3"><span class="schedule-item-time">01:00
+              PM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Live Exhibition</h3>
+            </div>
+          </div>
+          <div id="schedule-item-3-3" class="schedule-item" data-section="3"><span class="schedule-item-time">04:30
+              PM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Announcement of Top 10 Teams</h3>
+            </div>
+          </div>
+          <div id="schedule-item-3-4" class="schedule-item" data-section="3"><span class="schedule-item-time">05:00
+              PM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Live Judging</h3>
+            </div>
+          </div>
+          <div id="schedule-item-3-5" class="schedule-item" data-section="3"><span class="schedule-item-time">6:00
+              PM</span>
+            <div class="schedule-item-desc">
+              <h3 class="schedule-item-desc-title">Closing Ceremony</h3>
+              <div class="schedule-item-text">
+                <ul class="fw-normal" style="font-size: 0.8em;">
+                  <li>
+                    Introduction by MC <br>
+                    <span class="fst-italic">Shlok Bhosale, Student Organizer, Hackverse 4.0</span>
+                  </li>
+                  <li>
+                    Welcome Address <br>
+                    <span class="fst-italic">Rajveer Singh, Lead Organizer, Hackverse 4.0</span>
+                  </li>
+                  <li>
+                    HackVerse 3.0 Report <br>
+                    <span class="fst-italic">Rajveer Singh, Lead Organizer, Hackverse 4.0</span>
+                  </li>
+                  <li>
+                    Introduction to Judges <br>
+                  </li>
+                  <li>
+                    Judges Experience <br>
+                  </li>
+                  <li>
+                    Company Prizes by respective companies <br>
+                  </li>
+                  <li>
+                    Track Prizes announcements <br>
+                  </li>
+                  <li>
+                    Main Prize announcement <br>
+                    <!-- <span class="fst-italic">Prof. Narendranath S, Dean of Student Welfare, NITK</span> -->
+                  </li>
+                  <li>
+                    Presidential Address <br>
+                    <!-- <span class="fst-italic">Prof. Narendranath S, Dean of Student Welfare, NITK</span> -->
+                  </li>
+                  <li>
+                    Vote of Thanks <br>
+                    <span class="fst-italic">Achintya Kumar, Lead Organiser, HackVerse 4.0</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -1671,10 +1833,10 @@
               href="https://zolve.com/" target="_blank" rel="noopener noreferrer" ><img loading="lazy" 
                 src="./img/zolve_logo.webp" style="scale: 1.5;width:70%" alt="zolve" class="p-1 m-0" data-aos="zoom-in"/>
               </a>
-              <a class="col-6 col-md-6 col-sm-6 col-lg-4 d-flex justify-content-center align-items-center" href="https://www.publicissapient.com/"
+              <!-- <a class="col-6 col-md-6 col-sm-6 col-lg-4 d-flex justify-content-center align-items-center" href="https://www.publicissapient.com/"
                 target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" src="./img/PS_Logo.webp" alt="Publis_Sapient" style="scale: 1.5;width:60%" class="p-1 m-0" data-aos="zoom-in">
-              </a>
+              </a> -->
               <a class="col-6 col-md-3 col-sm-6 col-lg-4 d-flex justify-content-center align-items-center" href="https://devfolio.co/"
                 target="_blank" rel="noopener noreferrer">
                 <img loading="lazy" src="./img/Devfolio_Logo-Colored.webp" alt="Devfolio" class="p-1 m-1" data-aos="zoom-in"></a>
