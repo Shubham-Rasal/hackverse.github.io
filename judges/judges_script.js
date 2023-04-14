@@ -30,9 +30,30 @@ let judges_info = [
     {
         name: 'Manan Poddar',
         image_path: 'Manan_Poddar.webp',
-        email: 'mananpoddarm@gmail.com ',
+        email: 'mananpoddarm@gmail.com',
         linkedin: 'https://www.linkedin.com/in/manan-poddar-59226314a/',
         designation: 'Software engineer at Airbnb | CSE @ National Institute of Technology Karnataka'
+    },
+    {
+        name: 'Denver Dsouza',
+        image_path: 'Denver_Dsouza.webp',
+        email: '',
+        linkedin: 'https://in.linkedin.com/in/denverjude',
+        designation: 'Chief Operating Officer - Devfolio'
+    },
+    {
+        name: 'Aniket Raj',
+        image_path: 'Aniket_Raj.webp',
+        email: '',
+        linkedin: 'https://in.linkedin.com/in/aniketraj1',
+        designation: 'Community Lead - Devfolio'
+    },
+    {
+        name: 'Anish Dhiman',
+        image_path: 'Anish_Dhiman.webp',
+        email: '',
+        linkedin: 'https://www.linkedin.com/in/manan-poddar-59226314a/',
+        designation: 'Product Designer - Devfolio'
     },
 ]
 

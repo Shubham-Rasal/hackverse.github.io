@@ -692,6 +692,8 @@ button:focus {
   max-width: 200px;
   width: auto;
   max-height: 150px;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 #sponsors a img:hover {
@@ -707,7 +709,8 @@ button:focus {
 
 @media only screen and (min-width: 521px) and (max-width: 1000px) {
   #sponsors .row img {
-    width: 95%;
+    /* width: 95%;
+    height: auto; */
   }
 
   .sponsor-us {
