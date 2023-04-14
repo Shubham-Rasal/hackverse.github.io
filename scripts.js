@@ -9,36 +9,36 @@ navLinks.forEach((l) => {
   });
 });
 
-window.addEventListener("scroll", testScroll);
-var viewed = false;
+// window.addEventListener("scroll", testScroll);
+// var viewed = false;
 
-function isScrolledIntoView(elem) {
-  var docViewTop = window.scrollY;
-  var docViewBottom = docViewTop + window.innerHeight;
+// function isScrolledIntoView(elem) {
+//   var docViewTop = window.scrollY;
+//   var docViewBottom = docViewTop + window.innerHeight;
 
-  var elemTop = elem.offsetTop;
-  var elemBottom = elemTop + elem.offsetHeight;
+//   var elemTop = elem.offsetTop;
+//   var elemBottom = elemTop + elem.offsetHeight;
 
-  return elemBottom <= docViewBottom && elemTop >= docViewTop;
-}
+//   return elemBottom <= docViewBottom && elemTop >= docViewTop;
+// }
 
-function testScroll() {
-  if (isScrolledIntoView(document.querySelector(".milestone-number")) && !viewed) {
-    viewed = true;
-    var numberHolders = document.querySelectorAll(".number-holder");
-    numberHolders.forEach(function (numberHolder) {
-      var counter = 0;
-      var textContent = parseInt(numberHolder.textContent, 10);
-      var animation = setInterval(function () {
-        counter++;
-        numberHolder.textContent = Math.ceil((counter * textContent) / 100);
-        if (counter >= 100) {
-          clearInterval(animation);
-        }
-      }, 40);
-    });
-  }
-}
+// function testScroll() {
+//   if (isScrolledIntoView(document.querySelector(".milestone-number")) && !viewed) {
+//     viewed = true;
+//     var numberHolders = document.querySelectorAll(".number-holder");
+//     numberHolders.forEach(function (numberHolder) {
+//       var counter = 0;
+//       var textContent = parseInt(numberHolder.textContent, 10);
+//       var animation = setInterval(function () {
+//         counter++;
+//         numberHolder.textContent = Math.ceil((counter * textContent) / 100);
+//         if (counter >= 100) {
+//           clearInterval(animation);
+//         }
+//       }, 40);
+//     });
+//   }
+// }
 
 
 // *** Countdown logic Starts ***
