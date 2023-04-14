@@ -1,41 +1,39 @@
 let judges_info = [
     {
-        name: 'Ashish Banerjee',
-        image_path: 'Ashish_Banerjee.webp',
-        email: 'tech@ashishbanerjee.com',
-        linkedin: 'https://www.linkedin.com/in/ashban/',
-        designation: 'Technology Evangelist | Open Source Evangelist | Ex Technical Director @ Oracle India Pvt. Ltd'
+        name: 'Anup Pai',
+        image_path: 'Anup_Pai.webp',
+        email: '',
+        linkedin: 'https://www.linkedin.com/in/paianup/',
+        designation: 'Founder and CEO - eSamudaay | Fintellix Solutions (formerly iCreate) Founder'
     },
     {
-        name: 'Suresh Reddy',
-        image_path: 'Suresh_Reddy.webp',
-        email: 'suresh.reddy@wellsfargo.com',
-        linkedin: 'https://www.linkedin.com/in/suresh-reddy-7545842b/',
-        designation: 'Distinguished Engineer - Digital and Innovation @ Wells Fargo | Ex-Lead @ CSC | Ex-Senior IT Engineer @CMC Limited'
+        name: 'Rakesh Ravuri',
+        image_path: 'Rakesh_Ravuri.webp',
+        email: '',
+        linkedin: 'https://www.linkedin.com/in/rakeshravuri/',
+        designation: 'Engineering leader & CTO @ Publicis Sapient, building world-class engineering teams'
     },
     {
-        name: 'Anjali Sheel',
-        image_path: 'Anjali_Sheel.webp',
-        email: 'anjalisheel@gmail.com',
-        linkedin: 'https://www.linkedin.com/in/anjali-sheel/',
-        designation: 'Software Engineer II @ Microsoft | Educator @ Unacademy | Ex Siemens Healthineers'
+        name: 'Ravi Haldipur',
+        image_path: 'Ravi_Haldipur.webp',
+        email: '',
+        linkedin: 'https://www.linkedin.com/in/ravi-haldipur/',
+        designation: 'Co-Founder & Head of Business Development at eSamudaay'
     },
     {
-        name: 'Salman Shah',
-        image_path: 'Salman_Shah.webp',
-        email: 'sbs.191197@gmail.com',
-        linkedin: 'https://www.linkedin.com/in/sbshah97/',
-        designation: 'SDE-1 @ Microsoft | Ex-SDE @ Myntra | Formerly @ Internet Archive, IRIS NITK, Haqdarshak | GSoC 2018, GCI 2018'
+        name: 'Aditi Gupta',
+        image_path: 'Aditi_gupta.webp',
+        email: 'guptaaditi1709@gmail.com',
+        linkedin: 'https://www.linkedin.com/in/aditigupta17/',
+        designation: 'Software Engineer at Google | GSoC 2020, CERN-HSF | Tata Crucible Campus Quiz Regional Winner 2019, 2020'
     },
     {
-        name: 'Rahul Verma',
-        image_path: 'Rahul_Verma.webp',
-        email: 'rv404674@gmail.com',
-        linkedin: 'https://www.linkedin.com/in/rahul-verma-8aa59b116/',
-        designation: 'BackEnd SDE-2 @ Koo | Ex-Senior Backend Engineer @ MoEngage | Ex Software Developer Intern @ SAP Labs India | Ex Open Source Developer @ Mozilla'
+        name: 'Manan Poddar',
+        image_path: 'Manan_Poddar.webp',
+        email: 'mananpoddarm@gmail.com ',
+        linkedin: 'https://www.linkedin.com/in/manan-poddar-59226314a/',
+        designation: 'Software engineer at Airbnb | CSE @ National Institute of Technology Karnataka'
     },
-    
-
 ]
 
 function insert_in_div(insert_div, persons) {
