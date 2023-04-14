@@ -43,48 +43,48 @@ navLinks.forEach((l) => {
 
 // *** Countdown logic Starts ***
 
-var date_str = new Date("2023-04-15T03:00:00.000Z"); //.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
-var countDownDate = Date.parse(date_str);
+// var date_str = new Date("2023-04-15T03:00:00.000Z"); //.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
+// var countDownDate = Date.parse(date_str);
 
-// var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-// var countDownDate = new Date(utc + (3600000*+5.5));
+// // var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+// // var countDownDate = new Date(utc + (3600000*+5.5));
 
-// Update the count down every 1 second
-var x = setInterval(function () {
-  // Get today's date and time
-  // var now = new Date().getTime();
+// // Update the count down every 1 second
+// var x = setInterval(function () {
+//   // Get today's date and time
+//   // var now = new Date().getTime();
 
-  // Get today's date and time in ist
-  // d = new Date();
-  // utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-  // nd = new Date(utc + (3600000*+5.5));
-  // var now =  nd;
+//   // Get today's date and time in ist
+//   // d = new Date();
+//   // utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+//   // nd = new Date(utc + (3600000*+5.5));
+//   // var now =  nd;
 
-  var now_str = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
-  var now = Date.parse(now_str);
+//   var now_str = new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
+//   var now = Date.parse(now_str);
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+//   // Find the distance between now and the count down date
+//   var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//   // Time calculations for days, hours, minutes and seconds
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("countdown-day").innerHTML=days;
-  document.getElementById("countdown-hour").innerHTML=hours;
-  document.getElementById("countdown-minute").innerHTML=minutes;
-  document.getElementById("countdown-second").innerHTML=seconds;
+//   // Display the result in the element with id="demo"
+//   document.getElementById("countdown-day").innerHTML=days;
+//   document.getElementById("countdown-hour").innerHTML=hours;
+//   document.getElementById("countdown-minute").innerHTML=minutes;
+//   document.getElementById("countdown-second").innerHTML=seconds;
 
-  // If the count down is finished in corner cases
-  // reset the count to next day, this makes the
-  // timer on forever loop
-  if (distance < 0) {
-    countDownDate = getNeverEndingDate();
-  }
-}, 1000);
+//   // If the count down is finished in corner cases
+//   // reset the count to next day, this makes the
+//   // timer on forever loop
+//   if (distance < 0) {
+//     countDownDate = getNeverEndingDate();
+//   }
+// }, 1000);
 // *** Countdown logic Ends ***
 
 // ***Prize section Scripts Starts Here ***
