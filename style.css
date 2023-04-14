@@ -1327,6 +1327,8 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  max-height: 500px;
+  overflow-y: scroll;
 }
 
 .prize .special-prize-container .special-prize-card{
