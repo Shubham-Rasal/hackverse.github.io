@@ -692,6 +692,8 @@ button:focus {
   max-width: 200px;
   width: auto;
   max-height: 150px;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 #sponsors a img:hover {
@@ -707,7 +709,8 @@ button:focus {
 
 @media only screen and (min-width: 521px) and (max-width: 1000px) {
   #sponsors .row img {
-    width: 95%;
+    /* width: 95%;
+    height: auto; */
   }
 
   .sponsor-us {
@@ -728,6 +731,8 @@ button:focus {
 @media only screen and (max-width: 520px) {
   #sponsors .row img {
     width: 80%;
+    padding: 0.3rem;
+    margin: 0;
   }
 
   .sponsor-us {
@@ -1182,8 +1187,15 @@ section {
   min-height: 250px;
 }
 
+.prize .participation-prizes {
+  background: rgba(255, 255, 255, 0.13);
+  padding: 2rem 3rem;
+  font-size: 0.8rem;
+  color: #07486E;
+}
+
 .prize .prize-card-container .prize-card-container-main {
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
@@ -1368,7 +1380,12 @@ section {
   position: relative;
   overflow: hidden;
   background: rgba(105, 197, 251, 0.75);
-  background: linear-gradient(135deg,rgba(67, 184, 251, 0.75), rgba(65, 181, 249, 0.75), rgba(48, 173, 245, 0.9));
+  background: linear-gradient(
+    135deg,
+    rgba(67, 184, 251, 0.75),
+    rgba(65, 181, 249, 0.75),
+    rgba(48, 173, 245, 0.9)
+  );
   margin: 20px auto;
 }
 
@@ -1428,14 +1445,14 @@ section {
   text-align: left;
 }
 
-.prize .special-prize-container .special-prize-card .description button{
+.prize .special-prize-container .special-prize-card .description button {
   padding: 0;
 }
 
-.prize .special-prize-container .special-prize-card .description button a{
-  color: #EBF8FF; 
-  border-radius: 3px; 
-  background: #2AA6EC; 
+.prize .special-prize-container .special-prize-card .description button a {
+  color: #ebf8ff;
+  border-radius: 3px;
+  background: #2aa6ec;
   padding: 8px;
 }
 
