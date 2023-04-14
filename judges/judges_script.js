@@ -22,7 +22,7 @@ let judges_info = [
     },
     {
         name: 'Aditi Gupta',
-        image_path: 'Aditi_gupta.webp',
+        image_path: 'Aditi_Gupta.webp',
         email: 'guptaaditi1709@gmail.com',
         linkedin: 'https://www.linkedin.com/in/aditigupta17/',
         designation: 'Software Engineer at Google | GSoC 2020, CERN-HSF | Tata Crucible Campus Quiz Regional Winner 2019, 2020'
