@@ -43,7 +43,7 @@ navLinks.forEach((l) => {
 
 // *** Countdown logic Starts ***
 
-// var date_str = new Date("2023-04-15T03:00:00.000Z"); //.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
+// var date_str = new Date("2023-04-15T07:00:00.000Z");//.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
 // var countDownDate = Date.parse(date_str);
 
 // // var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
@@ -85,6 +85,20 @@ navLinks.forEach((l) => {
 //     countDownDate = getNeverEndingDate();
 //   }
 // }, 1000);
+
+// function getNeverEndingDate() {
+//   // Create a new Date object
+//   let neverEndingDate = new Date();
+  
+//   // Set the date to the next day
+//   neverEndingDate.setDate(neverEndingDate.getDate() + 1);
+  
+//   // Set the time to midnight
+//   neverEndingDate.setHours(0, 0, 0, 0);
+  
+//   // Return the never ending date
+//   return neverEndingDate;
+// }
 // *** Countdown logic Ends ***
 
 // ***Prize section Scripts Starts Here ***
