@@ -43,7 +43,7 @@ navLinks.forEach((l) => {
 
 // *** Countdown logic Starts ***
 
-var date_str = new Date("2023-04-15T07:00:00.000Z");//.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
+var date_str = new Date("2023-04-16T06:30:00.000Z");//.toLocaleString("en-US", { timeZone: "Asia/Kolkata" });
 var countDownDate = Date.parse(date_str);
 
 // var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
