@@ -1,15 +1,17 @@
-let activeScheduleIndex = 0;
+let activeScheduleIndex = 1;
 
 setSchedule = (idx) => {
   if (idx < 0 || idx > 2) return;
 
-  document.getElementById("left-button").disabled = idx == 0;
+  document.getElementById("left-button").disabled = idx == 1;
   document.getElementById("right-button").disabled = idx == 2;
 
-  document
+  if(idx!=0) {
+    document
     .getElementById("day-item-" + activeScheduleIndex)
     .classList.remove("active");
-  document.getElementById("day-item-" + idx).classList.add("active");
+    document.getElementById("day-item-" + idx).classList.add("active");
+  }
 
   document
     .getElementById("day-item-" + idx)
