@@ -261,24 +261,6 @@ let student_info_core_4 =
     "Profile_Photo_name": "namanjain",
     "Designation": "PR Head"
    },
-//  {
-//   "Name": "Yogesh",
-//   "Email_id": "yovikas1730@gmail.com ",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/yogesh2001",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1dnkej8BhWQYeG9i70E6eC2ux0KsIGfWE",
-//   "Profile_photo_url": "IMG_20210228_074937_011 - YOGESH.jpg",
-//   "Profile_Photo_name": "IMG_20210228_074937_011 - YOGESH",
-//   "Designation": "Media Head"
-//  },
-//  {
-//   "Name": "Neha Mane",
-//   "Email_id": "nehapmane@gmail.com",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/mane05\/",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1JlOR4A9RZktjCca27jwxHc8rtFtEU2qI",
-//   "Profile_photo_url": "pro pic - neha mane.jpg",
-//   "Profile_Photo_name": "pro pic - neha mane",
-//   "Designation": "Student Relations Head"
-//  },
  
  {
   "Name": "Ishan Bhattacharya",
@@ -293,43 +275,6 @@ let student_info_core_4 =
 
 let student_info_core_3 =
 [
-//  {
-//   "Name": "Rakshith H R",
-//   "Email_id": "rakshithh176@gmail.com",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/rakshith-h-r\/",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1c37ah2Pv-PN1Bpq2zQJdnVaqiIWJFzPH",
-//   "Profile_photo_url": "20220128_162628 - Rakshith H R.jpg",
-//   "Profile_Photo_name": "20220128_162628 - Rakshith H R",
-//   "Designation": "Content Coordinator"
-//  },
-//  {
-//   "Name": "Anupama Kolsur",
-//   "Email_id": "anupamakolsur.191ec107@nitk.edu.in",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/anupamakolsur\/",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1Nd2Vncfo7K5xMUi4Ah5JExAiCpjXDljq",
-//   "Profile_photo_url": "Anupama Kolsur - Anupama Kolsur.jpeg",
-//   "Profile_Photo_name": "Anupama Kolsur - Anupama Kolsur",
-//   "Designation": "Operations Coordinator"
-//  },
-
-//  {
-//   "Name": "Krishna Prasad Kuddannaya",
-//   "Email_id": "krishnapk.191cv223@nitk.edu.in",
-//   "LinkedIn_profile": "linkedin.com\/in\/krishna-prasad-kuddannaya-7b507a1a0",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1K7ncha8jWCBpakAkyZWqmD5bv_dyuY6t",
-//   "Profile_photo_url": "IMG_8107 - KRISHNA PRASAD KUDDANNAYA.JPG",
-//   "Profile_Photo_name": "IMG_8107 - KRISHNA PRASAD KUDDANNAYA",
-//   "Designation": "Marketing Coordinator"
-//  },
-//  {
-//   "Name": "Alan Tony",
-//   "Email_id": "alantonye@gmail.com",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/alan-tony-38880a1ba\/",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1z9rAuExIi1EhO363vx3xBXmaar9ymwdS",
-//   "Profile_photo_url": "Profile - Alan Tony.jpeg",
-//   "Profile_Photo_name": "Profile - Alan Tony",
-//   "Designation": "Technical Coordinator"
-//  },
 
 {
     "Name": "Shlok Bhosale",
@@ -363,15 +308,6 @@ let student_info_others =
         "Profile_Photo_name": "shivagarg",
         "Designation": "Website Team"
     },
-    // {
-    //     "Name": "Sharvani Laxmi Somayaji",
-    //     "Email_id": "sharvanilaxmisomayaji@gmail.com",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/sharvani2002/",
-    //     "Profile_photo": "https://drive.google.com/open?id=1wtJ_VrS-zg1kUcGN2ZpGeR-0yIDYoLVY",
-    //     "Profile_photo_url": "sharvani_pp - Sharvani Somayaji..jpg",
-    //     "Profile_Photo_name": "sharvani_pp - Sharvani Somayaji.",
-    //     "Designation": "Technical Team"
-    // },
     {
         "Name": "Samyak Sanjay Sand",
         "Email_id": "samyaksand@gmail.com",
@@ -526,15 +462,6 @@ let student_info_others =
         "Profile_Photo_name": "1664693637825",
         "Designation": "Student Relations Team"
     },
-    // {
-    //     "Name": "Harshwardhan Shinde",
-    //     "Email_id": "harshwardhan.201me224@nitk.edu.in",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/harshwardhan-shinde-358778231",
-    //     "Profile_photo": "https://drive.google.com/file/d/1VffIFxsQsuQPZc2CBBtUn5t2GWjNw4ik/view?usp=sharing",
-    //     "Profile_photo_url": "MY PIC.jpg",
-    //     "Profile_Photo_name": "MY PIC",
-    //     "Designation": "Operations Team"
-    // },
     {
         "Name": "Aniket Tupe",
         "Email_id": "atupe507@gmail.com",
@@ -722,42 +649,6 @@ let student_info_others =
         "Designation": "Website Team"
        }
     // {
-    //     "Name": "Abhinav Dugar",
-    //     "Email_id": "dugarabhinav2001@gmail.com",
-    //     "LinkedIn_profile": "www.linkedin.com/in/abhinav-dugar-59084a1aa/",
-    //     "Profile_photo": "https://drive.google.com/open?id=1KE71PhS6M0Qxmsjz3avh5tTwgVikBtxj",
-    //     "Profile_photo_url": "Screenshot_20220204-113223 - Abhinav Dugar.jpg",
-    //     "Profile_Photo_name": "Screenshot_20220204-113223 - Abhinav Dugar",
-    //     "Designation": "Technical Team"
-    // },
-    // {
-    //     "Name": "Aryan Jain",
-    //     "Email_id": "aryanjain.201me210@nitk.edu.in",
-    //     "LinkedIn_profile": "linkedin.com/in/aryan-jain-ba6994218",
-    //     "Profile_photo": "https://drive.google.com/open?id=1ZeDMcagHsQZish7nzHASRA2eeum5tKdm",
-    //     "Profile_photo_url": "AryanJain_pic (1) - ARYAN JAIN.jpg",
-    //     "Profile_Photo_name": "AryanJain_pic (1) - ARYAN JAIN",
-    //     "Designation": "Content Team"
-    // },
-    // {
-    //     "Name": "Divyam Neer Verma",
-    //     "Email_id": "5rY4a7uC7@OU",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/divyam-neer-verma-ba81241b2/",
-    //     "Profile_photo": "https://drive.google.com/open?id=1n9LRS2cs9fVGNITAFnlBQtg2Hp-jGwbd",
-    //     "Profile_photo_url": "1635273330599 - Divyam Neer Verma.jfif",
-    //     "Profile_Photo_name": "1635273330599 - Divyam Neer Verma",
-    //     "Designation": "Marketing Team"
-    // },
-    // {
-    //     "Name": "Sachin Saroha",
-    //     "Email_id": "sachinsaroha.181cv137@nitk.edu.in",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/sachin-saroha/",
-    //     "Profile_photo": "https://drive.google.com/open?id=1GlBKNF4sntD9pbSqUDqK16kSwe0uV4Ph",
-    //     "Profile_photo_url": "Photo (2) - Sachin kumar saroha.jpg",
-    //     "Profile_Photo_name": "Photo (2) - Sachin kumar saroha",
-    //     "Designation": "Technical Team"
-    // },
-    // {
     //     "Name": "Saurabh Mokashi",
     //     "Email_id": "sherumokashi@gmail.com",
     //     "LinkedIn_profile": "linkedin.com/in/saurabh-mokashi-37387b1a1",
@@ -765,24 +656,6 @@ let student_info_others =
     //     "Profile_photo_url": "profile - Saurabh Dhananjay Mokashi..jpeg",
     //     "Profile_Photo_name": "profile - Saurabh Dhananjay Mokashi.",
     //     "Designation": "Technical Team"
-    // },
-    // {
-    //     "Name": "Adarsh Ashok Pai",
-    //     "Email_id": "adarshpai305@gmail.com",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/adarsh-ashok-pai-65111a1b9",
-    //     "Profile_photo": "https://drive.google.com/open?id=1RHv2-GLot9w60yD5EOx7kto7lQJvWF1j",
-    //     "Profile_photo_url": "IMG_20191222_212419 - ADARSH ASHOK PAI..jpg",
-    //     "Profile_Photo_name": "IMG_20191222_212419 - ADARSH ASHOK PAI.",
-    //     "Designation": "Student Relations Team"
-    // },
-    // {
-    //     "Name": "Devansh Singal",
-    //     "Email_id": "devanshsingal.201me216@nitk.edu.in",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/devansh-singal-a72b86216",
-    //     "Profile_photo": "https://drive.google.com/open?id=1jk_hSYXSGPNBD841uuhtM_-K-xI5Jzsh",
-    //     "Profile_photo_url": "IMG_20220204_182123-01 - DEVANSH SINGAL.jpeg",
-    //     "Profile_Photo_name": "IMG_20220204_182123-01 - DEVANSH SINGAL",
-    //     "Designation": "Public Relations Team"
     // },
     // {
     //     "Name": "Sakshi Babar",
@@ -793,42 +666,6 @@ let student_info_others =
     //     "Profile_Photo_name": "IMG_20200106_002254 - babar sakshi mahesh",
     //     "Designation": "Operations Team"
     // },
-    // {
-    //     "Name": "Laksh Sadhwani",
-    //     "Email_id": "laksh.sadhwani07@gmail.com",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/sadhwanilaksh",
-    //     "Profile_photo": "https://drive.google.com/open?id=1MQUa9kA89hj25uywg3jgl4rIUws09X5G",
-    //     "Profile_photo_url": "passport photo - Laksh Sadhwani.png",
-    //     "Profile_Photo_name": "passport photo - Laksh Sadhwani",
-    //     "Designation": "Student Relations Team"
-    // },
-    // {
-    //     "Name": "Khushi Jain",
-    //     "Email_id": "khushijain.201me127@nitk.edu.in",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/khushi-jain-162097216",
-    //     "Profile_photo": "https://drive.google.com/open?id=1vCy04ZIbaeb0HXInhM6PLsH005TbQupt",
-    //     "Profile_photo_url": "Snapchat-573492083 - KHUSHI JAIN.jpg",
-    //     "Profile_Photo_name": "Snapchat-573492083 - KHUSHI JAIN",
-    //     "Designation": "Marketing Team"
-    // },
-    // {
-    //     "Name": "Sannuta",
-    //     "Email_id": "sannuta.191ee149@nitk.edu.in",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/sannuta-r-mijar-4ab3211b3",
-    //     "Profile_photo": "https://drive.google.com/open?id=1N2fe_syWnBjqfAi4BAkTl42cgL9WTw-W",
-    //     "Profile_photo_url": "WhatsApp Image 2021-08-14 at 12.53.39 AM - Sannuta.jpeg",
-    //     "Profile_Photo_name": "WhatsApp Image 2021-08-14 at 12.53.39 AM - Sannuta",
-    //     "Designation": "Marketing Team"
-    // },
-    // {
-    //     "Name": "Ravindra Nath Gautam",
-    //     "Email_id": "ravindranathgautam.201it149@nitk.edu.in",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/ravindra-nath-gautam-264922229/",
-    //     "Profile_photo": "https://drive.google.com/open?id=1TmjQGDhtLeHztH0gopH4Q-0_nmRSuLqV",
-    //     "Profile_photo_url": "photo_2022-02-11_22-34-02 - RAVINDRA NATH GAUTAM.jpg",
-    //     "Profile_Photo_name": "photo_2022-02-11_22-34-02 - RAVINDRA NATH GAUTAM",
-    //     "Designation": "Technical Team"
-    // }
 ]
 
 
