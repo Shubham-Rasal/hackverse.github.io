@@ -270,7 +270,17 @@ let student_info_core_4 =
   "Profile_photo_url": "IMG_7663.jpg",
   "Profile_Photo_name": "IMG_7663",
   "Designation": "Content Head"
- }
+ },
+ {
+    "Timestamp": "4\/17\/2023 18:26:25",
+    "Email_id": "aritrasinha.191ec108@nitk.edu.in",
+    "Name": "Aritra Sinha ",
+    "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/aritra-sinha-0251101a3",
+    "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1wwYJGlvBkno789n6Eun7hNkYI5dZ5Exb\/view?usp=drivesdk",
+    "Profile_photo_url": "IMG_20230206_014209_429.webp",
+    "Profile_Photo_name": "IMG_20230206_014209_429",
+    "Designation": "Technical Head"
+   }
 ]
 
 let student_info_core_3 =
@@ -556,7 +566,7 @@ let student_info_others =
         "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1-zQvPQpmeEm7b1TwpFWpMZTAvJxhHfS4\/view?usp=drivesdk",
         "Profile_photo_url": "Gungun_Jain_NiTK.webp",
         "Profile_Photo_name": "Gungun_Jain_NiTK",
-        "Designation": "Student Relation Team"
+        "Designation": "Student Relations Team"
        },
        {
         "Timestamp": "4\/9\/2023 11:56:21",
@@ -566,7 +576,7 @@ let student_info_others =
         "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1MwQGGnEwYKsYWAyhZBazXiVke6V_1cJw\/view?usp=drivesdk",
         "Profile_photo_url": "29389 (495×648)",
         "Profile_Photo_name": "29389 (495×648)",
-        "Designation": "Student relation team"
+        "Designation": "Student relations team"
        },
        {
         "Timestamp": "4\/9\/2023 12:33:30",
@@ -596,7 +606,7 @@ let student_info_others =
         "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1mDJjKwuNWXj4UqxKof_nt3lv8hKL0pdk\/view?usp=sharing",
         "Profile_photo_url": "Kedar_profilePhoto.webp",
         "Profile_Photo_name": "Kedar_profilePhoto",
-        "Designation": "Student Relation Team"
+        "Designation": "Student Relations Team"
        },
        {
         "Timestamp": "4\/9\/2023 15:55:18",
@@ -647,6 +657,16 @@ let student_info_others =
         "Profile_photo_url": "IMG_20221103_172006.webp",
         "Profile_Photo_name": "IMG_20221103_172006",
         "Designation": "Website Team"
+       },
+       {
+        "Timestamp": "4\/17\/2023 17:38:42",
+        "Email_id": "devanshsingal.201me216@nitk.edu.in",
+        "Name": "Devansh Singal",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/devansh-singal",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1gqSDeoqBAPtyMxw_as8VUPe0L_7rLtMw\/view?usp=drivesdk",
+        "Profile_photo_url": "1644150196059.webp",
+        "Profile_Photo_name": 1644150196059,
+        "Designation": "Student & public relations team"
        }
     // {
     //     "Name": "Saurabh Mokashi",
