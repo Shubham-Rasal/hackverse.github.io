@@ -120,7 +120,7 @@ let adv_info = [
 ]
 
 let fac_info = [{
-        name: 'Dr Basavaraj Talawar',
+        name: 'Dr. Basavaraj Talawar',
         image_path: 'fac-ads/basavaraj_talawar.webp',
         email: 'basavaraj@nitk.edu.in',
         linkedin: '#',
@@ -251,6 +251,16 @@ let student_info_core_4 =
     "Profile_Photo_name": "sharvani_pp - Sharvani Somayaji",
     "Designation": "Website Head"
    },
+   {
+    "Timestamp": "4\/9\/2023 2:10:45",
+    "Email_id": "namanjain3421@gmail.com",
+    "Name": "Naman Jain",
+    "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/naman-jain-51201a214",
+    "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1yV0N0XQy-ACcaB60E9LhIuC8aXzRywTJ\/view?usp=drivesdk",
+    "Profile_photo_url": "namanjain.webp",
+    "Profile_Photo_name": "namanjain",
+    "Designation": "PR Head"
+   },
 //  {
 //   "Name": "Yogesh",
 //   "Email_id": "yovikas1730@gmail.com ",
@@ -328,7 +338,7 @@ let student_info_core_3 =
     "Profile_photo": "https://drive.google.com/file/d/1rYApiMgAMF7go0nWDFhCjA_Wnj26wVLh/view?usp=sharing",
     "Profile_photo_url": "Shlok2.jpg",
     "Profile_Photo_name": "Shlok2",
-    "Designation": "Website and Student Relations Team"
+    "Designation": "Website & Student Relations Team"
 }
 //  {
 //   "Name": "Aritra Sinha",
@@ -499,7 +509,7 @@ let student_info_others =
         "Designation": "Operations Team"
     },
     {
-        "Name": "G.Hemanth",
+        "Name": "G. Hemanth",
         "Email_id": "hemanthgudela123@gmail.com",
         "LinkedIn_profile": "https://www.linkedin.com/in/gudela-hemanth-191192225",
         "Profile_photo": "https://drive.google.com/file/d/1MtD-Rogek_M76SVqhItxucmXhjFxZnP6/view?usp=drivesdk",
@@ -571,6 +581,146 @@ let student_info_others =
         "Profile_Photo_name": "DocScanner Aug 8, 2022 23-34",
         "Designation": "Technical Team"
     },
+       {
+        "Timestamp": "4\/9\/2023 2:25:31",
+        "Email_id": "dommetisrichandana.201mn019@nitk.edu.in",
+        "Name": "Sri Chandana ",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/srichandanad",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1M8Jpv4_s7Q8RvUaROVhUEoui0j0knr_F\/view?usp=drivesdk",
+        "Profile_photo_url": "chandana.webp",
+        "Profile_Photo_name": "chandana",
+        "Designation": "Content, Student & public relations team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 11:04:01",
+        "Email_id": "kushanchalia@gmail.com",
+        "Name": "Kush Anchalia",
+        "LinkedIn_profile": "linkedin.com\/in\/kush-anchalia-41678a228",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1tVCVV1TptvsA-33UHqg6qoe_FIQj9C33\/view?usp=sharing",
+        "Profile_photo_url": "my IMAGE.jpeg",
+        "Profile_Photo_name": "my IMAGE",
+        "Designation": "Student & public relations team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 11:31:02",
+        "Email_id": "atibkaif.221ec129@nitk.edu.in",
+        "Name": "MD ATIB KAIF",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/md-atib-kaif-07882b263",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1OXcDxoqCCvqV5WHE9LD-80EBnQDl3R2e\/view?usp=sharing",
+        "Profile_photo_url": "IMG_20220513_175134_253.webp",
+        "Profile_Photo_name": "IMG_20220513_175134_253",
+        "Designation": "Student & public relations team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 12:18:43",
+        "Email_id": "shankar.221mn048@nitk.edu.in",
+        "Name": "Shankar Gouda",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/m\/in\/shankar-gouda",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1em-GsHmdOE4f9COJ_x8yXGS9o3xAQQL3\/view?usp=drivesdk",
+        "Profile_photo_url": "IMG_20210810_090948_transcpr.webp",
+        "Profile_Photo_name": "IMG_20210810_090948_transcpr",
+        "Designation": "student Relations Team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 11:39:05",
+        "Email_id": "gungunjain.221me318@nitk.edu.in",
+        "Name": "Gungun Jain",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/gungun-jain-3bb256267",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1-zQvPQpmeEm7b1TwpFWpMZTAvJxhHfS4\/view?usp=drivesdk",
+        "Profile_photo_url": "Gungun_Jain_NiTK.webp",
+        "Profile_Photo_name": "Gungun_Jain_NiTK",
+        "Designation": "Student Relation Team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 11:56:21",
+        "Email_id": "chinmaychinmay2003@gmail.com",
+        "Name": "Chinmay k",
+        "LinkedIn_profile": "www.linkedin.com\/in\/chinmay-k-563320251 ",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1MwQGGnEwYKsYWAyhZBazXiVke6V_1cJw\/view?usp=drivesdk",
+        "Profile_photo_url": "29389 (495×648)",
+        "Profile_Photo_name": "29389 (495×648)",
+        "Designation": "Student relation team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 12:33:30",
+        "Email_id": "subhastembhare@gmail.com",
+        "Name": "Subhash tembhare",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/subhash-tembhare-0ab236237",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1O_GEw7B7hj44qbbMCm9D3i1JFOVZnMv0\/view?usp=drivesdk",
+        "Profile_photo_url": "ezgif-3-1d9b179947.webp",
+        "Profile_Photo_name": "ezgif-3-1d9b179947",
+        "Designation": "Student & public relations team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 12:49:26",
+        "Email_id": "loyamukund30@gmail.com",
+        "Name": "Mukund Loya",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/mukund-loya-29a3011b9\/",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1f6yQsWl4wQBtjjhX3bVivgej5gn7_e33\/view?usp=share_link",
+        "Profile_photo_url": "c57.jpeg",
+        "Profile_Photo_name": "c57",
+        "Designation": "Student Relations Team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 14:30:50",
+        "Email_id": "kedar.221it023@nitk.edu.in",
+        "Name": "Kedar",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/kedardhule",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1mDJjKwuNWXj4UqxKof_nt3lv8hKL0pdk\/view?usp=sharing",
+        "Profile_photo_url": "Kedar_profilePhoto.webp",
+        "Profile_Photo_name": "Kedar_profilePhoto",
+        "Designation": "Student Relation Team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 15:55:18",
+        "Email_id": "shamithamnaiknitkeduin.211ec248@nitk.edu.in",
+        "Name": "shamitha m naik",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/shamitha-naik-6b4947257",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1w9J1mWqLsMGnXiQQeTIcvtPMO7l_p5AD\/view?usp=share_link",
+        "Profile_photo_url": "passport pic.pdf",
+        "Profile_Photo_name": "passport pic",
+        "Designation": "student relations team"
+       },
+       {
+        "Timestamp": "4\/9\/2023 16:06:40",
+        "Email_id": "baliprasanna@gmail.com",
+        "Name": "Prasanna Kumar",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/prasanna-kumar-3258a8257",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/15WCqH1ETrJ-SbASgtC_RKWT4DOdw0RZC\/view?usp=sharing",
+        "Profile_photo_url": "photo.webp",
+        "Profile_Photo_name": "photo",
+        "Designation": " Student Relations Team"
+       },
+       {
+        "Timestamp": "4\/10\/2023 23:01:21",
+        "Email_id": "naramamidibhavitha.211it044@nitk.edu.in",
+        "Name": "Bhavitha Naramamidi ",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/bhavitha-naramamidi-288905248",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1Em7nmcOsqbJjWnDO5Bg2eRVQQcUAhvA9\/view?usp=drivesdk",
+        "Profile_photo_url": "15_passportphoto.jpg",
+        "Profile_Photo_name": "15_passportphoto",
+        "Designation": "Student Relations team"
+       },
+       {
+        "Timestamp": "4\/12\/2023 7:54:09",
+        "Email_id": "meetalisrivastava.201me234@nitk.edu.in",
+        "Name": "Meetali Srivastava ",
+        "LinkedIn_profile": "www.linkedin.com\/in\/meetalis",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/15XTxxZWWIDBZjCGdUEcZC0qyjbEyNO9r\/view?usp=share_link",
+        "Profile_photo_url": "profile photo.webp",
+        "Profile_Photo_name": "profile photo",
+        "Designation": "Student & public relations team"
+       },
+       {
+        "Timestamp": "4\/15\/2023 1:12:39",
+        "Email_id": "omkamble0800@gmail.com",
+        "Name": "Om Kamble",
+        "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/om-kamble-54623720a",
+        "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1yTdQwYgpqg-o6pWzgCwhptKTSDt4iQ3s\/view?usp=drivesdk",
+        "Profile_photo_url": "IMG_20221103_172006.webp",
+        "Profile_Photo_name": "IMG_20221103_172006",
+        "Designation": "Website Team"
+       }
     // {
     //     "Name": "Abhinav Dugar",
     //     "Email_id": "dugarabhinav2001@gmail.com",
