@@ -44,7 +44,7 @@
 
     <!-- <link rel="stylesheet" href="../style.min.css" /> -->
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./team_style.css" />
+    <link rel="stylesheet" href="./gallery_style.css" />
     <!-- Responsive design stylesheet-->
   <link rel="stylesheet" href="../responsive.css" />
     
@@ -52,6 +52,10 @@
 
     <!--font-awesome for social media icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css -->
 
     <!-- <link rel="stylesheet" href="./alien.css" /> -->
     <title>Hackverse 4.0 | April 2023</title>
@@ -95,24 +99,15 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav navbar-nav navbar-nav-scroll">
           <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="#p"
-              ><span>PATRONS</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#adv"><span>ADVISORY COMMITTEE</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#facad"><span>FACULTY ADVISORS</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#students"><span>STUDENT TEAM</span></a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="https://hackverse.nitk.ac.in/"><span>HACKVERSE 4.0</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://hackverse.nitk.ac.in/blog" target="_blank"
+              rel="noopener noreferrer"><span>BLOG</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://hackverse.nitk.ac.in/team" target="_blank"
+              rel="noopener noreferrer"><span>TEAM</span></a>
           </li>
         </ul>
       </div>
@@ -140,48 +135,47 @@
           <img loading="lazy" width="17.5x" height="17.5px" src="../img/youtube-nav.svg" alt="youtube" />
         </a>
         <a class="social-icons" href="https://discord.gg/HnmH7fGK" target="_blank" rel="noopener noreferrer">
-          <img loading="lazy" width="17.5x" height="17.5px" src="../img/discord-nav.svg" alt="discord" />
+            <img loading="lazy" width="17.5x" height="17.5px" src="../img/discord-nav.svg" alt="discord" />
         </a>
       </div>
     </div>
     <!-- </div> -->
   </nav>
-
-<!-- Members Start -->
-<section id="teams" class="our-speaker-area section-padding-100" >
-    <div id="p" class="container">
-        <h1 class="page-title" data-aos="fade-up" style="text-align: center;padding: 8%;">Patrons</h1>
-        <div class="row justify-content-center">
-        </div>
+  <section id="gallery">
+   <!-- Add rectangular space on the top only in the front page to shift the contents below the navbar -->
+   <div class="home-top-space-custom">
     </div>
 
-    <div id="adv" class="container">
-        <h1 class="page-title" data-aos="fade-up" style="text-align: center;padding: 8%;">Advisory Committee</h1>
-        <div class="row justify-content-center">
-        </div>
+  <!-- Gallery start -->
+  
+  <div class="container">
+    <div class="row">
+      <a href="../img/gallery/img_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-lg-6">
+        <img src="../img/gallery/img_1.jpg" class="img-fluid rounded">
+      </a>
+      <a href="../img/gallery/img_2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-lg-6">
+        <img src="../img/gallery/img_2.jpg" class="img-fluid rounded">
+      </a>
+      <a href="../img/gallery/img_3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-lg-12">
+        <img src="../img/gallery/img_3.jpg" class="img-fluid rounded">
+      </a>
     </div>
-
-    <div id="facad" class="container">
-        <h1 class="page-title" data-aos="fade-up" style="text-align: center;padding: 8%;">Faculty Advisors</h1>
-        <div class="row justify-content-center">
-        </div>
+    <div class="row">
+      <a href="../img/gallery/img_4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-lg-6">
+        <img src="../img/gallery/img_4.jpg" class="img-fluid rounded">
+      </a>
+      <a href="../img/gallery/img_5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-lg-6">
+        <img src="../img/gallery/img_5.jpg" class="img-fluid rounded">
+      </a>
+      <a href="../img/gallery/img_6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-lg-12">
+        <img src="../img/gallery/img_6.jpg" class="img-fluid rounded">
+      </a>
     </div>
+  </div>
 
-    <div id="students" class="container">
-            <h1 class="page-title" data-aos="fade-up" style="text-align: center;padding: 8%;">Student Team</h1>
-            <div class="row justify-content-center">
-            </div>
-        </div>
 </section>
+<!-- Gallery end -->
 
-<!-- Members End -->
-
-<!-- Trial : Displaying a random image from gdrive -->
-<!-- <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1vCy04ZIbaeb0HXInhM6PLsH005TbQupt"/> -->
-<!-- <img loading="lazy" src="../img/team_page/students/1DC6227B-8DCE-4C51-8755-A6A4A57EFB84 - Kancharla Jahnavi.jpeg"/> -->
-
-<!-- Script to add content to each section-->
-<script src="team_script.js"></script>
 
 <!-- Footer -->
 <div class="fluid-container footer">
@@ -315,7 +309,14 @@
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
   crossorigin="anonymous"
 ></script>
-<!-- <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script> -->
+
+<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" crossorigin="anonymous"></script>
+
+<script defer src="./gallery_script.js"></script>
+
 <!-- Google Analytics -->
 <script
   async defer

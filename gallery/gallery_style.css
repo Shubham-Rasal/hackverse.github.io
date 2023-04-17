@@ -1,0 +1,19 @@
+#gallery {
+    background: url(../img/snow-heap.webp) bottom no-repeat, #d5f0ff;
+    padding-bottom: 15rem;
+    margin-top: 2%;
+}
+
+/* #scroll-spy {
+    background: #d5f0ff;
+} */
+
+.row {
+    margin: 20px;
+}
+#gallery img {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
