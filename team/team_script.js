@@ -158,34 +158,6 @@ let student_info_core_4 =
         "Profile_Photo_name": "IMG_20220425_142325_662_2",
         "Designation": "Lead Organizer"
        },
-//  {
-//   "Name": "Rithik Jain",
-//   "Email_id": "rithikjain1811@gmail.com",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/rithik-jain-162324192\/",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1pb3jJW1Jp3iMBPkvZA4-qUpEklBwA5_c",
-//   "Profile_photo_url": "img - RITHIK JAIN..jpg",
-//   "Profile_Photo_name": "img - RITHIK JAIN.",
-//   "Designation": "Public Relations Head"
-//  },
-//  
-//  {
-//   "Name": "Ramyashree G K",
-//   "Email_id": "gkramyashree.181cv112@nitk.edu.in",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/ramyashree-g-k-0002b616b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BM8JCkyGtQYuzMTmDKLEFZQ%3D%3D",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1QT7oxAVwE1mTBvTuZmrs1kz8W7c9vcw7",
-//   "Profile_photo_url": "Ramya pic (1) - RAMYA SHREE G K.jpeg",
-//   "Profile_Photo_name": "Ramya pic (1) - RAMYA SHREE G K",
-//   "Designation": "Public Relations Head"
-//  },
-//  {
-//   "Name": "Gaurav Chaurasia",
-//   "Email_id": "gaurav.181cv155@nitk.edu.in",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/gaurav-chaurasia\/",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=11tW6f1HSY1jo8i-YuPgOcc7iivYFS9_N",
-//   "Profile_photo_url": "IMG_20211121_155154 - Gaurav Chaurasia.jpg",
-//   "Profile_Photo_name": "IMG_20211121_155154 - Gaurav Chaurasia",
-//   "Designation": "Technical Head"
-//  },
  {
   "Name": "Anupama Kolsur",
   "Email_id": "anupamakolsur27@gmail.com",
@@ -195,24 +167,6 @@ let student_info_core_4 =
   "Profile_Photo_name": "Hackverse Image",
   "Designation": "Operations Head"
  },
-//  {
-//   "Name": "Jahnavi Kancharla ",
-//   "Email_id": "jahnavikancharla99@gmail.com",
-//   "LinkedIn_profile": "www.linkedin.com\/in\/jahnavikancharla",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1JWY3EgsEpqkUqeSy7wFDwmkdy3Ml-yFi",
-//   "Profile_photo_url": "1DC6227B-8DCE-4C51-8755-A6A4A57EFB84 - Kancharla Jahnavi.jpeg",
-//   "Profile_Photo_name": "1DC6227B-8DCE-4C51-8755-A6A4A57EFB84 - Kancharla Jahnavi",
-//   "Designation": "Operations Head"
-//  },
-//  {
-//   "Name": "Siddharth Ramesh",
-//   "Email_id": "siddharth.181ch040@nitk.edu.in",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/siddharth-ramesh-730503173",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=19kMi3tKovxk_V7PXTvi53YAJMJuTbtkZ",
-//   "Profile_photo_url": "A7307334 - SIDDHARTH RAMESH..jpg",
-//   "Profile_Photo_name": "A7307334 - SIDDHARTH RAMESH.",
-//   "Designation": "Marketing Head"
-//  },
  {
   "Name": "Stavan Kudche",
   "Email_id": "stavankudche@gmail.com",
@@ -280,6 +234,16 @@ let student_info_core_4 =
     "Profile_photo_url": "IMG_20230206_014209_429.webp",
     "Profile_Photo_name": "IMG_20230206_014209_429",
     "Designation": "Technical Head"
+   },
+   {
+    "Timestamp": "4\/17\/2023 23:01:51",
+    "Email_id": "namanraka16@gmail.com",
+    "Name": "Naman Raka",
+    "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/namanraka",
+    "Profile_photo": "https:\/\/s137.convertio.me\/p\/OSMiOi-uvTNeiLxV7D-wsQ\/cde0d9179dced20f80835b51a59aac77\/22542.webp",
+    "Profile_photo_url": "22542.webp",
+    "Profile_Photo_name": "22542",
+    "Designation": "Marketing Head"
    }
 ]
 
@@ -295,15 +259,6 @@ let student_info_core_3 =
     "Profile_Photo_name": "Shlok2",
     "Designation": "Website & Student Relations Team"
 }
-//  {
-//   "Name": "Aritra Sinha",
-//   "Email_id": "aritrasinha002@gmail.com",
-//   "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/aritra-sinha-0251101a3\/",
-//   "Profile_photo": "https:\/\/drive.google.com\/open?id=1j4wacuIMh-83vRrcWih7hVJULNOgeOOA",
-//   "Profile_photo_url": "Profile-Picture - Aritra Sinha.jpg",
-//   "Profile_Photo_name": "Profile-Picture - Aritra Sinha",
-//   "Designation": "Technical Coordinator"
-//  },
  
 ]
 
