@@ -566,7 +566,7 @@ let student_info_others =
        {
         "Timestamp": "4\/9\/2023 15:55:18",
         "Email_id": "shamithamnaiknitkeduin.211ec248@nitk.edu.in",
-        "Name": "shamitha m naik",
+        "Name": "Shamitha m naik",
         "LinkedIn_profile": "https:\/\/www.linkedin.com\/in\/shamitha-naik-6b4947257",
         "Profile_photo": "https:\/\/drive.google.com\/file\/d\/1w9J1mWqLsMGnXiQQeTIcvtPMO7l_p5AD\/view?usp=share_link",
         "Profile_photo_url": "passport pic.pdf",
@@ -622,7 +622,16 @@ let student_info_others =
         "Profile_photo_url": "1644150196059.webp",
         "Profile_Photo_name": 1644150196059,
         "Designation": "Student & public relations team"
-       }
+       },
+    {
+        "Name": "Sakshi Babar",
+        "Email_id": "sakshibabar111@gmail.com",
+        "LinkedIn_profile": "https://www.linkedin.com/in/sakshi-babar-0547431b6",
+        "Profile_photo": "https://drive.google.com/open?id=1rFek8lzsA-_3tJBE__8qp4UI0DV7NoWg",
+        "Profile_photo_url": "IMG_20200106_002254 - babar sakshi mahesh.JPG",
+        "Profile_Photo_name": "IMG_20200106_002254 - babar sakshi mahesh",
+        "Designation": "Operations Team"
+    },
     // {
     //     "Name": "Saurabh Mokashi",
     //     "Email_id": "sherumokashi@gmail.com",
@@ -632,15 +641,7 @@ let student_info_others =
     //     "Profile_Photo_name": "profile - Saurabh Dhananjay Mokashi.",
     //     "Designation": "Technical Team"
     // },
-    // {
-    //     "Name": "Sakshi Babar",
-    //     "Email_id": "sakshibabar111@gmail.com",
-    //     "LinkedIn_profile": "https://www.linkedin.com/in/sakshi-babar-0547431b6",
-    //     "Profile_photo": "https://drive.google.com/open?id=1rFek8lzsA-_3tJBE__8qp4UI0DV7NoWg",
-    //     "Profile_photo_url": "IMG_20200106_002254 - babar sakshi mahesh.JPG",
-    //     "Profile_Photo_name": "IMG_20200106_002254 - babar sakshi mahesh",
-    //     "Designation": "Operations Team"
-    // },
+
 ]
 
 
