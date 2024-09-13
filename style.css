@@ -33,7 +33,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #69c6fb #ffffff;
+  scrollbar-color: #BA042D #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -46,7 +46,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #69c6fb;
+  background-color: #BA042D;
   border-radius: 20px;
   border: 3px solid #ffffff;
 }
@@ -91,7 +91,7 @@ p {
 .water {
   width: 400px;
   height: 400px;
-  background-color: #4db8ff;
+  background-color: #BA042D;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
