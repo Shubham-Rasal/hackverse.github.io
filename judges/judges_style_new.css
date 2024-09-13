@@ -1,0 +1,140 @@
+:root {
+    --color1: #BF0904; /* Red for consistency with the theme */
+  }
+  
+  #judges-section {
+    min-height: 80vh;
+    background-color: #090909; /* Black background */
+    color: #BF0904; /* Red text color for contrast */
+  }
+  
+  #judges-section p {
+    font-size: 12px;
+  }
+  
+  #judges-section .teams {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  #judges-section .card {
+    padding: 20px 15px 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: 380px;
+    height: 380px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background: rgba(9, 9, 9, 0.8); /* Semi-transparent black */
+  }
+  
+  #judges-section .card h5 {
+    color: #BF0904; /* Red color for headings */
+    font-weight: 600;
+    font-family: "Cabin Sketch", "Poppins", cursive;
+  }
+  
+  #judges-section .card-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #judges-section .name {
+    font-weight: 600;
+    color: #BF0904; /* Red color for names */
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 7px 0;
+  }
+  
+  #judges-section .member-info {
+    text-align: center;
+  }
+  
+  #judges-section .post {
+    color: #BF0904; /* Red color for posts */
+    text-transform: capitalize;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 3px;
+    align-content: center;
+  }
+  
+  /* Social media icons */
+  #judges-section .social {
+    padding: 0;
+    position: absolute;
+    margin-bottom: 4px;
+    bottom: 5px;
+    list-style: none;
+  }
+  
+  #judges-section .social li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  #judges-section .card .social li a {
+    border-radius: 50%;
+    font-size: 15px;
+    color: #090909; /* Black for social icon text */
+    border: 1px solid #090909; /* Black border for social icons */
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    transition: all 0.5s ease 0s;
+  }
+  
+  #judges-section .card .social li a:hover {
+    background: #BF0904; /* Red background on hover */
+    color: #fff; /* White text color on hover */
+  }
+  
+  /* Profile photo */
+  #judges-section .card-top img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+  
+  #judges-section .card .pic {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  
+  #judges-section .card:hover .pic {
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+    width: 170px;
+    border-radius: 50%;
+  }
+  
+  #judges-section .section-padding-100 {
+    padding-top: 30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #judges-section .section-padding-100 {
+      padding-top: 90px;
+    }
+  }
+  
+  #judges {
+    padding-top: 50px;
+  }
+  

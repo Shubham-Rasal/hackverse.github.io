@@ -33,7 +33,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #BA042D #ffffff;
+  scrollbar-color: #69c6fb #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -46,7 +46,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #BA042D;
+  background-color: #69c6fb;
   border-radius: 20px;
   border: 3px solid #ffffff;
 }
@@ -91,7 +91,7 @@ p {
 .water {
   width: 400px;
   height: 400px;
-  background-color: #BA042D;
+  background-color: #4db8ff;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -134,7 +134,7 @@ button:focus {
 
 .gradient-text-light {
   background-color: #e4f4ff;
-  background-image: linear-gradient(45deg, #BA042D, #ffffff);
+  background-image: linear-gradient(45deg, #6bc4ff, #ffffff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -144,7 +144,7 @@ button:focus {
 
 .gradient-text-dark {
   background-color: #000406;
-  background-image: linear-gradient(45deg, #00344d, #BA042D);
+  background-image: linear-gradient(45deg, #00344d, #16a2ff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -153,8 +153,8 @@ button:focus {
 }
 
 .gradient-text-blue {
-  background-color: #BA042D;
-  background-image: linear-gradient(45deg, rgb(0, 170, 255), #BA042D);
+  background-color: #6bc4ff;
+  background-image: linear-gradient(45deg, rgb(0, 170, 255), #6bc4ff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -166,7 +166,7 @@ button:focus {
   height: 100vh;
   margin-bottom: 0%;
   padding-bottom: 0%;
-  background-color: #BA042D;
+  background-color: #63c3fb;
 }
 
 #hero svg {
@@ -576,7 +576,7 @@ button:focus {
 }
 .repeating-text-background .accent-text {
   font-family: Krona One, sans-serif;
-  -webkit-text-stroke: 2px rgba(191, 9, 4, 0.3);
+  -webkit-text-stroke: 2px rgba(105, 197, 251, 0.3);
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-size: 92px;
@@ -668,13 +668,11 @@ button:focus {
   overflow-x: hidden;
 }
 
-
-
 .sponsor {
   color: white;
   margin-top: 32px;
   font-weight: 700;
-  background-color: #BA042D; /* Updated color */
+  background-color: #00a1ff;
   border-radius: 50px;
   width: 40%;
   font-size: 1.25rem;
@@ -684,11 +682,11 @@ button:focus {
 }
 
 .sponsor:hover {
-  background-color: #D44B61; /* A lighter shade for hover */
+  background-color: #6ec5ff;
 }
 
 .sponsor-section-link {
-  color: #BA042D; /* Updated color for links */
+  color: #0079bf;
 }
 
 #sponsors .row img {
@@ -767,7 +765,7 @@ button:focus {
   background-color: #021f3b;
   color: #dcf0fc;
   padding-top: 8%;
-  background: url("img/trees-snow.webp") bottom no-repeat, #FB6373;
+  background: url("img/trees-snow.webp") bottom no-repeat, #63c3fb;
   background-size: 100%, cover;
 }
 
@@ -776,7 +774,7 @@ button:focus {
   border: none;
   margin-bottom: 32px;
   border-radius: 4px;
-  border-bottom: 2px solid #F04456;
+  border-bottom: 2px solid #22b9f0;
   background: rgba(136, 210, 252, 0.5);
 }
 .accordion-button {
@@ -810,7 +808,7 @@ button:focus {
 }
 
 .footer {
-  background: linear-gradient(#fff, rgb(252, 136, 156));
+  background: linear-gradient(#fff, rgb(136, 210, 252));
   color: #000;
   padding: 5%;
   padding-bottom: 0%;
@@ -861,7 +859,7 @@ a {
 
 #social-nav-icons {
   font-size: 18px;
-  color: #000;
+  color: white;
 }
 
 #social-nav-icons > img {
@@ -876,8 +874,7 @@ a {
 #scroll-spy {
   padding-top: 0px;
   padding-bottom: 0px;
-  background: rgba(251, 105, 130, 0.8);
-
+  background: rgba(105, 197, 251, 0.8);
   box-shadow: 10px 10px 76px 0px rgb(0 0 0 / 5%);
   backdrop-filter: blur(10px);
   /* color: #042c44; */
@@ -889,7 +886,7 @@ a {
 }
 
 #scroll-spy-link :hover {
-  color: #FF4B4B;
+  color: #18a7ff;
 }
 
 #navbarDropdown {
@@ -898,28 +895,20 @@ a {
   backdrop-filter: blur(2px);
 }
 
-/* Active and highlighted state */
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .show > .nav-link {
-  color: #BF0904 !important; /* Red for active links */
+  color: #fff !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(9, 9, 9, 0.7); /* Light black for normal links */
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 600;
   text-align: center;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #BF0904; /* Red for hover effect */
+.navbar-dark .navbar-nav .nav-link :hover {
+  color: #fff;
 }
-
-/* Background color for the navbar */
-.navbar-dark {
-  background-color: #090909; /* Black background */
-}
-
-
 
 .container {
   justify-content: center;
@@ -945,7 +934,7 @@ a {
 
 /* Countdown Starts Here  */
 #countdown-section {
-  background: #BF0904;
+  background: #69c6fb;
 }
 
 .countdown-container {
@@ -955,7 +944,7 @@ a {
 }
 
 .countdown p {
-  color: #000;
+  color: #fff;
   text-align: center;
   font-size: larger;
 }
@@ -974,7 +963,7 @@ a {
 }
 
 .countdown-block {
-  color: #000;
+  color: #fff;
   position: relative;
   display: inline-block;
   min-width: 80px;
@@ -1099,7 +1088,7 @@ section {
 
 .gradient-text-dark {
   background-color: #000406;
-  background-image: linear-gradient(45deg, #BF0904, #000);
+  background-image: linear-gradient(45deg, #00344d, #16a2ff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -1115,7 +1104,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #BF0904;
+  background-color: #d4eaff;
   padding: 3rem 0;
 }
 
@@ -1126,13 +1115,13 @@ section {
 }
 
 .prize h3 {
-  color: #000;
+  color: #1673a8;
   font-weight: bold;
   font-size: 1.25rem;
 }
 
 .prize .prize-container {
-  background: #D94F4F;
+  background: #b1dffa;
   width: 100%;
   padding: 4rem 6rem;
   display: flex;
@@ -1148,7 +1137,7 @@ section {
 
 .prize .prize-container .prize-navbar {
   width: 100%;
-  border-bottom: 1px solid #F57C7C;
+  border-bottom: 1px solid #7ac8f5;
   display: flex;
   padding: 1rem 0;
   border-radius: 16px 16px 0 0;
@@ -1179,7 +1168,7 @@ section {
   position: absolute;
   inset: 0;
   top: 36px;
-  border-bottom: 4px solid #F04F4F;
+  border-bottom: 4px solid #4fb5f0;
   border-radius: 100px;
   animation: 0.25s linear view;
 }
@@ -1206,8 +1195,7 @@ section {
   background: rgba(255, 255, 255, 0.13);
   padding: 2rem 3rem;
   font-size: 0.8rem;
-  color: #BF0904
-  ;
+  color: #07486e;
 }
 
 .prize .prize-card-container .prize-card-container-main {
@@ -1370,7 +1358,7 @@ section {
 }
 
 .prize .prize-card-container .prize-card .prize-card-text p {
-  color: #BF0904;
+  color: #07486e;
   font-weight: 600;
   margin: 0;
   font-size: 1.2rem;
@@ -1395,14 +1383,13 @@ section {
   padding: 5px;
   position: relative;
   overflow: hidden;
-  background: rgba(191, 9, 4, 0.75);
+  background: rgba(105, 197, 251, 0.75);
   background: linear-gradient(
     135deg,
-    rgba(191, 9, 4, 0.75), /* Similar to rgba(67, 184, 251, 0.75) */
-    rgba(179, 7, 3, 0.75),  /* Similar to rgba(65, 181, 249, 0.75) */
-    rgba(162, 10, 7, 0.9)    /* Similar to rgba(48, 173, 245, 0.9) */
+    rgba(67, 184, 251, 0.75),
+    rgba(65, 181, 249, 0.75),
+    rgba(48, 173, 245, 0.9)
   );
-
   margin: 20px auto;
 }
 
@@ -1422,7 +1409,7 @@ section {
   padding: 2px 15px;
   margin-bottom: 8px;
   font-size: x-large;
-  color: #991515;
+  color: #156999;
 }
 
 .prize .special-prize-container .special-prize-card .front .prize-logo {
@@ -1430,7 +1417,7 @@ section {
   top: 20px;
   border-radius: 8px;
   /* background: #156999; */
-  background: rgba(191, 9, 4, 0.75);
+  background: rgba(115, 201, 250, 0.75);
   padding: 5px 20px;
 }
 
@@ -1446,7 +1433,7 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 204, 204, 0.9);
+  background-color: rgba(235, 248, 255, 0.9);
   transition: 1s;
   z-index: 1;
   padding: 0 1rem;
@@ -1469,7 +1456,7 @@ section {
 .prize .special-prize-container .special-prize-card .description button a {
   color: #ebf8ff;
   border-radius: 3px;
-  background: #EC2A2A;
+  background: #2aa6ec;
   padding: 8px;
 }
 
@@ -1600,8 +1587,8 @@ section {
 }
 .screen-overlay {
   background: linear-gradient(
-    rgba(191, 9, 4, 0.5), /* Red with transparency */
-    rgba(191, 9, 4, 0.5) 2px,
+    rgba(51, 140, 191, 0.5),
+    rgba(51, 140, 191, 0.5) 2px,
     transparent 1px,
     transparent 1.5px
   );
@@ -1609,30 +1596,24 @@ section {
   height: 100%;
   animation: pan-overlay 22s infinite linear;
 }
-
 .slider-content {
-  color: white; /* Remains white for contrast */
-  text-shadow: black 1px 1px; /* Keeps the text shadow */
+  color: white;
+  text-shadow: black 1px 1px;
   height: 100%;
 }
-
 #track-cards::-webkit-scrollbar {
   height: 0.5rem;
 }
-
 #track-cards::-webkit-scrollbar-track {
-  background-color: #090909; /* Black for the scrollbar track */
+  background-color: #d4eaff;
 }
-
 #track-cards::-webkit-scrollbar-thumb {
-  background-color: #BF0904; /* Red for the scrollbar thumb */
+  background-color: #2e5980;
 }
-
 #track-intro {
   font-size: 1.25rem;
   font-family: Inter;
 }
-
 
 /* Tracks Section End */
 
@@ -1644,13 +1625,12 @@ section {
   min-height: 60vh;
   z-index: 2;
   width: 100%;
-  background-color: #090909; /* Black for consistency with the theme */
+  background-color: #d4eaff;
 }
 
 #speaker-section {
-  background-color: #BF0904; /* Red for a strong contrast and thematic consistency */
+  background-color: #2d294d;
 }
-
 
 .snow-head {
   z-index: 3;
@@ -1675,7 +1655,7 @@ section {
 
 .judge-card,
 .speaker-card {
-  outline: 0 solid #000;
+  outline: 0 solid white;
   transition: 0.25s all ease-in-out;
   width: 250px;
   aspect-ratio: 0.7;
@@ -1684,20 +1664,20 @@ section {
 
 .judge-card:hover,
 .speaker-card:hover {
-  outline: 3px solid #000;
+  outline: 3px solid white;
   cursor: pointer;
 }
 
 .judge-card:hover > .profile-image > img,
 .speaker-card:hover > .profile-image > img {
   scale: 1.05;
-  outline: 6px solid #000;
+  outline: 6px solid white;
   outline-offset: -5.2px;
 }
 
 .profile-image > img {
   scale: 1;
-  outline: 0 solid #000;
+  outline: 0 solid white;
   transition: 0.2s all ease-in-out;
 }
 

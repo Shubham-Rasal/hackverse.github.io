@@ -1,14 +1,15 @@
 :root {
-  --color1: #ffffff83;
+  /* --color1: #ffffff83; */
+  --color1: #BF0904;
   /* --color1: #cedfd8; */
 }
 #judges-section {
   min-height: 80vh;
-  background-color: #69c6fb;
+  background-color: #BF4A4A;
   /* background-image: url("../img/bg_stars.webp"); */
   background-size: cover;
   background-repeat: no-repeat;
-  color: #d1e5dc;
+  color: #BF6C6C;
 }
 
 #judges-section p {
@@ -40,7 +41,7 @@
 }
 
 #judges-section .card h5{
-  color: #fff;
+  color: #000;
   font-weight: 600;
   font-family: "Cabin Sketch", "Poppins", cursive;
 }
@@ -53,7 +54,7 @@
 }
 #judges-section .name {
   font-weight: 600;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   display: block;
   font-size: 20px;
@@ -85,7 +86,7 @@
   text-align: center;
 }
 #judges-section .post {
-  color: #201c3c;
+  color: #000;
   text-transform: capitalize;
   display: block;
   font-size: 15px;
@@ -109,8 +110,8 @@
 #judges-section .card .social li a {
   border-radius: 50%;
   font-size: 15px;
-  color: var(--color1, #fff);
-  border: 1px solid var(--color1, #fff);
+  color: var(--color1, #000);
+  border: 1px solid var(--color1, #000);
   display: block;
   width: 30px;
   height: 30px;
@@ -119,8 +120,8 @@
 }
 #judges-section .card .social li a:hover {
   /* background: #041d3c; */
-  background: var(--color1, #fff);
-  color: #fff;
+  background: var(--color1, #000);
+  color: #000;
 }
 
 /* Profile photo */
