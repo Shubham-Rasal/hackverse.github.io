@@ -185,6 +185,15 @@ button:focus {
   height: 100vh;
   z-index: 2;
   width: 100%;
+  background-image: url("https://w0.peakpx.com/wallpaper/923/790/HD-wallpaper-money-heist-netflix-la-casa-de-papel-money-heist-tv-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Vertically center content */
+  
 }
 
 .font-esgalon {
@@ -912,6 +921,98 @@ a {
 
 .container {
   justify-content: center;
+}
+
+.hero-container {
+  
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 60rem;
+}
+
+.heading-hackverse {
+  font-size: 5rem; /* equivalent to text-6xl */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.coming-soon {
+  color: #fb923c; /* equivalent to text-orange-400 */
+  font-size: 1.25rem; /* equivalent to text-xl */
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem; /* equivalent to text-lg */
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.register-btn, .learn-more-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  color: white;
+}
+
+.register-btn {
+  background-color: #ef4444; /* equivalent to bg-red-500 */
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #dc2626; /* equivalent to hover:bg-red-600 */
+}
+
+.learn-more-btn {
+  background-color: rgba(0, 0, 0, 0.5); /* equivalent to bg-black bg-opacity-50 */
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #1f2937; /* equivalent to hover:bg-gray-800 */
+}
+
+@media (max-width: 768px) {
+  .heading-hackverse {
+    font-size: 2.5rem; /* Reduce heading size for tablets */
+  }
+
+  .coming-soon {
+    font-size: 1.125rem; /* text-lg */
+  }
+
+  .description {
+    font-size: 1rem; /* text-base */
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-hackverse {
+    font-size: 2rem; /* Reduce heading size for smaller phones */
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .coming-soon {
+    font-size: 1rem; /* Reduce coming soon text size */
+  }
+
+  .description {
+    font-size: 0.875rem; /* text-sm */
+  }
 }
 
 .hero-card {
