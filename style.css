@@ -773,7 +773,7 @@ button:focus {
 .faq {
   min-height: 150vh;
   padding-bottom: 25%;
-  background-color: #021f3b;
+  background-color: #000000;
   color: #dcf0fc;
   padding-top: 8%;
   /* background: url("img/trees-snow.webp") bottom no-repeat, #FB6373; */
