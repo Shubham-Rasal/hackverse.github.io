@@ -773,10 +773,10 @@ button:focus {
 .faq {
   min-height: 150vh;
   padding-bottom: 25%;
-  background-color: #021f3b;
+  background-color: #000000;
   color: #dcf0fc;
   padding-top: 8%;
-  background: url("img/trees-snow.webp") bottom no-repeat, #FB6373;
+  /* background: url("img/trees-snow.webp") bottom no-repeat, #FB6373; */
   background-size: 100%, cover;
 }
 
@@ -893,7 +893,7 @@ a {
   box-shadow: 10px 10px 76px 0px rgb(0 0 0 / 5%);
   backdrop-filter: blur(10px);
   /* color: #042c44; */
-  mask: linear-gradient(transparent, black 60%);
+  /* mask: linear-gradient(transparent, black 60%); */
 }
 
 #scroll-spy-link {
@@ -917,7 +917,7 @@ a {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(9, 9, 9, 0.7); /* Light black for normal links */
+  color: rgba(9, 9, 9, 0.7); //Light black for normal links
   font-weight: 600;
   text-align: center;
 }
@@ -1221,6 +1221,7 @@ section {
   width: 100%;
   background-color: #BF0904;
   padding: 3rem 0;
+  color: white;
 }
 
 .prize h1 {
@@ -1230,7 +1231,7 @@ section {
 }
 
 .prize h3 {
-  color: #000;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.25rem;
 }
@@ -1474,7 +1475,7 @@ section {
 }
 
 .prize .prize-card-container .prize-card .prize-card-text p {
-  color: #BF0904;
+  color: #ffffff;
   font-weight: 600;
   margin: 0;
   font-size: 1.2rem;
